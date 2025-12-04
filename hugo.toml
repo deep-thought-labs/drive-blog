@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Infinite Improbability Drive - Blog"
+title = "Project 42 - Blog"
 theme = "hugo-geekdoc"
 
 # Required to get well formatted code blocks
@@ -53,7 +53,7 @@ enableRobotsTXT = true
 
   # (Optional, default none) Set source repository location. Used for 'Edit page' links.
   # You can also specify this parameter per page in front matter.
-  geekdocRepo = "https://github.com/deep-thought-labs/babelfish-docs"
+  geekdocRepo = "https://github.com/WizardLatino/Infinitedrivefront"
 
   # (Optional, default none) Enable 'Edit page' links. Requires 'geekdocRepo' param
   # and the path must point to the parent directory of the 'content' folder.

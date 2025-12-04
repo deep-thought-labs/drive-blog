@@ -8,9 +8,19 @@ tags: ["introducción", "anuncio"]
 
 ¡Bienvenidos a nuestro blog oficial!
 
-Este sitio ha sido creado con el propósito de mantener a nuestra comunidad informada sobre el progreso y desarrollo de nuestros proyectos. Aquí encontrarás actualizaciones regulares, comunicados importantes y descripciones detalladas del avance de nuestro ecosistema.
+Este sitio ha sido creado con el propósito de mantener a nuestra comunidad informada sobre el progreso y desarrollo de **Project 42**. Aquí encontrarás actualizaciones regulares, comunicados importantes y descripciones detalladas del avance de nuestro ecosistema.
 
-> 🌐 Para más información sobre **Infinite Improbability Drive**, visita nuestro sitio principal: [infinitedrive.xyz](https://infinitedrive.xyz)
+## ¿Qué es Project 42?
+
+**Project 42** es una nación cypherpunk digital — un ecosistema completo diseñado para crear un ciberspacio donde la libertad es código, la privacidad es por defecto, y la red pertenece a todos.
+
+Nuestro proyecto se compone de tres componentes principales que trabajan en conjunto:
+
+1. **Infinite Improbability Drive**: La cadena de bloques fundacional que proporciona seguridad, gobernanza y economía al ecosistema
+2. **BabelFish Network**: La red P2P global que conecta millones de dispositivos en una infraestructura resistente a censura
+3. **Drive**: Las herramientas cliente que permiten gestionar nodos y servicios de manera unificada
+
+> 🌐 Para más información sobre nuestro proyecto, visita nuestro sitio principal: [infinitedrive.xyz](https://infinitedrive.xyz)
 
 ## Nuestro Compromiso
 

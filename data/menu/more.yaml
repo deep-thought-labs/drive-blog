@@ -1,10 +1,7 @@
 ---
 more:
-  - name: "CLI Releases"
-    ref: "https://github.com/WizardLatino/babefish-vm-test/releases"
+  - name: "Sitio Principal"
+    ref: "https://infinitedrive.xyz"
     external: true
-    icon: "gdoc_download"
-  - name: "Project Board"
-    ref: "https://github.com/orgs/deep-thought-labs/projects/1"
-    external: true
-    icon: "gdoc_date"
+    icon: "gdoc_link"
+  

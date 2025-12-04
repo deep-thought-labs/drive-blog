@@ -1,18 +1,18 @@
 ---
-title: "Fase de Testing: Infinite Improbability Drive"
-date: 2024-01-20T10:00:00Z
-tags: ["testing", "lanzamiento", "blockchain", "infinite-improbability-drive"]
+title: "Fase de Testing: Inicio de las Rondas de Testing"
+date: 2024-01-18T10:00:00Z
+tags: ["testing", "anuncio", "project-42", "infinite-improbability-drive"]
 ---
 
-# Fase de Testing: Infinite Improbability Drive
+# Fase de Testing: Inicio de las Rondas de Testing
 
-Nos complace anunciar que hemos entrado en una fase crucial de nuestro desarrollo: **la fase de testing** para el lanzamiento de uno de los proyectos principales de nuestro ecosistema.
+Nos complace anunciar que hemos entrado en una fase crucial de nuestro desarrollo: **la fase de testing** para el lanzamiento de **Project 42** y su componente principal, la cadena de bloques **Infinite Improbability Drive**.
 
-## Infinite Improbability Drive
+## Sobre Project 42
 
-**Infinite Improbability Drive** es nuestra cadena de bloques principal, un componente fundamental de nuestro ecosistema tecnológico. Esta blockchain representa años de investigación, desarrollo e innovación, y ahora estamos listos para comenzar las rondas de prueba que nos acercarán a su lanzamiento oficial.
+**Project 42** es una nación cypherpunk digital completa, y **Infinite Improbability Drive** es su cadena de bloques fundacional. Esta blockchain representa años de investigación, desarrollo e innovación, y ahora estamos listos para comenzar las rondas de prueba que nos acercarán a su lanzamiento oficial.
 
-> 🌐 Conoce más sobre Infinite Improbability Drive en nuestro sitio principal: [infinitedrive.xyz](https://infinitedrive.xyz)
+> 🌐 Conoce más sobre Project 42 en nuestro sitio principal: [infinitedrive.xyz](https://infinitedrive.xyz)
 
 ## ¿Qué implica esta fase?
 

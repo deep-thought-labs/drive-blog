@@ -1,23 +1,11 @@
 ---
 main:
-  - name: "Home"
+  - name: "Inicio"
     ref: "/"
     weight: 10
     icon: "gdoc_home"
 
-  - name: "Installation"
-    ref: "/instalacion"
+  - name: "Blog"
+    ref: "/posts/"
     weight: 20
-    icon: "gdoc_download"
-
-  - name: "Commands"
-    ref: "/comandos"
-    weight: 30
-    icon: "gdoc_keyboard"
-    sub:
-      - name: "Node Management"
-        ref: "/comandos/nodos"
-        weight: 31
-      - name: "API Management"
-        ref: "/comandos/apis"
-        weight: 32
+    icon: "gdoc_book"
