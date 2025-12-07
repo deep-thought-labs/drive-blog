@@ -5,7 +5,6 @@ Blog oficial de Infinite Improbability Drive donde compartimos actualizaciones, 
 ## Sitio Principal
 
 - 🌐 **Sitio Web**: [infinitedrive.xyz](https://infinitedrive.xyz)
-- 📦 **Repositorio Frontend**: [github.com/WizardLatino/Infinitedrivefront](https://github.com/WizardLatino/Infinitedrivefront)
 
 ## Desarrollo Local
 
