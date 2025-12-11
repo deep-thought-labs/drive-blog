@@ -1,0 +1,103 @@
+---
+title: "Fase de Testing - Ronda 1: Chain Launch"
+date: 2024-02-01T10:00:00Z
+tags:
+  - testing
+  - round-1
+  - chain-launch
+  - genesis
+  - validators
+---
+
+# Testing Phase - Round 1: Chain Launch
+
+The first round of testing focuses on the most critical process in a chain's lifecycle: **the Chain Launch**.
+
+
+## Importance of Chain Launch
+
+This process is **essential and very important** in the chain's lifecycle because:
+
+- **It is only done once** in the chain's lifecycle
+- It must be **very well defined and standardized**
+- During the testing phase, we will perform it several times on our test chains
+- **For the Mainnet, it will only be done once**
+- Therefore, we must practice and have the procedure very clear so that when we do it on the Mainnet, everything works perfectly, like clockwork
+
+## Required Preparation
+
+Before starting, each participant must have:
+
+- ✅ Their node initialized
+- ✅ Their validation key correctly created in the correct location
+- ✅ They have practiced key management and verified the `priv_validator_key`
+
+## Chain Launch Process
+
+### Step 1: Genesis Base
+
+A Genesis base file will be provided that **does not yet contain any validation accounts**.
+
+### Step 2: Transaction Creation
+
+Each participant will use this Genesis file to create the transactions necessary to create their validator within it.
+
+### Step 3: File Generation
+
+Each participant will provide a file generated from their node's data.
+
+### Step 4: Compiling the Final Genesis
+
+All the files from each participant will be compiled and combined into a single Genesis file.
+
+### Step 5: Launching the Chain
+
+This new Genesis file, created by compiling all the separate transactions, will be the Genesis of the chain.
+
+When we all start our nodes using this new Genesis file, **we will all be validators of the newly created chain, starting from block 1**.
+
+## Process Flow
+
+```
+1. Base Genesis (without validators)
+
+↓
+2. Each participant creates transactions for their validator
+
+↓
+3. Each participant generates a file with their node's data
+
+↓
+4. Compilation of all files into a single Genesis
+
+↓
+5. All participants start nodes with the final Genesis
+
+↓
+6. Chain launched with all participants as validators from block 1
+```
+
+## Specific Instructions
+
+Specific instructions and detailed steps will be provided later. This post serves as preparation and context for the process.
+
+## Objectives of this Round
+
+- Validate the complete Chain Launch process
+- Ensure all participants can correctly create validators
+- Verify that the compiled Genesis works correctly
+- Document any issues or necessary improvements in the process
+
+## Next Rounds
+
+After this first round, we will continue with:
+
+- Cyclical testing rounds (every Thursday)
+- Testing different functionalities
+- Token movement
+- Voting in the DAO
+- Simulation of various scenarios
+
+---
+
+**This is the most important round** because it establishes the standard procedure we will use for the official Mainnet launch. Accuracy and attention to detail are crucial.
