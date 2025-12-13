@@ -1,6 +1,6 @@
 ---
 more:
-  - name: "Sitio Principal"
+  - name: "Main Site"
     ref: "https://infinitedrive.xyz"
     external: true
     icon: "gdoc_link"

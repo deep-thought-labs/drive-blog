@@ -49,7 +49,7 @@ The client that manages nodes and services:
 - **Unified Interface**: Centralized tool for operating the ecosystem
 - **Technical Documentation**: Comprehensive guides for developers and operators
 
-> 📚 [Documentación de Drive](https://github.com/deep-thought-labs/drive)
+> 📚 [Drive Repository](https://github.com/deep-thought-labs/drive)
 
 ### 📝 This Blog
 A communication platform where we share:
@@ -60,49 +60,57 @@ A communication platform where we share:
 
 ## Recent Posts
 
-### [Welcome and Introduction to the Project](/posts/introduccion-bienvenida/)
+### [Welcome and Introduction to the Project](/en/posts/introduccion-bienvenida/)
 
 Our first welcome post where we explain the purpose of this blog and our commitment to transparency and communication with the community.
 
-**Date:** January 15, 2024
+**Date:** October 30, 2025
 
 ---
 
-### [Testing Phase: Start of Testing Rounds](/posts/fase-testing-infinite-improbability-drive/)
+### [Testing Phase: Start of Testing Rounds](/en/posts/fase-testing-infinite-improbability-drive/)
 
 Initial announcement regarding the start of the testing phase for Project 42.
 
-**Date:** January 18, 2024
+**Date:** November 6, 2025
 
 ---
 
-### [Testing Phase: Strategy and Preparation](/posts/fase-testing-anuncio-general/)
+### [Testing Phase: Strategy and Preparation](/en/posts/fase-testing-anuncio-general/)
 
 Complete testing strategy, including information on the two chains (pre-mainnet and testnet) and the participation process.
 
-**Date:** January 20, 2024
+**Date:** November 13, 2025
 
 ---
 
-### [Testing Phase: Preparation with Drive and Key Management](/posts/fase-testing-preparacion-drive-keys/)
+### [Testing Phase: Preparation with Drive and Key Management](/en/posts/fase-testing-preparacion-drive-keys/)
 
 Essential guide on installing Drive and critical management of keys and seed phrases for validators.
 
-**Date:** January 25, 2024
+**Date:** November 27, 2025
 
 ---
 
-### [Fase de Testing - Ronda 1: Chain Launch](/posts/fase-testing-ronda-1-chain-launch/)
+### [Testing Phase - Round 1: Chain Launch](/en/posts/fase-testing-ronda-1-chain-launch/)
 
 First round of testing focused on the critical Chain Launch process.
 
-**Date:** February 1, 2024
+**Date:** December 4, 2025
+
+---
+
+### [Testing Phase: How to Create a Gentx (Genesis Transaction)](/en/posts/guia-de-creacion-de-gentx/)
+
+Step by step guide of creating gentx.
+
+**Date:** December 11, 2025
 
 ---
 
 ## Navigation
 
-- 📝 [View all posts](/posts/) - Explore all our posts
+- 📝 [View all posts](/en/posts/) - Explore all our posts
 - 🌐 [Home Site](https://infinitedrive.xyz) - Visit infinitedrive.xyz for more information
 - 🔍 Use the search bar at the top to find specific content
 

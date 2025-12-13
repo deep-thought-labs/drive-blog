@@ -2,7 +2,6 @@
 title: "ブログへようこそ"
 geekdocBreadcrumb: false
 ---
-ようこそ
 
 ここは**Project 42**の公式ブログです。ここでは、最新情報、お知らせ、プロジェクトの進捗状況などを共有しています。Project 42は、デジタルサイファーパンク国家であり、**Infinite Improbability Drive**ブロックチェーン、**BabelFish**ネットワーク、そしてサービスとノードを管理する**Drive**クライアントツールで構成される完全なエコシステムです。
 
@@ -59,49 +58,55 @@ geekdocBreadcrumb: false
 
 ## 最近の投稿
 
-### [プロジェクトへの歓迎と紹介](/posts/introduccion-bienvenida/)
+### [プロジェクトへの歓迎と紹介](/ja/posts/introduccion-bienvenida/)
 
 私たちの最初のウェルカム投稿では、このブログの目的と、コミュニティとの透明性とコミュニケーションへの取り組みについて説明します。
 
-**日付:** 2024年1月15日
+**日付:** 2025年10月30日
 
 ---
 
-### [テストフェーズ: テストラウンドの開始](/posts/fase-testing-infinite-improbability-drive/)
+### [テストフェーズ: テストラウンドの開始](/ja/posts/fase-testing-infinite-improbability-drive/)
 
 Project 42 のテスト フェーズの開始に関する最初の発表。
 
-**日付:** 2024年1月18日
+**日付:** 2025年11月6日
 
 ---
 
-### [テストフェーズ: 戦略と準備](/posts/fase-testing-anuncio-general/)
+### [テストフェーズ: 戦略と準備](/ja/posts/fase-testing-anuncio-general/)
 
 2 つのチェーン (プレメインネットとテストネット) と参加プロセスに関する情報を含む、完全なテスト戦略。
 
-**日付:** 2024年1月20日
+**日付:** 2025年11月13日
 
 ---
 
-### [テストフェーズ: ドライブとキー管理の準備](/posts/fase-testing-preparacion-drive-keys/)
+### [テストフェーズ: ドライブとキー管理の準備](/ja/posts/fase-testing-preparacion-drive-keys/)
 
 ドライブのインストールとバリデーターのキーとシードフレーズの重要な管理に関する必須ガイド。
 
-**日付:** 2024年1月25日
+**日付:** 2025年11月27日
 
 ---
 
-### [テストフェーズ - ロンダ 1: チェーン ローンチ](/posts/fase-testing-ronda-1-chain-launch/)
+### [テストフェーズ - ラウンド 1: チェーン ローンチ](/ja/posts/fase-testing-ronda-1-chain-launch/)
 
 最初のテストでは、重要なチェーン起動プロセスに重点を置きました。
 
-**日付:** 2024年2月1日
+**日付:** 2025年12月4日
 
 ---
+### [テストフェーズ：Gentx（Genesisトランザクション）の作成方法](/ja/posts/guia-de-creacion-de-gentx/)
 
+gentx作成のステップバイステップガイド。
+
+**日付:** 2025年12月11日
+
+---
 ## ナビゲーション
 
-- 📝 [すべての投稿を表示](/posts/) - すべての投稿を閲覧
+- 📝 [すべての投稿を表示](/ja/posts/) - すべての投稿を閲覧
 - 🌐 [ホームサイト](https://infinitedrive.xyz) - 詳細については、infinitedrive.xyz をご覧ください
 - 🔍 上部の検索バーを使って特定のコンテンツを検索
 

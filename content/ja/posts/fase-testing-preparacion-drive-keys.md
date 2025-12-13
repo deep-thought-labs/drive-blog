@@ -1,12 +1,7 @@
 ---
 tille: "テストフェーズ: Driveと鍵管理について"
-date: 2024-01-25T10:00:00Z
-tags:
-  - テスト
-  - drive
-  - キー
-  - セキュリティ
-  - 準備
+date: 2025-11-27T10:00:00Z
+tags: ["testing", "drive", "keys", "security", "preparation"]
 ---
 
 # テストフェーズ: ドライブとキー管理の準備

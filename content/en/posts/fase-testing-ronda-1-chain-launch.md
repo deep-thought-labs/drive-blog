@@ -1,12 +1,7 @@
 ---
 title: "Testing Phase - Round 1: Chain Launch"
-date: 2024-02-01T10:00:00Z
-tags:
-  - testing
-  - round-1
-  - chain-launch
-  - genesis
-  - validators
+date: 2025-12-04T10:00:00Z
+tags: ["testing", "round-1", "chain-launch", "genesis", "validators"]
 ---
 
 # Testing Phase - Round 1: Chain Launch

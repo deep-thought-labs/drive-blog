@@ -60,49 +60,55 @@ Plataforma de comunicación donde compartimos:
 
 ## Publicaciones Recientes
 
-### [Bienvenida e Introducción al Proyecto](/posts/introduccion-bienvenida/)
+### [Bienvenida e Introducción al Proyecto](/es/posts/introduccion-bienvenida/)
 
 Nuestro primer post de bienvenida donde explicamos el propósito de este blog y nuestro compromiso con la transparencia y comunicación con la comunidad.
 
-**Fecha:** 15 de enero, 2024
+**Fecha:** 30 de octubre, 2025
 
 ---
 
-### [Fase de Testing: Inicio de las Rondas de Testing](/posts/fase-testing-infinite-improbability-drive/)
+### [Fase de Testing: Inicio de las Rondas de Testing](/es/posts/fase-testing-infinite-improbability-drive/)
 
 Anuncio inicial sobre el inicio de la fase de testing para Project 42.
 
-**Fecha:** 18 de enero, 2024
+**Fecha:** 6 de noviembre, 2025
 
 ---
 
-### [Fase de Testing: Estrategia y Preparación](/posts/fase-testing-anuncio-general/)
+### [Fase de Testing: Estrategia y Preparación](/es/posts/fase-testing-anuncio-general/)
 
 Estrategia completa de testing, incluyendo información sobre las dos cadenas (pre-mainnet y testnet) y el proceso de participación.
 
-**Fecha:** 20 de enero, 2024
+**Fecha:** 13 de noviembre, 2025
 
 ---
 
-### [Fase de Testing: Preparación con Drive y Gestión de Keys](/posts/fase-testing-preparacion-drive-keys/)
+### [Fase de Testing: Preparación con Drive y Gestión de Keys](/es/posts/fase-testing-preparacion-drive-keys/)
 
 Guía esencial sobre la instalación de Drive y la gestión crítica de keys y seed phrases para validadores.
 
-**Fecha:** 25 de enero, 2024
+**Fecha:** 27 de noviembre, 2025
 
 ---
 
-### [Fase de Testing - Ronda 1: Chain Launch](/posts/fase-testing-ronda-1-chain-launch/)
+### [Fase de Testing - Ronda 1: Chain Launch](/es/posts/fase-testing-ronda-1-chain-launch/)
 
 Primera ronda de testing enfocada en el proceso crítico de Chain Launch (lanzamiento de la cadena).
 
-**Fecha:** 1 de febrero, 2024
+**Fecha:** 4 de diciembre, 2025
 
 ---
+## [Fase de Testing: Cómo crear una Gentx (Transacción Genesis)](/es/posts/guia-de-creacion-de-gentx/)
 
+Guía paso a paso para crear una Gentx.
+
+**Fecha:** 11 de diciembre, 2025
+
+---
 ## Navegación
 
-- 📝 [Ver todos los posts](/posts/) - Explora todas nuestras publicaciones
+- 📝 [Ver todos los posts](/es/posts/) - Explora todas nuestras publicaciones
 - 🌐 [Sitio Principal](https://infinitedrive.xyz) - Visita infinitedrive.xyz para más información
 - 🔍 Usa la búsqueda en la barra superior para encontrar contenido específico
 

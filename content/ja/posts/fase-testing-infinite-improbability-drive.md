@@ -1,11 +1,7 @@
 ---
 title: テストフェーズ：テストラウンド開始
-date: 2024-01-18T10:00:00Z
-tags:
-  - テスト
-  - お知らせ
-  - プロジェクト42
-  - 無限不可能性ドライブ
+date: 2025-11-06T10:00:00Z
+tags: ["testing", "announcement", "project-42", "infinite-improbability-drive"]
 ---
 
 # テストフェーズ: テストラウンドの開始

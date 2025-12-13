@@ -1,6 +1,6 @@
 ---
 title: "Fase de Testing: Inicio de las Rondas de Testing"
-date: 2024-01-18T10:00:00Z
+date: 2025-11-06T10:00:00Z
 tags: ["testing", "anuncio", "project-42", "infinite-improbability-drive"]
 ---
 

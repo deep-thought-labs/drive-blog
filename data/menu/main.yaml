@@ -1,6 +1,6 @@
 ---
 main:
-  - name: "Inicio"
+  - name: "Home"
     ref: "/"
     weight: 10
     icon: "gdoc_home"

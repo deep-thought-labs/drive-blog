@@ -1,6 +1,6 @@
 ---
 title: "Testing Phase: Preparation with Drive and Key Management"
-date: 2024-01-25T10:00:00Z
+date: 2025-11-27T10:00:00Z
 tags: ["testing", "drive", "keys", "security", "preparation"]
 ---
 
