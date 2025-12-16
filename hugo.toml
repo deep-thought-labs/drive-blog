@@ -360,17 +360,23 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 [languages.en]
     weight = 1
     languageName = "English"
+    languageCode = "en-US"
+    languageDirection = "ltr"
     title = "Project 42 - Blog"
     contentDir = "content/en"
 
 [languages.es]
     weight = 2
     languageName = "Español"
+    languageCode = "es-ES"
+    languageDirection = "ltr"
     title = "Project 42 - Blog"
     contentDir = "content/es"
 
 [languages.ja]
     weight = 3
     languageName = "日本語"
+    languageCode = "ja-JP"
+    languageDirection = "ltr"
     title = "Project 42 - Blog"
     contentDir = "content/ja"
