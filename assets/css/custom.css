@@ -82,3 +82,15 @@ a:hover {
 }
 */
 
+/* hugo-brewm: Fix search modal visibility */
+/* Ensure search modal appears above screening overlay */
+#search.on-hull {
+    z-index: 1;
+    position: relative;
+}
+
+#has-search-fallback.on-hull {
+    z-index: 1;
+    position: relative;
+}
+
