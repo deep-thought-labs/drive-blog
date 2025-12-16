@@ -1,0 +1,54 @@
+{{- /* hugo-brewm theme: Override menu walk template to ensure language-aware URLs */}}
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+{{- $open := .open }}
+{{- $main := eq $menuID "main" }}
+{{- $n := .n }}
+{{- $n = add $n 1 }}
+{{- $l := printf "l%d" $n }}
+{{- $deck := and $main (eq $n 2) }}
+{{ range .menuEntries -}}
+    {{- $name := .Name }}
+    {{- $class := .Params.class }}
+    {{- $hasDestination := false }}
+    {{- if or .URL .PageRef }}
+        {{- $hasDestination = true }}
+    {{- end }}
+    {{- /* hugo-brewm: Ensure URLs respect current language */}}
+    {{- $menuURL := .URL }}
+    {{- if and $menuURL (not (urls.Parse $menuURL).IsAbs) }}
+        {{- /* Use relLangURL to ensure language prefix is included for current language */}}
+        {{- $menuURL = relLangURL $menuURL }}
+    {{- end }}
+    {{- $attrs := dict "href" $menuURL }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+        {{- $attrs = merge $attrs (dict "aria-current" "page") }}
+    {{- else if $page.HasMenuCurrent .Menu . }}
+        {{- $attrs = merge $attrs (dict "aria-current" "true") }}
+    {{- end }}
+    {{- $desc := .Post }}
+    {{- if $deck }}
+        {{- $attrs = merge $attrs (dict "class" "on-deck") }}
+    {{- else if $desc }}
+        {{- $attrs = merge $attrs (dict "class" "has-desc") }}
+    {{- end }}
+    {{- $icon := .Pre }}
+    {{- with $icon }}
+        {{- if not $name }}
+            {{- $attrs = merge $attrs (dict "title" . "aria-label" .) }}
+        {{- end }}
+    {{- end }}
+    {{- $u := urls.Parse $menuURL -}}
+    {{- if $u.IsAbs }}
+        {{- $attrs = merge $attrs (dict "target" "_blank" "rel" "external noopener noreferrer nofollow" ) }}
+    {{- end }}
+    {{- $identifier := .Identifier }}
+    <li role="presentation" {{ with $class }}class="{{ . }}"{{ end }}>
+        {{- if .Children }}
+            {{- template "menuItemWithChildren" dict "item" . "attrs" $attrs "link" $hasDestination "icon" $icon "name" $name "desc" $desc "deck" $deck "menuID" $menuID "open" $open "l" $l "n" $n "page" $page }}
+        {{- else }}
+            {{- template "menuItem" dict "attrs" $attrs "name" $name "desc" $desc "icon" $icon "identifier" $identifier }}
+        {{- end }}
+    </li>
+{{- end }}
+
