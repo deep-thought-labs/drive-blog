@@ -62,7 +62,7 @@ A communication platform where we share:
 
 ## Recent Posts
 
-### [Welcome and Introduction to the Project](/en/posts/introduccion-bienvenida/)
+### [Welcome](/en/posts/introduccion-bienvenida/)
 
 Our first welcome post where we explain the purpose of this blog and our commitment to transparency and communication with the community.
 
@@ -70,7 +70,7 @@ Our first welcome post where we explain the purpose of this blog and our commitm
 
 ---
 
-### [Testing Phase: Start of Testing Rounds](/en/posts/fase-testing-infinite-improbability-drive/)
+### [Testing Begins](/en/posts/fase-testing-infinite-improbability-drive/)
 
 Initial announcement regarding the start of the testing phase for Project 42.
 
@@ -78,7 +78,7 @@ Initial announcement regarding the start of the testing phase for Project 42.
 
 ---
 
-### [Testing Phase: Strategy and Preparation](/en/posts/fase-testing-anuncio-general/)
+### [Testing Strategy](/en/posts/fase-testing-anuncio-general/)
 
 Complete testing strategy, including information on the two chains (pre-mainnet and testnet) and the participation process.
 
@@ -86,7 +86,7 @@ Complete testing strategy, including information on the two chains (pre-mainnet 
 
 ---
 
-### [Testing Phase: Preparation with Drive and Key Management](/en/posts/fase-testing-preparacion-drive-keys/)
+### [Drive Setup](/en/posts/fase-testing-preparacion-drive-keys/)
 
 Essential guide on installing Drive and critical management of keys and seed phrases for validators.
 
@@ -94,7 +94,7 @@ Essential guide on installing Drive and critical management of keys and seed phr
 
 ---
 
-### [Testing Phase - Round 1: Chain Launch](/en/posts/fase-testing-ronda-1-chain-launch/)
+### [Round 1: Chain Launch](/en/posts/fase-testing-ronda-1-chain-launch/)
 
 First round of testing focused on the critical Chain Launch process.
 
@@ -102,7 +102,7 @@ First round of testing focused on the critical Chain Launch process.
 
 ---
 
-### [Testing Phase: How to Create a Gentx (Genesis Transaction)](/en/posts/guia-de-creacion-de-gentx/)
+### [How to Create a Gentx](/en/posts/guia-de-creacion-de-gentx/)
 
 Step by step guide of creating gentx.
 

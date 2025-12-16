@@ -60,7 +60,7 @@ keepAspectRatio: true
 
 ## 最近の投稿
 
-### [プロジェクトへの歓迎と紹介](/ja/posts/introduccion-bienvenida/)
+### [歓迎](/ja/posts/introduccion-bienvenida/)
 
 私たちの最初のウェルカム投稿では、このブログの目的と、コミュニティとの透明性とコミュニケーションへの取り組みについて説明します。
 
@@ -68,7 +68,7 @@ keepAspectRatio: true
 
 ---
 
-### [テストフェーズ: テストラウンドの開始](/ja/posts/fase-testing-infinite-improbability-drive/)
+### [テスト開始](/ja/posts/fase-testing-infinite-improbability-drive/)
 
 Project 42 のテスト フェーズの開始に関する最初の発表。
 
@@ -76,7 +76,7 @@ Project 42 のテスト フェーズの開始に関する最初の発表。
 
 ---
 
-### [テストフェーズ: 戦略と準備](/ja/posts/fase-testing-anuncio-general/)
+### [テスト戦略](/ja/posts/fase-testing-anuncio-general/)
 
 2 つのチェーン (プレメインネットとテストネット) と参加プロセスに関する情報を含む、完全なテスト戦略。
 
@@ -84,7 +84,7 @@ Project 42 のテスト フェーズの開始に関する最初の発表。
 
 ---
 
-### [テストフェーズ: ドライブとキー管理の準備](/ja/posts/fase-testing-preparacion-drive-keys/)
+### [Drive準備](/ja/posts/fase-testing-preparacion-drive-keys/)
 
 ドライブのインストールとバリデーターのキーとシードフレーズの重要な管理に関する必須ガイド。
 
@@ -92,14 +92,14 @@ Project 42 のテスト フェーズの開始に関する最初の発表。
 
 ---
 
-### [テストフェーズ - ラウンド 1: チェーン ローンチ](/ja/posts/fase-testing-ronda-1-chain-launch/)
+### [ラウンド1: チェーンローンチ](/ja/posts/fase-testing-ronda-1-chain-launch/)
 
 最初のテストでは、重要なチェーン起動プロセスに重点を置きました。
 
 **日付:** 2025年12月4日
 
 ---
-### [テストフェーズ：Gentx（Genesisトランザクション）の作成方法](/ja/posts/guia-de-creacion-de-gentx/)
+### [Gentxの作成方法](/ja/posts/guia-de-creacion-de-gentx/)
 
 gentx作成のステップバイステップガイド。
 

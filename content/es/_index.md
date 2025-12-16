@@ -62,7 +62,7 @@ Plataforma de comunicación donde compartimos:
 
 ## Publicaciones Recientes
 
-### [Bienvenida e Introducción al Proyecto](/es/posts/introduccion-bienvenida/)
+### [Bienvenida](/es/posts/introduccion-bienvenida/)
 
 Nuestro primer post de bienvenida donde explicamos el propósito de este blog y nuestro compromiso con la transparencia y comunicación con la comunidad.
 
@@ -70,7 +70,7 @@ Nuestro primer post de bienvenida donde explicamos el propósito de este blog y 
 
 ---
 
-### [Fase de Testing: Inicio de las Rondas de Testing](/es/posts/fase-testing-infinite-improbability-drive/)
+### [Inicio de Testing](/es/posts/fase-testing-infinite-improbability-drive/)
 
 Anuncio inicial sobre el inicio de la fase de testing para Project 42.
 
@@ -78,7 +78,7 @@ Anuncio inicial sobre el inicio de la fase de testing para Project 42.
 
 ---
 
-### [Fase de Testing: Estrategia y Preparación](/es/posts/fase-testing-anuncio-general/)
+### [Estrategia de Testing](/es/posts/fase-testing-anuncio-general/)
 
 Estrategia completa de testing, incluyendo información sobre las dos cadenas (pre-mainnet y testnet) y el proceso de participación.
 
@@ -86,7 +86,7 @@ Estrategia completa de testing, incluyendo información sobre las dos cadenas (p
 
 ---
 
-### [Fase de Testing: Preparación con Drive y Gestión de Keys](/es/posts/fase-testing-preparacion-drive-keys/)
+### [Preparación con Drive](/es/posts/fase-testing-preparacion-drive-keys/)
 
 Guía esencial sobre la instalación de Drive y la gestión crítica de keys y seed phrases para validadores.
 
@@ -94,14 +94,14 @@ Guía esencial sobre la instalación de Drive y la gestión crítica de keys y s
 
 ---
 
-### [Fase de Testing - Ronda 1: Chain Launch](/es/posts/fase-testing-ronda-1-chain-launch/)
+### [Ronda 1: Chain Launch](/es/posts/fase-testing-ronda-1-chain-launch/)
 
 Primera ronda de testing enfocada en el proceso crítico de Chain Launch (lanzamiento de la cadena).
 
 **Fecha:** 4 de diciembre, 2025
 
 ---
-## [Fase de Testing: Cómo crear una Gentx (Transacción Genesis)](/es/posts/guia-de-creacion-de-gentx/)
+## [Cómo crear una Gentx](/es/posts/guia-de-creacion-de-gentx/)
 
 Guía paso a paso para crear una Gentx.
 
