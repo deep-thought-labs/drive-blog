@@ -20,11 +20,15 @@
                 {{- end }}
             {{- else if and (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
                 {{- /* Only try to find equivalent page for regular content pages (posts), not taxonomies or lists */}}
-                {{- $currentPath := strings.TrimPrefix (printf "/%s" $.Language.Lang) $currentPage.RelPermalink }}
-                {{- $targetPath := printf "/%s%s" $targetLang $currentPath }}
-                {{- $foundPage := $.Site.GetPage $targetPath }}
-                {{- if and $foundPage (eq $foundPage.Kind "page") }}
-                    {{- $targetURL = $foundPage.RelPermalink }}
+                {{- /* Use file base name to find translation, as Hugo matches translations by filename */}}
+                {{- $currentFile := $currentPage.File }}
+                {{- if $currentFile }}
+                    {{- $baseName := $currentFile.BaseFileName }}
+                    {{- $targetPath := printf "/%s/posts/%s" $targetLang $baseName }}
+                    {{- $foundPage := $.Site.GetPage $targetPath }}
+                    {{- if and $foundPage (eq $foundPage.Kind "page") }}
+                        {{- $targetURL = $foundPage.RelPermalink }}
+                    {{- end }}
                 {{- end }}
                 {{- /* If page not found or not a regular page, $targetURL remains as home (.RelPermalink) */}}
             {{- end }}
@@ -69,11 +73,15 @@
                             {{- end }}
                         {{- else if and (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
                             {{- /* Only try to find equivalent page for regular content pages (posts), not taxonomies or lists */}}
-                            {{- $currentPath := strings.TrimPrefix (printf "/%s" $.Language.Lang) $currentPage.RelPermalink }}
-                            {{- $targetPath := printf "/%s%s" $targetLang $currentPath }}
-                            {{- $foundPage := $.Site.GetPage $targetPath }}
-                            {{- if and $foundPage (eq $foundPage.Kind "page") }}
-                                {{- $targetURL = $foundPage.RelPermalink }}
+                            {{- /* Use file base name to find translation, as Hugo matches translations by filename */}}
+                            {{- $currentFile := $currentPage.File }}
+                            {{- if $currentFile }}
+                                {{- $baseName := $currentFile.BaseFileName }}
+                                {{- $targetPath := printf "/%s/posts/%s" $targetLang $baseName }}
+                                {{- $foundPage := $.Site.GetPage $targetPath }}
+                                {{- if and $foundPage (eq $foundPage.Kind "page") }}
+                                    {{- $targetURL = $foundPage.RelPermalink }}
+                                {{- end }}
                             {{- end }}
                             {{- /* If page not found or not a regular page, $targetURL remains as home (.RelPermalink) */}}
                         {{- end }}
