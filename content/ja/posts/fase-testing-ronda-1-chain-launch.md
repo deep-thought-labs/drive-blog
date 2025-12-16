@@ -2,9 +2,13 @@
 title: "テストフェーズ - ラウンド1: チェーンローンチ"
 date: 2025-12-04T10:00:00Z
 tags: ["testing", "genesis"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'テストフェーズ - ラウンド1: チェーンローンチ'
 ---
 
 # テストフェーズ - ラウンド 1: チェーンの起動
+
+{{< figure src="cover" caption="alt" >}}
 
 最初のテストラウンドは、チェーンのライフサイクルの中で最も重要なプロセスである **チェーンの起動** に焦点を当てています。
 

@@ -2,9 +2,13 @@
 title: "Testing Phase: Preparation with Drive and Key Management"
 date: 2025-11-27T10:00:00Z
 tags: ["testing", "drive"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'Testing Phase - Preparation with Drive'
 ---
 
 # Testing Phase: Preparation with Drive and Key Management
+
+{{< figure src="cover" caption="alt" >}}
 
 Before starting the testing rounds, it is essential to properly prepare our environment and understand the critical importance of secure management of keys and seed phrases.
 

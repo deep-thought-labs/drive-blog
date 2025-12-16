@@ -2,9 +2,13 @@
 title: "Fase de Testing: Inicio de las Rondas de Testing"
 date: 2025-11-06T10:00:00Z
 tags: ["testing", "announcement", "infinite-improbability-drive"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'Fase de Testing - Infinite Improbability Drive'
 ---
 
 # Fase de Testing: Inicio de las Rondas de Testing
+
+{{< figure src="cover" caption="alt" >}}
 
 Nos complace anunciar que hemos entrado en una fase crucial de nuestro desarrollo: **la fase de testing** para el lanzamiento de **Project 42** y su componente principal, la cadena de bloques **Infinite Improbability Drive**.
 
