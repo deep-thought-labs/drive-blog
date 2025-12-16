@@ -30,6 +30,29 @@
 
     /* mark & selector highlight color */
     --hl: yellow;
+
+    /* hugo-brewm: Text width customization */
+    /* Default: --golden-ratio: 61.803398% (optimal reading width) */
+    /* Increase for wider text: e.g., 75% or 80% */
+    /* Decrease for narrower text: e.g., 55% or 50% */
+    /* --golden-ratio: 75%; */
+
+    /* hugo-brewm: Maximum content width */
+    /* Default: --max-width: 58rem (approximately 928px) */
+    /* Increase for wider layout: e.g., 70rem or 80rem */
+    /* --max-width: 70rem; */
+}
+
+/* hugo-brewm: Override paragraph width to match titles and other elements */
+/* Remove width restriction from paragraphs to match heading width */
+#content > p,
+#main-article section > p,
+#content > blockquote,
+#content > ul,
+#content > ol,
+.textwidth {
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 /* Logo customization (if using logoInlineCSS = true) */
