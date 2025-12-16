@@ -12,25 +12,39 @@
             {{- /* hugo-brewm: Try to find translation of current page, fallback to home */}}
             {{- $targetLang := .Language.Lang }}
             {{- $targetURL := .RelPermalink }}
+            {{- $foundTranslation := false }}
             {{- if $currentPage.Translations }}
+                {{- /* First, try Hugo's automatic translation linking */}}
                 {{- range $currentPage.Translations }}
-                    {{- if eq .Language.Lang $targetLang }}
+                    {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) }}
                         {{- $targetURL = .RelPermalink }}
+                        {{- $foundTranslation = true }}
                     {{- end }}
                 {{- end }}
-            {{- else if and (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
-                {{- /* Only try to find equivalent page for regular content pages (posts), not taxonomies or lists */}}
-                {{- /* Use file base name to find translation, as Hugo matches translations by filename */}}
+            {{- end }}
+            {{- if and (not $foundTranslation) (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
+                {{- /* If no automatic translation found, try to find by translationKey or filename */}}
                 {{- $currentFile := $currentPage.File }}
                 {{- if $currentFile }}
-                    {{- $baseName := $currentFile.BaseFileName }}
                     {{- $currentSection := $currentPage.Section }}
-                    {{- /* Search for page with same filename in target language, same section */}}
-                    {{- $foundTranslation := false }}
-                    {{- range where $.Site.AllPages "Kind" "page" }}
-                        {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
-                            {{- $targetURL = .RelPermalink }}
-                            {{- $foundTranslation = true }}
+                    {{- $translationKey := $currentPage.Params.translationKey }}
+                    {{- /* First try to find by translationKey if it exists */}}
+                    {{- if $translationKey }}
+                        {{- range where $.Site.AllPages "Kind" "page" }}
+                            {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) (eq .Section $currentSection) .Params.translationKey (eq .Params.translationKey $translationKey) }}
+                                {{- $targetURL = .RelPermalink }}
+                                {{- $foundTranslation = true }}
+                            {{- end }}
+                        {{- end }}
+                    {{- end }}
+                    {{- /* Fallback to filename matching if translationKey didn't work */}}
+                    {{- if not $foundTranslation }}
+                        {{- $baseName := $currentFile.BaseFileName }}
+                        {{- range where $.Site.AllPages "Kind" "page" }}
+                            {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
+                                {{- $targetURL = .RelPermalink }}
+                                {{- $foundTranslation = true }}
+                            {{- end }}
                         {{- end }}
                     {{- end }}
                 {{- end }}
@@ -69,25 +83,39 @@
                         {{- /* hugo-brewm: Try to find translation of current page, fallback to home */}}
                         {{- $targetLang := .Language.Lang }}
                         {{- $targetURL := .RelPermalink }}
+                        {{- $foundTranslation := false }}
                         {{- if $currentPage.Translations }}
+                            {{- /* First, try Hugo's automatic translation linking */}}
                             {{- range $currentPage.Translations }}
-                                {{- if eq .Language.Lang $targetLang }}
+                                {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) }}
                                     {{- $targetURL = .RelPermalink }}
+                                    {{- $foundTranslation = true }}
                                 {{- end }}
                             {{- end }}
-                        {{- else if and (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
-                            {{- /* Only try to find equivalent page for regular content pages (posts), not taxonomies or lists */}}
-                            {{- /* Use file base name to find translation, as Hugo matches translations by filename */}}
+                        {{- end }}
+                        {{- if and (not $foundTranslation) (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
+                            {{- /* If no automatic translation found, try to find by translationKey or filename */}}
                             {{- $currentFile := $currentPage.File }}
                             {{- if $currentFile }}
-                                {{- $baseName := $currentFile.BaseFileName }}
                                 {{- $currentSection := $currentPage.Section }}
-                                {{- /* Search for page with same filename in target language, same section */}}
-                                {{- $foundTranslation := false }}
-                                {{- range where $.Site.AllPages "Kind" "page" }}
-                                    {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
-                                        {{- $targetURL = .RelPermalink }}
-                                        {{- $foundTranslation = true }}
+                                {{- $translationKey := $currentPage.Params.translationKey }}
+                                {{- /* First try to find by translationKey if it exists */}}
+                                {{- if $translationKey }}
+                                    {{- range where $.Site.AllPages "Kind" "page" }}
+                                        {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) (eq .Section $currentSection) .Params.translationKey (eq .Params.translationKey $translationKey) }}
+                                            {{- $targetURL = .RelPermalink }}
+                                            {{- $foundTranslation = true }}
+                                        {{- end }}
+                                    {{- end }}
+                                {{- end }}
+                                {{- /* Fallback to filename matching if translationKey didn't work */}}
+                                {{- if not $foundTranslation }}
+                                    {{- $baseName := $currentFile.BaseFileName }}
+                                    {{- range where $.Site.AllPages "Kind" "page" }}
+                                        {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
+                                            {{- $targetURL = .RelPermalink }}
+                                            {{- $foundTranslation = true }}
+                                        {{- end }}
                                     {{- end }}
                                 {{- end }}
                             {{- end }}
