@@ -1,58 +1,15 @@
-{{- /* hugo-brewm theme: Override i18n template to maintain current page when switching languages */}}
 {{ "<!-- i18n.html -->" | safeHTML }}
 {{- if hugo.IsMultilingual }}
     {{- $bilingual := eq (where $.Site.Home.AllTranslations ".Language.disabled" "ne" true | len ) 2 }}
-    {{- $currentPage := . }}
     {{- if $bilingual }}
         {{- range where $.Site.Home.AllTranslations "Lang" "ne" $.Lang }}
             {{- $act639  := substr $.Language.LanguageCode 0 2 | upper }}
             {{- $alt639  := substr .Language.LanguageCode 0 2 | upper }}
             {{- $name    := .Language.LanguageName }}
             {{- $flag := partial "i18n/flag.html" (dict "iso3166" (substr .Language.LanguageCode -2)) }}
-            {{- /* hugo-brewm: Try to find translation of current page, fallback to home */}}
-            {{- $targetLang := .Language.Lang }}
-            {{- $targetURL := .RelPermalink }}
-            {{- $foundTranslation := false }}
-            {{- if $currentPage.Translations }}
-                {{- /* First, try Hugo's automatic translation linking */}}
-                {{- range $currentPage.Translations }}
-                    {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) }}
-                        {{- $targetURL = .RelPermalink }}
-                        {{- $foundTranslation = true }}
-                    {{- end }}
-                {{- end }}
-            {{- end }}
-            {{- if and (not $foundTranslation) (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
-                {{- /* If no automatic translation found, try to find by translationKey or filename */}}
-                {{- $currentFile := $currentPage.File }}
-                {{- if $currentFile }}
-                    {{- $currentSection := $currentPage.Section }}
-                    {{- $translationKey := $currentPage.Params.translationKey }}
-                    {{- /* First try to find by translationKey if it exists */}}
-                    {{- if $translationKey }}
-                        {{- range where $.Site.AllPages "Kind" "page" }}
-                            {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) (eq .Section $currentSection) .Params.translationKey (eq .Params.translationKey $translationKey) }}
-                                {{- $targetURL = .RelPermalink }}
-                                {{- $foundTranslation = true }}
-                            {{- end }}
-                        {{- end }}
-                    {{- end }}
-                    {{- /* Fallback to filename matching if translationKey didn't work */}}
-                    {{- if not $foundTranslation }}
-                        {{- $baseName := $currentFile.BaseFileName }}
-                        {{- range where $.Site.AllPages "Kind" "page" }}
-                            {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
-                                {{- $targetURL = .RelPermalink }}
-                                {{- $foundTranslation = true }}
-                            {{- end }}
-                        {{- end }}
-                    {{- end }}
-                {{- end }}
-                {{- /* If page not found or not a regular page, $targetURL remains as home (.RelPermalink) */}}
-            {{- end }}
             <nav id="bi18n" aria-label="{{ i18n "selectLang" }}">
                 <a id="has-i18n" class="on-deck"
-                    href="{{ $targetURL }}"
+                    href="{{ .Permalink }}"
                     aria-label="{{ printf "%s %s" (i18n "switchLangTo") $name }}"
                     aria-description="{{ printf "%s %s" (i18n "currentLang") $.Language.LanguageName }}">
                     <span class="emoji">{{ $flag }}&nbsp;</span>
@@ -80,49 +37,8 @@
                 <ul class="on-plank">
                     {{- range where $.Site.Home.AllTranslations "Lang" "ne" $.Lang -}}
                         {{- $flag := partial "i18n/flag.html" (dict "iso3166" (substr .Language.LanguageCode -2)) }}
-                        {{- /* hugo-brewm: Try to find translation of current page, fallback to home */}}
-                        {{- $targetLang := .Language.Lang }}
-                        {{- $targetURL := .RelPermalink }}
-                        {{- $foundTranslation := false }}
-                        {{- if $currentPage.Translations }}
-                            {{- /* First, try Hugo's automatic translation linking */}}
-                            {{- range $currentPage.Translations }}
-                                {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) }}
-                                    {{- $targetURL = .RelPermalink }}
-                                    {{- $foundTranslation = true }}
-                                {{- end }}
-                            {{- end }}
-                        {{- end }}
-                        {{- if and (not $foundTranslation) (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
-                            {{- /* If no automatic translation found, try to find by translationKey or filename */}}
-                            {{- $currentFile := $currentPage.File }}
-                            {{- if $currentFile }}
-                                {{- $currentSection := $currentPage.Section }}
-                                {{- $translationKey := $currentPage.Params.translationKey }}
-                                {{- /* First try to find by translationKey if it exists */}}
-                                {{- if $translationKey }}
-                                    {{- range where $.Site.AllPages "Kind" "page" }}
-                                        {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) (eq .Section $currentSection) .Params.translationKey (eq .Params.translationKey $translationKey) }}
-                                            {{- $targetURL = .RelPermalink }}
-                                            {{- $foundTranslation = true }}
-                                        {{- end }}
-                                    {{- end }}
-                                {{- end }}
-                                {{- /* Fallback to filename matching if translationKey didn't work */}}
-                                {{- if not $foundTranslation }}
-                                    {{- $baseName := $currentFile.BaseFileName }}
-                                    {{- range where $.Site.AllPages "Kind" "page" }}
-                                        {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
-                                            {{- $targetURL = .RelPermalink }}
-                                            {{- $foundTranslation = true }}
-                                        {{- end }}
-                                    {{- end }}
-                                {{- end }}
-                            {{- end }}
-                            {{- /* If page not found or not a regular page, $targetURL remains as home (.RelPermalink) */}}
-                        {{- end }}
                         <li>
-                            <a href="{{ $targetURL }}" aria-label="{{ printf "Change language to %s" .Language.LanguageName }}">
+                            <a href="{{ .Permalink }}" aria-label="{{ printf "Change language to %s" .Language.LanguageName }}">
                                 <span class="emoji">{{ $flag }}&nbsp;</span>
                                 <span class="languangeName">{{ .Language.LanguageName }}</span>
                             </a>
@@ -135,4 +51,3 @@
     {{- end }}
 {{- end }}
 {{/*----------------------- end of i18n.html -----------------------*/}}
-

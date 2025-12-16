@@ -1,7 +1,6 @@
 ---
 title: "テスト戦略"
 date: 2025-11-13T10:00:00Z
-translationKey: "testing-strategy"
 tags: ["testing", "announcement"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
 alt: 'テストフェーズ - Project 42'
