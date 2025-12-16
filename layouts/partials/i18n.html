@@ -26,10 +26,11 @@
                     {{- $baseName := $currentFile.BaseFileName }}
                     {{- $currentSection := $currentPage.Section }}
                     {{- /* Search for page with same filename in target language, same section */}}
+                    {{- $foundTranslation := false }}
                     {{- range where $.Site.AllPages "Kind" "page" }}
-                        {{- if and (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
+                        {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
                             {{- $targetURL = .RelPermalink }}
-                            {{- break }}
+                            {{- $foundTranslation = true }}
                         {{- end }}
                     {{- end }}
                 {{- end }}
@@ -82,10 +83,11 @@
                                 {{- $baseName := $currentFile.BaseFileName }}
                                 {{- $currentSection := $currentPage.Section }}
                                 {{- /* Search for page with same filename in target language, same section */}}
+                                {{- $foundTranslation := false }}
                                 {{- range where $.Site.AllPages "Kind" "page" }}
-                                    {{- if and (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
+                                    {{- if and (not $foundTranslation) (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
                                         {{- $targetURL = .RelPermalink }}
-                                        {{- break }}
+                                        {{- $foundTranslation = true }}
                                     {{- end }}
                                 {{- end }}
                             {{- end }}
