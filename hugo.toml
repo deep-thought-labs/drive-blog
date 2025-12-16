@@ -1,6 +1,6 @@
 baseURL = "/"
 title = "Project 42 - Blog"
-theme = "hugo-geekdoc"
+theme = "hugo-brewm"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
