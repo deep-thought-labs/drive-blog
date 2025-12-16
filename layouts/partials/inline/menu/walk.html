@@ -26,7 +26,14 @@
         {{- $hasLangPrefix := or (strings.HasPrefix $parsedURL.Path "/en/") (or (strings.HasPrefix $parsedURL.Path "/es/") (strings.HasPrefix $parsedURL.Path "/ja/")) }}
         {{- if and $hasLangPrefix (not (strings.HasPrefix $parsedURL.Path $langPrefix)) }}
             {{- /* Wrong language prefix, replace with current language */}}
-            {{- $pathWithoutLang := strings.TrimPrefix "/en/" (strings.TrimPrefix "/es/" (strings.TrimPrefix "/ja/" $parsedURL.Path))) }}
+            {{- $pathWithoutLang := $parsedURL.Path }}
+            {{- if strings.HasPrefix $pathWithoutLang "/en/" }}
+                {{- $pathWithoutLang = strings.TrimPrefix "/en/" $pathWithoutLang }}
+            {{- else if strings.HasPrefix $pathWithoutLang "/es/" }}
+                {{- $pathWithoutLang = strings.TrimPrefix "/es/" $pathWithoutLang }}
+            {{- else if strings.HasPrefix $pathWithoutLang "/ja/" }}
+                {{- $pathWithoutLang = strings.TrimPrefix "/ja/" $pathWithoutLang }}
+            {{- end }}
             {{- $menuURL = printf "%s%s" $langPrefix $pathWithoutLang }}
             {{- if $parsedURL.RawQuery }}
                 {{- $menuURL = printf "%s?%s" $menuURL $parsedURL.RawQuery }}
