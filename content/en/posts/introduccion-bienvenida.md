@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Project 42 - Infinite Improbability Drive'
 ---
 
-# Welcome
-
 {{< figure src="cover" caption="alt" >}}
 
 Welcome to our official blog!

@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'テストフェーズ - Infinite Improbability Drive'
 ---
 
-# テスト開始
-
 {{< figure src="cover" caption="alt" >}}
 
 私たちは開発の重要な段階、つまり**Project 42**とその主要コンポーネントである**Infinite Improbability Drive**ブロックチェーンの立ち上げに向けた**テスト段階**に入ったことをお知らせします。

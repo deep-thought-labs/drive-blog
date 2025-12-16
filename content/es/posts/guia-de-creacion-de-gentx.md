@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Guía - Cómo crear una Gentx'
 ---
 
-# Cómo crear una Gentx
-
 {{< figure src="cover" caption="alt" >}}
 
 ## PASO 0. Requisitos previos

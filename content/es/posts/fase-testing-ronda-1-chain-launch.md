@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Fase de Testing - Ronda 1: Chain Launch'
 ---
 
-# Ronda 1: Chain Launch
-
 {{< figure src="cover" caption="alt" >}}
 
 The first round of testing focuses on the most critical process in a chain's lifecycle: **the Chain Launch**.

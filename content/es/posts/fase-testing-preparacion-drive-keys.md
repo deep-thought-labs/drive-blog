@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Fase de Testing - Preparación con Drive'
 ---
 
-# Preparación con Drive
-
 {{< figure src="cover" caption="alt" >}}
 
 Antes de comenzar con las rondas de testing, es fundamental preparar correctamente nuestro entorno y entender la importancia crítica de la gestión segura de keys (claves) y seed phrases (frases semilla).

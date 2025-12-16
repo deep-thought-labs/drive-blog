@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'テストフェーズ - Project 42'
 ---
 
-# テスト戦略
-
 {{< figure src="cover" caption="alt" >}}
 
 Project 42の**テストフェーズ**の正式な開始をお知らせいたします。このフェーズは、正式リリース前に**Infinite Improbability Drive**ブロックチェーンの重要な機能、コマンド、フローをすべて検証するために非常に重要です。

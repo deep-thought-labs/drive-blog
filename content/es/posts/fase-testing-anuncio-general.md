@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Fase de Testing - Project 42'
 ---
 
-# Estrategia de Testing
-
 {{< figure src="cover" caption="alt" >}}
 
 Nos complace anunciar el inicio oficial de la **fase de testing** para Project 42. Esta fase es crucial para validar todas las funcionalidades, comandos y flujos esenciales de nuestra cadena de bloques **Infinite Improbability Drive** antes del lanzamiento oficial.

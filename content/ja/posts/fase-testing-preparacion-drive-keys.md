@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'テストフェーズ - Driveの準備'
 ---
 
-# Drive準備
-
 {{< figure src="cover" caption="alt" >}}
 
 テスト ラウンドを開始する前に、環境を適切に準備し、キーとシード フレーズを安全に管理することの重要性を理解することが重要です。

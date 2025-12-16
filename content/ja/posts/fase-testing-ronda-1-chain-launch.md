@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'テストフェーズ - ラウンド1: チェーンローンチ'
 ---
 
-# ラウンド1: チェーンローンチ
-
 {{< figure src="cover" caption="alt" >}}
 
 最初のテストラウンドは、チェーンのライフサイクルの中で最も重要なプロセスである **チェーンの起動** に焦点を当てています。

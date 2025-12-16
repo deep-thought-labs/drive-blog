@@ -60,57 +60,14 @@ Plataforma de comunicación donde compartimos:
 - Progreso de desarrollo y testing
 - Noticias relevantes del ecosistema
 
-## Publicaciones Recientes
+## Publicaciones
 
-### [Bienvenida](/es/posts/introduccion-bienvenida/)
-
-Nuestro primer post de bienvenida donde explicamos el propósito de este blog y nuestro compromiso con la transparencia y comunicación con la comunidad.
-
-**Fecha:** 30 de octubre, 2025
+📝 [Ver todos los posts](/es/posts/) - Explora todas nuestras publicaciones y mantente al día con las últimas actualizaciones.
 
 ---
 
-### [Inicio de Testing](/es/posts/fase-testing-infinite-improbability-drive/)
-
-Anuncio inicial sobre el inicio de la fase de testing para Project 42.
-
-**Fecha:** 6 de noviembre, 2025
-
----
-
-### [Estrategia de Testing](/es/posts/fase-testing-anuncio-general/)
-
-Estrategia completa de testing, incluyendo información sobre las dos cadenas (pre-mainnet y testnet) y el proceso de participación.
-
-**Fecha:** 13 de noviembre, 2025
-
----
-
-### [Preparación con Drive](/es/posts/fase-testing-preparacion-drive-keys/)
-
-Guía esencial sobre la instalación de Drive y la gestión crítica de keys y seed phrases para validadores.
-
-**Fecha:** 27 de noviembre, 2025
-
----
-
-### [Ronda 1: Chain Launch](/es/posts/fase-testing-ronda-1-chain-launch/)
-
-Primera ronda de testing enfocada en el proceso crítico de Chain Launch (lanzamiento de la cadena).
-
-**Fecha:** 4 de diciembre, 2025
-
----
-## [Cómo crear una Gentx](/es/posts/guia-de-creacion-de-gentx/)
-
-Guía paso a paso para crear una Gentx.
-
-**Fecha:** 11 de diciembre, 2025
-
----
 ## Navegación
 
-- 📝 [Ver todos los posts](/es/posts/) - Explora todas nuestras publicaciones
 - 🌐 [Sitio Principal](https://infinitedrive.xyz) - Visita infinitedrive.xyz para más información
 - 🔍 Usa la búsqueda en la barra superior para encontrar contenido específico
 

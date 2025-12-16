@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Testing Phase - Infinite Improbability Drive'
 ---
 
-# Testing Begins
-
 {{< figure src="cover" caption="alt" >}}
 
 We are pleased to announce that we have entered a crucial phase of our development: **the testing phase** for the launch of **Project 42** and its main component, the **Infinite Improbability Drive** blockchain.

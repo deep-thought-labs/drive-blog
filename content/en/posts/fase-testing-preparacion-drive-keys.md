@@ -6,8 +6,6 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Testing Phase - Preparation with Drive'
 ---
 
-# Drive Setup
-
 {{< figure src="cover" caption="alt" >}}
 
 Before starting the testing rounds, it is essential to properly prepare our environment and understand the critical importance of secure management of keys and seed phrases.
