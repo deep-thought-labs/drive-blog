@@ -1,6 +1,8 @@
 baseURL = "/"
 title = "Project 42 - Blog"
 theme = "hugo-geekdoc"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 
 # Required to get well formatted code blocks
 pygmentsUseClasses = true
@@ -123,3 +125,23 @@ enableRobotsTXT = true
   #[params.geekdocContentLicense]
   #  name = "CC BY-SA 4.0"
   #  link = "https://creativecommons.org/licenses/by-sa/4.0/"
+
+[languages]
+
+[languages.en]
+  weight = 1
+  languageName = "English"
+  title = "Project 42 - Blog"
+  contentDir = "content/en"
+
+[languages.es]
+  weight = 2
+  languageName = "Español"
+  title = "Project 42 - Blog"
+  contentDir = "content/es"
+
+[languages.ja]
+  weight = 3
+  languageName = "日本語"
+  title = "Project 42 - Blog"
+  contentDir = "content/ja"

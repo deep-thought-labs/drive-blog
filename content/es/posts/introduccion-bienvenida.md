@@ -1,6 +1,6 @@
 ---
 title: "Bienvenida e Introducción al Proyecto"
-date: 2024-01-15T10:00:00Z
+date: 2025-10-30T10:00:00Z
 tags: ["introducción", "anuncio"]
 ---
 

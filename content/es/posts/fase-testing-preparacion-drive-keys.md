@@ -1,6 +1,6 @@
 ---
 title: "Fase de Testing: Preparación con Drive y Gestión de Keys"
-date: 2024-01-25T10:00:00Z
+date: 2025-11-27T10:00:00Z
 tags: ["testing", "drive", "keys", "seguridad", "preparación"]
 ---
 
