@@ -24,16 +24,20 @@
         {{- if $hasLangPrefix }}
             {{- /* URL already has a language prefix, check if it matches current language */}}
             {{- if not (strings.HasPrefix $parsedURL.Path $langPrefix) }}
-                {{- /* Wrong language prefix, replace with current language */}}
-                {{- $pathWithoutLang := $parsedURL.Path }}
-                {{- if strings.HasPrefix $pathWithoutLang "/en/" }}
-                    {{- $pathWithoutLang = strings.TrimPrefix "/en/" $pathWithoutLang }}
-                {{- else if strings.HasPrefix $pathWithoutLang "/es/" }}
-                    {{- $pathWithoutLang = strings.TrimPrefix "/es/" $pathWithoutLang }}
-                {{- else if strings.HasPrefix $pathWithoutLang "/ja/" }}
-                    {{- $pathWithoutLang = strings.TrimPrefix "/ja/" $pathWithoutLang }}
-                {{- end }}
-                {{- $menuURL = printf "%s%s" $langPrefix $pathWithoutLang }}
+            {{- /* Wrong language prefix, replace with current language */}}
+            {{- $pathWithoutLang := $parsedURL.Path }}
+            {{- if strings.HasPrefix $pathWithoutLang "/en/" }}
+                {{- $pathWithoutLang = strings.TrimPrefix "/en/" $pathWithoutLang }}
+            {{- else if strings.HasPrefix $pathWithoutLang "/es/" }}
+                {{- $pathWithoutLang = strings.TrimPrefix "/es/" $pathWithoutLang }}
+            {{- else if strings.HasPrefix $pathWithoutLang "/ja/" }}
+                {{- $pathWithoutLang = strings.TrimPrefix "/ja/" $pathWithoutLang }}
+            {{- end }}
+            {{- /* Ensure path starts with / */}}
+            {{- if not (strings.HasPrefix $pathWithoutLang "/") }}
+                {{- $pathWithoutLang = printf "/%s" $pathWithoutLang }}
+            {{- end }}
+            {{- $menuURL = printf "%s%s" $langPrefix $pathWithoutLang }}
                 {{- if $parsedURL.RawQuery }}
                     {{- $menuURL = printf "%s?%s" $menuURL $parsedURL.RawQuery }}
                 {{- end }}
