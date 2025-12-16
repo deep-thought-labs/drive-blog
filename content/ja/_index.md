@@ -1,5 +1,5 @@
 ---
-{{/* hugo-brewm theme: Home page with cover image */}}
+# hugo-brewm theme: Home page with cover image
 title: "ブログへようこそ"
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
 keepAspectRatio: true
