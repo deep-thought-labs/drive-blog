@@ -11,7 +11,7 @@
             {{- $flag := partial "i18n/flag.html" (dict "iso3166" (substr .Language.LanguageCode -2)) }}
             {{- /* hugo-brewm: Try to find translation of current page, fallback to home */}}
             {{- $targetLang := .Language.Lang }}
-            {{- $targetURL := .Permalink }}
+            {{- $targetURL := .RelPermalink }}
             {{- if $currentPage.Translations }}
                 {{- range $currentPage.Translations }}
                     {{- if eq .Language.Lang $targetLang }}
@@ -26,7 +26,7 @@
                 {{- if and $foundPage (eq $foundPage.Kind "page") }}
                     {{- $targetURL = $foundPage.RelPermalink }}
                 {{- end }}
-                {{- /* If page not found or not a regular page, $targetURL remains as home (.Permalink) */}}
+                {{- /* If page not found or not a regular page, $targetURL remains as home (.RelPermalink) */}}
             {{- end }}
             <nav id="bi18n" aria-label="{{ i18n "selectLang" }}">
                 <a id="has-i18n" class="on-deck"
@@ -59,8 +59,8 @@
                     {{- range where $.Site.Home.AllTranslations "Lang" "ne" $.Lang -}}
                         {{- $flag := partial "i18n/flag.html" (dict "iso3166" (substr .Language.LanguageCode -2)) }}
                         {{- /* hugo-brewm: Try to find translation of current page, fallback to home */}}
-                        {{- $targetURL := .Permalink }}
                         {{- $targetLang := .Language.Lang }}
+                        {{- $targetURL := .RelPermalink }}
                         {{- if $currentPage.Translations }}
                             {{- range $currentPage.Translations }}
                                 {{- if eq .Language.Lang $targetLang }}
@@ -75,7 +75,7 @@
                             {{- if and $foundPage (eq $foundPage.Kind "page") }}
                                 {{- $targetURL = $foundPage.RelPermalink }}
                             {{- end }}
-                            {{- /* If page not found or not a regular page, $targetURL remains as home (.Permalink) */}}
+                            {{- /* If page not found or not a regular page, $targetURL remains as home (.RelPermalink) */}}
                         {{- end }}
                         <li>
                             <a href="{{ $targetURL }}" aria-label="{{ printf "Change language to %s" .Language.LanguageName }}">
