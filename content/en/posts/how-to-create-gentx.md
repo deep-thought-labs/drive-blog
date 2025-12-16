@@ -1,6 +1,7 @@
 ---
 title: "How to Create a Gentx"
 date: 2025-12-11T10:00:00Z
+translationKey: "how-to-create-gentx"
 tags: ["guide", "genesis"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
 alt: 'Guide - How to Create a Gentx'

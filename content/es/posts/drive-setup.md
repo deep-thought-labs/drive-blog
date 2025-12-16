@@ -1,6 +1,7 @@
 ---
 title: "Preparación con Drive"
 date: 2025-11-27T10:00:00Z
+translationKey: "drive-setup"
 tags: ["testing", "drive"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
 alt: 'Fase de Testing - Preparación con Drive'
