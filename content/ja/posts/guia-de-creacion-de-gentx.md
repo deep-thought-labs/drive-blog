@@ -1,5 +1,5 @@
 ---
-title: テストフェーズ：Gentx（Genesisトランザクション）の作成方法
+title: "Gentxの作成方法"
 date: 2025-12-11T10:00:00Z
 tags: ["guide", "genesis"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'

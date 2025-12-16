@@ -1,5 +1,5 @@
 ---
-title: "Fase de Testing: Estrategia y Preparación"
+title: "Estrategia de Testing"
 date: 2025-11-13T10:00:00Z
 tags: ["testing", "announcement"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'

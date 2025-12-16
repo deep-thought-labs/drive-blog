@@ -1,5 +1,5 @@
 ---
-title: "Bienvenida e Introducción al Proyecto"
+title: "Bienvenida"
 date: 2025-10-30T10:00:00Z
 tags: ["announcement", "project-42"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'

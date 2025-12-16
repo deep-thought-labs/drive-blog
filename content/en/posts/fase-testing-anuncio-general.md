@@ -1,5 +1,5 @@
 ---
-title: "Testing Phase: Strategy and Preparation"
+title: "Testing Strategy"
 date: 2025-11-13T10:00:00Z
 tags: ["testing", "announcement"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'

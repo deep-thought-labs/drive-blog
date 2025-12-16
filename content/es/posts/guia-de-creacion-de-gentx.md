@@ -1,5 +1,5 @@
 ---
-title: Fase de testing Cómo crear una Gentx (Transacción Genesis)
+title: "Cómo crear una Gentx"
 date: 2025-12-11T10:00:00Z
 tags: ["guide", "genesis"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'

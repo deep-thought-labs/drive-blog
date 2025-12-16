@@ -1,5 +1,5 @@
 ---
-title: "テストフェーズ: Driveと鍵管理について"
+title: "Drive準備"
 date: 2025-11-27T10:00:00Z
 tags: ["testing", "drive"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'

@@ -1,5 +1,5 @@
 ---
-title: プロジェクトへの歓迎と紹介
+title: "歓迎"
 date: 2025-10-30T10:00:00Z
 tags: ["announcement", "project-42"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
