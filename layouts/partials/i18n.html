@@ -18,13 +18,15 @@
                         {{- $targetURL = .RelPermalink }}
                     {{- end }}
                 {{- end }}
-            {{- else if not $currentPage.IsHome }}
-                {{- /* If no translation exists, try to find equivalent page in target language */}}
+            {{- else if and (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
+                {{- /* Only try to find equivalent page for regular content pages (posts), not taxonomies or lists */}}
                 {{- $currentPath := strings.TrimPrefix (printf "/%s" $.Language.Lang) $currentPage.RelPermalink }}
                 {{- $targetPath := printf "/%s%s" $targetLang $currentPath }}
-                {{- with $.Site.GetPage $targetPath }}
-                    {{- $targetURL = .RelPermalink }}
+                {{- $foundPage := $.Site.GetPage $targetPath }}
+                {{- if and $foundPage (eq $foundPage.Kind "page") }}
+                    {{- $targetURL = $foundPage.RelPermalink }}
                 {{- end }}
+                {{- /* If page not found or not a regular page, $targetURL remains as home (.Permalink) */}}
             {{- end }}
             <nav id="bi18n" aria-label="{{ i18n "selectLang" }}">
                 <a id="has-i18n" class="on-deck"
@@ -65,13 +67,15 @@
                                     {{- $targetURL = .RelPermalink }}
                                 {{- end }}
                             {{- end }}
-                        {{- else if not $currentPage.IsHome }}
-                            {{- /* If no translation exists, try to find equivalent page in target language */}}
+                        {{- else if and (not $currentPage.IsHome) (eq $currentPage.Kind "page") }}
+                            {{- /* Only try to find equivalent page for regular content pages (posts), not taxonomies or lists */}}
                             {{- $currentPath := strings.TrimPrefix (printf "/%s" $.Language.Lang) $currentPage.RelPermalink }}
                             {{- $targetPath := printf "/%s%s" $targetLang $currentPath }}
-                            {{- with $.Site.GetPage $targetPath }}
-                                {{- $targetURL = .RelPermalink }}
+                            {{- $foundPage := $.Site.GetPage $targetPath }}
+                            {{- if and $foundPage (eq $foundPage.Kind "page") }}
+                                {{- $targetURL = $foundPage.RelPermalink }}
                             {{- end }}
+                            {{- /* If page not found or not a regular page, $targetURL remains as home (.Permalink) */}}
                         {{- end }}
                         <li>
                             <a href="{{ $targetURL }}" aria-label="{{ printf "Change language to %s" .Language.LanguageName }}">
