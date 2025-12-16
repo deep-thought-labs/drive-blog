@@ -19,6 +19,22 @@
     {{- if and $menuURL (not (urls.Parse $menuURL).IsAbs) }}
         {{- /* Use relLangURL to ensure language prefix is included for current language */}}
         {{- $menuURL = relLangURL $menuURL }}
+        {{- /* If URL has wrong language prefix, fix it to match current language */}}
+        {{- $currentLang := $page.Language.Lang }}
+        {{- $langPrefix := printf "/%s" $currentLang }}
+        {{- $parsedURL := urls.Parse $menuURL }}
+        {{- $hasLangPrefix := or (strings.HasPrefix $parsedURL.Path "/en/") (strings.HasPrefix $parsedURL.Path "/es/") (strings.HasPrefix $parsedURL.Path "/ja/") }}
+        {{- if and $hasLangPrefix (not (strings.HasPrefix $parsedURL.Path $langPrefix)) }}
+            {{- /* Wrong language prefix, replace with current language */}}
+            {{- $pathWithoutLang := strings.TrimPrefix "/en/" (strings.TrimPrefix "/es/" (strings.TrimPrefix "/ja/" $parsedURL.Path))) }}
+            {{- $menuURL = printf "%s%s" $langPrefix $pathWithoutLang }}
+            {{- if $parsedURL.RawQuery }}
+                {{- $menuURL = printf "%s?%s" $menuURL $parsedURL.RawQuery }}
+            {{- end }}
+            {{- if $parsedURL.Fragment }}
+                {{- $menuURL = printf "%s#%s" $menuURL $parsedURL.Fragment }}
+            {{- end }}
+        {{- end }}
     {{- end }}
     {{- $attrs := dict "href" $menuURL }}
     {{- if $page.IsMenuCurrent .Menu . }}
