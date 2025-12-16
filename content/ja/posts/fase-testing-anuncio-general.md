@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'テストフェーズ - Project 42'
 ---
 
-# テストフェーズ: 戦略と準備
+# テスト戦略
 
 {{< figure src="cover" caption="alt" >}}
 

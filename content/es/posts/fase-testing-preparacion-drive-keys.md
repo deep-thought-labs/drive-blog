@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Fase de Testing - Preparación con Drive'
 ---
 
-# Fase de Testing: Preparación con Drive y Gestión de Keys
+# Preparación con Drive
 
 {{< figure src="cover" caption="alt" >}}
 

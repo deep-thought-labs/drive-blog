@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Guía - Cómo crear una Gentx'
 ---
 
-# Cómo crear una Gentx (Transacción Genesis)
+# Cómo crear una Gentx
 
 {{< figure src="cover" caption="alt" >}}
 

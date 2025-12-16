@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'テストフェーズ - ラウンド1: チェーンローンチ'
 ---
 
-# テストフェーズ - ラウンド 1: チェーンの起動
+# ラウンド1: チェーンローンチ
 
 {{< figure src="cover" caption="alt" >}}
 

@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Testing Phase - Infinite Improbability Drive'
 ---
 
-# Testing Phase: Start of Testing Rounds
+# Testing Begins
 
 {{< figure src="cover" caption="alt" >}}
 

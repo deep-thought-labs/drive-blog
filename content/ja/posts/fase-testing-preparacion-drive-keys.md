@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'テストフェーズ - Driveの準備'
 ---
 
-# テストフェーズ: ドライブとキー管理の準備
+# Drive準備
 
 {{< figure src="cover" caption="alt" >}}
 

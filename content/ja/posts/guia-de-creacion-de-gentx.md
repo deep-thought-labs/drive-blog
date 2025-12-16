@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'ガイド - Gentxの作成方法'
 ---
 
-# テストフェーズ：Gentx（Genesisトランザクション）の作成方法
+# Gentxの作成方法
 
 {{< figure src="cover" caption="alt" >}}
 

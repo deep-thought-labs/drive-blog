@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Fase de Testing - Project 42'
 ---
 
-# Fase de Testing: Estrategia y Preparación
+# Estrategia de Testing
 
 {{< figure src="cover" caption="alt" >}}
 

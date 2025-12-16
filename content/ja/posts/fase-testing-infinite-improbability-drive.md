@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'テストフェーズ - Infinite Improbability Drive'
 ---
 
-# テストフェーズ: テストラウンドの開始
+# テスト開始
 
 {{< figure src="cover" caption="alt" >}}
 

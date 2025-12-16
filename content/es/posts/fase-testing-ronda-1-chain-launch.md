@@ -6,7 +6,7 @@ cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/fl
 alt: 'Fase de Testing - Ronda 1: Chain Launch'
 ---
 
-# Testing Phase - Round 1: Chain Launch
+# Ronda 1: Chain Launch
 
 {{< figure src="cover" caption="alt" >}}
 
