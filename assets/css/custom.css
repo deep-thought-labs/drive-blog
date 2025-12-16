@@ -31,20 +31,21 @@
     /* mark & selector highlight color */
     --hl: yellow;
 
-    /* hugo-brewm: Text width customization */
-    /* Default: --golden-ratio: 61.803398% (optimal reading width) */
-    /* Increase for wider text: e.g., 75% or 80% */
-    /* Decrease for narrower text: e.g., 55% or 50% */
-    /* --golden-ratio: 75%; */
-
-    /* hugo-brewm: Maximum content width */
-    /* Default: --max-width: 58rem (approximately 928px) */
-    /* Increase for wider layout: e.g., 70rem or 80rem */
-    /* --max-width: 70rem; */
+    /* hugo-brewm: Layout width variables - STILL USED by theme */
+    /* --golden-ratio: 61.803398% - Used for: home page tags panel, mobile layouts, cards, fediverse comments */
+    /* --canonic: 70.710678% - Used for: slides content, some responsive breakpoints */
+    /* --max-width: 58rem - Used for: overall layout max width, menu max width, home page posts list */
+    /* These variables are still important for other theme elements, not just paragraphs */
+    /* To customize these globally, uncomment and modify:
+    --golden-ratio: 75%;
+    --canonic: 80%;
+    --max-width: 70rem;
+    */
 }
 
 /* hugo-brewm: Override paragraph width to match titles and other elements */
-/* Remove width restriction from paragraphs to match heading width */
+/* This removes the --golden-ratio restriction ONLY from paragraphs and content elements */
+/* Other theme elements (home page, cards, menus) still use --golden-ratio for their layout */
 #content > p,
 #main-article section > p,
 #content > blockquote,
