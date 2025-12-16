@@ -1,7 +1,7 @@
 ---
 title: Fase de testing Cómo crear una Gentx (Transacción Genesis)
 date: 2025-12-11T10:00:00Z
-tags: ["testing", "guía", "genesis", "project-42", "gentx"]
+tags: ["guide", "genesis"]
 ---
 
 # Cómo crear una Gentx (Transacción Genesis)

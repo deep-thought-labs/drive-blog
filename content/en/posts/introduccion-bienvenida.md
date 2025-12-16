@@ -1,7 +1,7 @@
 ---
 title: "Welcome and Introduction to the Project"
 date: 2025-10-30T10:00:00Z
-tags: ["introduction", "announcement"]
+tags: ["announcement", "project-42"]
 ---
 
 # Welcome and Introduction to the Project

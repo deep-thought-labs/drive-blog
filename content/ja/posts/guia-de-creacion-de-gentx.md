@@ -1,7 +1,7 @@
 ---
 title: テストフェーズ：Gentx（Genesisトランザクション）の作成方法
 date: 2025-12-11T10:00:00Z
-tags: ["testing", "guide", "genesis", "project-42", "gentx"]
+tags: ["guide", "genesis"]
 ---
 
 # STEP 0. 前提条件

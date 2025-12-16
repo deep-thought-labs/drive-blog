@@ -1,7 +1,7 @@
 ---
 title: "テストフェーズ - ラウンド1: チェーンローンチ"
 date: 2025-12-04T10:00:00Z
-tags: ["testing", "round-1", "chain-launch", "genesis", "validators"]
+tags: ["testing", "genesis"]
 ---
 
 # テストフェーズ - ラウンド 1: チェーンの起動

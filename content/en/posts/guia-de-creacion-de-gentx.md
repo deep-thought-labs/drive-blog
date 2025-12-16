@@ -1,7 +1,7 @@
 ---
 title: "Testing Phase: How to Create a Gentx (Genesis Transaction)"
 date: 2025-12-11T10:00:00Z
-tags: ["testing", "guide", "genesis", "project-42", "gentx"]
+tags: ["guide", "genesis"]
 ---
 
 # How to Create a Gentx (Genesis Transaction)

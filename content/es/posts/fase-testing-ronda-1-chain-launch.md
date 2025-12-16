@@ -1,7 +1,7 @@
 ---
 title: "Fase de Testing - Ronda 1: Chain Launch"
 date: 2025-12-04T10:00:00Z
-tags:tags: ["testing", "round-1", "chain-launch", "genesis", "validators"]
+tags: ["testing", "genesis"]
 ---
 
 # Testing Phase - Round 1: Chain Launch

@@ -1,7 +1,7 @@
 ---
 title: "Fase de Testing: Estrategia y Preparación"
 date: 2025-11-13T10:00:00Z
-tags: ["testing", "anuncio", "estrategia", "project-42"]
+tags: ["testing", "announcement"]
 ---
 
 # Fase de Testing: Estrategia y Preparación

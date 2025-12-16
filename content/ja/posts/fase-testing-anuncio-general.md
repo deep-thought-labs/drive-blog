@@ -1,7 +1,7 @@
 ---
 title: テストフェーズ：戦略と準備
 date: 2025-11-13T10:00:00Z
-tags: ["testing", "announcement", "strategy", "project-42"]
+tags: ["testing", "announcement"]
 ---
 
 # テストフェーズ: 戦略と準備

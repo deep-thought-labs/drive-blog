@@ -1,7 +1,7 @@
 ---
 title: "Testing Phase: Start of Testing Rounds"
 date: 2025-11-06T10:00:00Z
-tags: ["testing", "announcement", "project-42", "infinite-improbability-drive"]
+tags: ["testing", "announcement", "infinite-improbability-drive"]
 ---
 
 # Testing Phase: Start of Testing Rounds

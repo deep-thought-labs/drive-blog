@@ -1,7 +1,7 @@
 ---
 title: プロジェクトへの歓迎と紹介
 date: 2025-10-30T10:00:00Z
-tags: ["introduction", "announcement"]
+tags: ["announcement", "project-42"]
 ---
 
 # プロジェクトへの歓迎と紹介
