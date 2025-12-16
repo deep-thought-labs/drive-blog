@@ -17,30 +17,33 @@
     {{- /* hugo-brewm: Ensure URLs respect current language */}}
     {{- $menuURL := .URL }}
     {{- if and $menuURL (not (urls.Parse $menuURL).IsAbs) }}
-        {{- /* Use relLangURL to ensure language prefix is included for current language */}}
-        {{- $menuURL = relLangURL $menuURL }}
-        {{- /* If URL has wrong language prefix, fix it to match current language */}}
         {{- $currentLang := $page.Language.Lang }}
         {{- $langPrefix := printf "/%s" $currentLang }}
         {{- $parsedURL := urls.Parse $menuURL }}
         {{- $hasLangPrefix := or (strings.HasPrefix $parsedURL.Path "/en/") (or (strings.HasPrefix $parsedURL.Path "/es/") (strings.HasPrefix $parsedURL.Path "/ja/")) }}
-        {{- if and $hasLangPrefix (not (strings.HasPrefix $parsedURL.Path $langPrefix)) }}
-            {{- /* Wrong language prefix, replace with current language */}}
-            {{- $pathWithoutLang := $parsedURL.Path }}
-            {{- if strings.HasPrefix $pathWithoutLang "/en/" }}
-                {{- $pathWithoutLang = strings.TrimPrefix "/en/" $pathWithoutLang }}
-            {{- else if strings.HasPrefix $pathWithoutLang "/es/" }}
-                {{- $pathWithoutLang = strings.TrimPrefix "/es/" $pathWithoutLang }}
-            {{- else if strings.HasPrefix $pathWithoutLang "/ja/" }}
-                {{- $pathWithoutLang = strings.TrimPrefix "/ja/" $pathWithoutLang }}
+        {{- if $hasLangPrefix }}
+            {{- /* URL already has a language prefix, check if it matches current language */}}
+            {{- if not (strings.HasPrefix $parsedURL.Path $langPrefix) }}
+                {{- /* Wrong language prefix, replace with current language */}}
+                {{- $pathWithoutLang := $parsedURL.Path }}
+                {{- if strings.HasPrefix $pathWithoutLang "/en/" }}
+                    {{- $pathWithoutLang = strings.TrimPrefix "/en/" $pathWithoutLang }}
+                {{- else if strings.HasPrefix $pathWithoutLang "/es/" }}
+                    {{- $pathWithoutLang = strings.TrimPrefix "/es/" $pathWithoutLang }}
+                {{- else if strings.HasPrefix $pathWithoutLang "/ja/" }}
+                    {{- $pathWithoutLang = strings.TrimPrefix "/ja/" $pathWithoutLang }}
+                {{- end }}
+                {{- $menuURL = printf "%s%s" $langPrefix $pathWithoutLang }}
+                {{- if $parsedURL.RawQuery }}
+                    {{- $menuURL = printf "%s?%s" $menuURL $parsedURL.RawQuery }}
+                {{- end }}
+                {{- if $parsedURL.Fragment }}
+                    {{- $menuURL = printf "%s#%s" $menuURL $parsedURL.Fragment }}
+                {{- end }}
             {{- end }}
-            {{- $menuURL = printf "%s%s" $langPrefix $pathWithoutLang }}
-            {{- if $parsedURL.RawQuery }}
-                {{- $menuURL = printf "%s?%s" $menuURL $parsedURL.RawQuery }}
-            {{- end }}
-            {{- if $parsedURL.Fragment }}
-                {{- $menuURL = printf "%s#%s" $menuURL $parsedURL.Fragment }}
-            {{- end }}
+        {{- else }}
+            {{- /* URL doesn't have language prefix, add it using relLangURL */}}
+            {{- $menuURL = relLangURL $menuURL }}
         {{- end }}
     {{- end }}
     {{- $attrs := dict "href" $menuURL }}
