@@ -23,7 +23,7 @@
         {{- $currentLang := $page.Language.Lang }}
         {{- $langPrefix := printf "/%s" $currentLang }}
         {{- $parsedURL := urls.Parse $menuURL }}
-        {{- $hasLangPrefix := or (strings.HasPrefix $parsedURL.Path "/en/") (strings.HasPrefix $parsedURL.Path "/es/") (strings.HasPrefix $parsedURL.Path "/ja/") }}
+        {{- $hasLangPrefix := or (strings.HasPrefix $parsedURL.Path "/en/") (or (strings.HasPrefix $parsedURL.Path "/es/") (strings.HasPrefix $parsedURL.Path "/ja/")) }}
         {{- if and $hasLangPrefix (not (strings.HasPrefix $parsedURL.Path $langPrefix)) }}
             {{- /* Wrong language prefix, replace with current language */}}
             {{- $pathWithoutLang := strings.TrimPrefix "/en/" (strings.TrimPrefix "/es/" (strings.TrimPrefix "/ja/" $parsedURL.Path))) }}
