@@ -8,11 +8,11 @@ Blog oficial de Infinite Improbability Drive donde compartimos actualizaciones, 
 
 ## Desarrollo Local
 
-Este blog está construido con [Hugo](https://gohugo.io/) y utiliza el tema [Geekdoc](https://geekdocs.de/).
+Este blog está construido con [Hugo](https://gohugo.io/) y utiliza el tema [hugo-brewm](https://github.com/foxihd/hugo-brewm).
 
 ### Requisitos
 
-- Hugo (versión 0.124 o superior)
+- Hugo (versión 0.135.0 o superior)
 
 ### Instalación y Ejecución
 
