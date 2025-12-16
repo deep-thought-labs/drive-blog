@@ -24,10 +24,13 @@
                 {{- $currentFile := $currentPage.File }}
                 {{- if $currentFile }}
                     {{- $baseName := $currentFile.BaseFileName }}
-                    {{- $targetPath := printf "/%s/posts/%s" $targetLang $baseName }}
-                    {{- $foundPage := $.Site.GetPage $targetPath }}
-                    {{- if and $foundPage (eq $foundPage.Kind "page") }}
-                        {{- $targetURL = $foundPage.RelPermalink }}
+                    {{- $currentSection := $currentPage.Section }}
+                    {{- /* Search for page with same filename in target language, same section */}}
+                    {{- range where $.Site.AllPages "Kind" "page" }}
+                        {{- if and (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
+                            {{- $targetURL = .RelPermalink }}
+                            {{- break }}
+                        {{- end }}
                     {{- end }}
                 {{- end }}
                 {{- /* If page not found or not a regular page, $targetURL remains as home (.RelPermalink) */}}
@@ -77,10 +80,13 @@
                             {{- $currentFile := $currentPage.File }}
                             {{- if $currentFile }}
                                 {{- $baseName := $currentFile.BaseFileName }}
-                                {{- $targetPath := printf "/%s/posts/%s" $targetLang $baseName }}
-                                {{- $foundPage := $.Site.GetPage $targetPath }}
-                                {{- if and $foundPage (eq $foundPage.Kind "page") }}
-                                    {{- $targetURL = $foundPage.RelPermalink }}
+                                {{- $currentSection := $currentPage.Section }}
+                                {{- /* Search for page with same filename in target language, same section */}}
+                                {{- range where $.Site.AllPages "Kind" "page" }}
+                                    {{- if and (eq .Language.Lang $targetLang) .File (eq .File.BaseFileName $baseName) (eq .Section $currentSection) }}
+                                        {{- $targetURL = .RelPermalink }}
+                                        {{- break }}
+                                    {{- end }}
                                 {{- end }}
                             {{- end }}
                             {{- /* If page not found or not a regular page, $targetURL remains as home (.RelPermalink) */}}
