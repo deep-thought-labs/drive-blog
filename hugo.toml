@@ -2,7 +2,7 @@
 baseURL = "/"
 ## Site title
 title = "Project 42 - Blog"
-## Use hugo-brewm theme
+## hugo-brewm: Theme selection
 theme = "hugo-brewm"
 ## Enable Git information for pages, (e.g. lastMod date information)
 enableGitInfo = true
@@ -49,7 +49,7 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
         lineNos = false
         ## Put line numbers in table
         lineNumbersInTable = true
-        ## Use classes for styling (required for hugo-brewm)
+        ## hugo-brewm: Required - use classes for verbatim styling
         noClasses = false
         ## Width of tab character
         tabWidth = 4
@@ -171,24 +171,24 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 
     ## Feed display settings
     [params.feed]
-        ## Enable flowlines (decorative illustrations for posts without cover images)
+        ## hugo-brewm: Enable flowlines (decorative illustrations for posts without cover images)
         flowlines = true
-        ## Limit number of flowlines with maximum 42
+        ## hugo-brewm: Limit number of flowlines with maximum 42
         flowlinesLimit = 21
-        ## Override Flowlines illustration directory (optional)
+        ## hugo-brewm: Override Flowlines illustration directory (optional)
         # OverrideFlowlinesDir = 'https://example.com/flowlines/'
-        ## Illustration extension when overriding flowlines
+        ## hugo-brewm: Illustration extension when overriding flowlines
         # flowlinesExt = 'svg'
 
     ## Home page display settings
     [params.home]
-        ## Disable slide carousel
+        ## hugo-brewm: Disable slide carousel
         disableSlide = false
-        ## Disable taxonomy listing carousel
+        ## hugo-brewm: Disable taxonomy listing carousel
         disableListing = false
-        ## Select taxonomy listing to be featured on home page
+        ## hugo-brewm: Select taxonomy listing to be featured on home page
         featuredListing = ['categories', 'tags', 'series']
-        ## Include section nodes in JSON output
+        ## hugo-brewm: Include section nodes in JSON output
         includeSectionInJson = false
 
     ## Logo configuration
@@ -204,23 +204,23 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 
     ## Post display settings
     [params.posts]
-        ## Enable text justification
+        ## hugo-brewm: Enable text justification
         justifying = false
-        ## Disable paragraph indentation
+        ## hugo-brewm: Disable paragraph indentation
         noIndent = false
-        ## Use sans-serif fonts as default
+        ## hugo-brewm: Use sans-serif fonts as default
         sfdefault = false
-        ## Show colophon section (including QR code)
+        ## hugo-brewm: Show colophon section (including QR code)
         colophon = true
-        ## Disable redaction history
+        ## hugo-brewm: Disable redaction history
         disableHistory = false
-        ## Show related content
+        ## hugo-brewm: Show related content
         related = true
-        ## Override maximum series/related post count
+        ## hugo-brewm: Override maximum series/related post count
         RelatedLimit = 5
-        ## Show share buttons
+        ## hugo-brewm: Show share buttons
         share = true
-        ## Enable section numbering
+        ## hugo-brewm: Enable section numbering
         secnum = false
 
     ## RSS feed settings
@@ -232,11 +232,11 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 
     ## Search configuration
     [params.search]
-        ## Enable search functionality, please index your site first with: npx pagefind --site "public"
+        ## hugo-brewm: Enable search functionality, please index your site first with: npx pagefind --site "public"
         enable = true
-        ## Use pagefind search when javascript enabled, currently only 'pagefind' is supported
+        ## hugo-brewm: Use pagefind search when javascript enabled, currently only 'pagefind' is supported
         pagefind = true
-        ## Fallback searchbox when javascript disabled, currently the options limited to 'mojeek', otherwise duckduckgo will be used
+        ## hugo-brewm: Fallback searchbox when javascript disabled, currently the options limited to 'mojeek', otherwise duckduckgo will be used
         # fallback = 'mojeek'
 
     ## Extended Metadata and Social card configuration
@@ -267,15 +267,15 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 
     ## Typography settings
     [params.typeface]
-        ## Use web safe fonts (will override font selection below)
+        ## hugo-brewm: Use web safe fonts (will override font selection below)
         webSafe = false
-        ## Serif font selection: 'Cormorant' 'EB Garamond' and 'crimson' (default)
+        ## hugo-brewm: Serif font selection: 'Cormorant' 'EB Garamond' and 'crimson' (default)
         roman = 'crimson'
-        ## Sans-serif font selection: 'Inter' 'Montserrat' 'Rosario' and 'Lexica Ultralegible' (default)
+        ## hugo-brewm: Sans-serif font selection: 'Inter' 'Montserrat' 'Rosario' and 'Lexica Ultralegible' (default)
         sans = 'inter'
-        ## Host fonts on local host instead of GitHub (requires downloading fonts first)
+        ## hugo-brewm: Host fonts on local host instead of GitHub (fonts downloaded to static/css/fonts/)
         localHost = true
-        ## Reduce icon subset for base-ui to only 38 icon (save up to 15KB)
+        ## hugo-brewm: Reduce icon subset for base-ui to only 38 icon (save up to 15KB)
         minimalUI = true
 
 ## Menu configuration

@@ -1,6 +1,8 @@
 ---
+{{/* hugo-brewm theme: Home page with cover image */}}
 title: "ブログへようこそ"
-geekdocBreadcrumb: false
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+keepAspectRatio: true
 ---
 
 ここは**Project 42**の公式ブログです。ここでは、最新情報、お知らせ、プロジェクトの進捗状況などを共有しています。Project 42は、デジタルサイファーパンク国家であり、**Infinite Improbability Drive**ブロックチェーン、**BabelFish**ネットワーク、そしてサービスとノードを管理する**Drive**クライアントツールで構成される完全なエコシステムです。

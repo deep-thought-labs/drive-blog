@@ -1,6 +1,8 @@
 ---
+{{/* hugo-brewm theme: Home page with cover image */}}
 title: "Welcome"
-geekdocBreadcrumb: false
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+keepAspectRatio: true
 ---
 
 Welcome to our Blog

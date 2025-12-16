@@ -1,6 +1,7 @@
+/* hugo-brewm theme: Custom color variables */
 :root {
     /* default contrast */
-    /* Accent color - change this to match your brand */
+    /* hugo-brewm: Accent color - change this to match your brand */
     --ac-light: #36c;      /* accent color on default contrast */
     --fg-light: #111;      /* foreground color on default contrast */
     --bg-light: #f9f9fb;  /* background color on default contrast */
