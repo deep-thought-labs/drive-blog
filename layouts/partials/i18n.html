@@ -1,0 +1,90 @@
+{{- /* hugo-brewm theme: Override i18n template to maintain current page when switching languages */}}
+{{ "<!-- i18n.html -->" | safeHTML }}
+{{- if hugo.IsMultilingual }}
+    {{- $bilingual := eq (where $.Site.Home.AllTranslations ".Language.disabled" "ne" true | len ) 2 }}
+    {{- $currentPage := . }}
+    {{- if $bilingual }}
+        {{- range where $.Site.Home.AllTranslations "Lang" "ne" $.Lang }}
+            {{- $act639  := substr $.Language.LanguageCode 0 2 | upper }}
+            {{- $alt639  := substr .Language.LanguageCode 0 2 | upper }}
+            {{- $name    := .Language.LanguageName }}
+            {{- $flag := partial "i18n/flag.html" (dict "iso3166" (substr .Language.LanguageCode -2)) }}
+            {{- /* hugo-brewm: Try to find translation of current page, fallback to home */}}
+            {{- $targetLang := .Language.Lang }}
+            {{- $targetURL := .Permalink }}
+            {{- if $currentPage.Translations }}
+                {{- range $currentPage.Translations }}
+                    {{- if eq .Language.Lang $targetLang }}
+                        {{- $targetURL = .RelPermalink }}
+                    {{- end }}
+                {{- end }}
+            {{- else if not $currentPage.IsHome }}
+                {{- /* If no translation exists, try to find equivalent page in target language */}}
+                {{- $currentPath := strings.TrimPrefix (printf "/%s" $.Language.Lang) $currentPage.RelPermalink }}
+                {{- $targetPath := printf "/%s%s" $targetLang $currentPath }}
+                {{- with $.Site.GetPage $targetPath }}
+                    {{- $targetURL = .RelPermalink }}
+                {{- end }}
+            {{- end }}
+            <nav id="bi18n" aria-label="{{ i18n "selectLang" }}">
+                <a id="has-i18n" class="on-deck"
+                    href="{{ $targetURL }}"
+                    aria-label="{{ printf "%s %s" (i18n "switchLangTo") $name }}"
+                    aria-description="{{ printf "%s %s" (i18n "currentLang") $.Language.LanguageName }}">
+                    <span class="emoji">{{ $flag }}&nbsp;</span>
+                    <span class="act iso639 sri" aria-hidden="true">{{ $act639 }}</span>
+                    <span class="alt iso639 sri" aria-hidden="true">&rarr; {{ $alt639 }}</span>
+                    <span class="t srt languangeName">{{ $name }}</span>
+                </a>
+            </nav>
+        {{- end }}
+    {{- else }}
+        <details id="has-i18n" class="presentation js-details srm" name="on-deck">
+            {{- with $.Language }}
+                {{- $flag := partial "i18n/flag.html" (dict "iso3166" (substr .LanguageCode -2)) }}
+                <summary class="anchor on-deck"
+                    aria-label="{{ i18n "selectLang" }}"
+                    aria-description="{{ printf "%s %s" (i18n "currentLang") $.Language.LanguageName }}">
+                    <span class="emoji">{{ $flag }}&nbsp;</span>
+                    <span class="iso639">{{ substr .LanguageCode 0 2 | upper }} </span>
+                    <span class="languangeName">{{ .LanguageName }}</span>
+                </summary>
+            {{- end }}
+
+            {{ "<!-- on hull -->" | safeHTML }}
+            <nav id="i18n-menu" aria-label="{{ i18n "selectLang" }}">
+                <ul class="on-plank">
+                    {{- range where $.Site.Home.AllTranslations "Lang" "ne" $.Lang -}}
+                        {{- $flag := partial "i18n/flag.html" (dict "iso3166" (substr .Language.LanguageCode -2)) }}
+                        {{- /* hugo-brewm: Try to find translation of current page, fallback to home */}}
+                        {{- $targetURL := .Permalink }}
+                        {{- $targetLang := .Language.Lang }}
+                        {{- if $currentPage.Translations }}
+                            {{- range $currentPage.Translations }}
+                                {{- if eq .Language.Lang $targetLang }}
+                                    {{- $targetURL = .RelPermalink }}
+                                {{- end }}
+                            {{- end }}
+                        {{- else if not $currentPage.IsHome }}
+                            {{- /* If no translation exists, try to find equivalent page in target language */}}
+                            {{- $currentPath := strings.TrimPrefix (printf "/%s" $.Language.Lang) $currentPage.RelPermalink }}
+                            {{- $targetPath := printf "/%s%s" $targetLang $currentPath }}
+                            {{- with $.Site.GetPage $targetPath }}
+                                {{- $targetURL = .RelPermalink }}
+                            {{- end }}
+                        {{- end }}
+                        <li>
+                            <a href="{{ $targetURL }}" aria-label="{{ printf "Change language to %s" .Language.LanguageName }}">
+                                <span class="emoji">{{ $flag }}&nbsp;</span>
+                                <span class="languangeName">{{ .Language.LanguageName }}</span>
+                            </a>
+                        </li>
+                    {{- end }}
+                </ul>
+                <div class="screening js-cgpn" role="presentation" aria-hidden="true"></div>
+            </nav>
+        </details>
+    {{- end }}
+{{- end }}
+{{/*----------------------- end of i18n.html -----------------------*/}}
+
