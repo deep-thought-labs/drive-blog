@@ -12,10 +12,21 @@ canonifyURLs = true
 defaultContentLanguage = "en"
 ## Put default language in subdirectory
 defaultContentLanguageInSubdir = true
+## Show placeholder for missing translations
+enableMissingTranslationPlaceholders = true
 ## Generate a robots.txt
 enableRobotsTXT = true
 ## Files to ignore when building site
 ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
+
+## Front matter field configurations
+[frontmatter]
+    ## Publication date fields
+    date = [':default']
+    ## Expiry date fields
+    expiryDate = ['expiryDate', 'unpublishdate', ':default']
+    ## Last modified date fields
+    lastmod = ['lastmod', ':default']
 
 ## Markup configuration
 [markup]
@@ -49,16 +60,26 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
             ## Allow HTML in markdown
             unsafe = true
 
+## Outputs configuration
+[outputs]
+    home = ['html', 'rss', 'json']
+
 ## Sitemap configuration
 [sitemap]
     ## Change frequency setting (will affect posts listings layout): 'always', 'hourly', 'daily', 'weekly', 'monthly', 'yearly', 'never'
     changeFreq = 'monthly'
+
+## RSS configuration
+[services.rss]
+    ## Limit RSS item (-1 for unlimited)
+    limit = -1
 
 ## Taxonomy register
 [taxonomies]
     category = 'categories'
     tag = 'tags'
     author = 'author'
+    series = 'series'
 
 ## Site parameters
 [params]
@@ -74,6 +95,8 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     extMeta = true
     ## Enable coffee metric
     coffeeStat = true
+    ## Default social card image, recommended resolution: 1200 x 630px
+    # images = "https://infinitedrive.xyz/img/social-share.jpg"
     ## Do not block AI user agent for robot.txt
     AllowAIRobots = false
     ## or BearMode--Minimize clutter for small site; Disable breadcrumbs menu, share button, related posts, colophon and redaction history.
@@ -83,24 +106,79 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     ## Merge site license, footer menu and coffee stat
     unifiedFooter = true
 
+    ## Analytics configuration
+    ## At the moment, analytics can be added manually by creating a custom template at `layouts/partials/analytics.html`
+    [params.analytics]
+        ## Choose where to append analytics script: use 'head' to place within <head> tags, or 'body' to place before closing </body> tag.
+        append = 'body'
+
     ## Author information
     [params.author]
         ## site author's name
         name = 'Infinite Improbability Drive'
         ## Author's email (will be used for RSS feed)
         email = 'contact@infinitedrive.xyz'
+        ## Co-authors information (optional)
+        # coauthor = [
+        #     {name = "Co-author Name", bio = "Biography of co-author"}
+        # ]
 
     ## Comments configuration
     [params.comments]
         ## Disable comments (disable fediverse comments)
         disabled = false
+        ## Comment platform selection, currently only 'fediverse' is supported
+        # platform = 'fediverse'
+
+    ## Favicon configuration
+    [params.favicon]
+        # png = '/favicon-96x96.png'
+        # svg = '/favicon.svg'
+        # ico = '/favicon.ico'
+        # apple = '/apple-touch-icon.png'
+        # appTitle = 'Project 42'
+        # webmanifest = '/site.webmanifest'
+
+    ## Fediverse integration settings for verification and comments
+    [params.fediverse]
+        ## Fediverse instance URL (e.g., mastodon.social, bsky.app)
+        # instance = 'mastodon.social'
+        ## Fediverse username
+        # username = 'username'
+
+    ## Giscus configuration (GitHub Discussions as comments)
+    [params.giscus]
+        ## Repository name (e.g., "username/repository")
+        # repo = "username/repository"
+        ## Repository ID (find it in Giscus setup)
+        # repoID = "R_xxx"
+        ## Discussion category
+        # category = "Comments"
+        ## Category ID (find it in Giscus setup)
+        # categoryID = "DIC_xxx"
+        ## Discussion mapping: 'pathname', 'url', 'title', 'og:title'
+        # mapping = "og:title"
+        ## Enable reactions: "1" or "0"
+        # reactionsEnabled = "1"
+        ## Emit discussion metadata: "1" or "0"
+        # emitMetadata = "0"
+        ## Comment input box position: "top" or "bottom"
+        # inputPosition = "bottom"
+        ## Color theme: "light", "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+        # theme = "preferred_color_scheme"
+        ## Loading behavior: "lazy" or "eager"
+        # loading = "lazy"
 
     ## Feed display settings
     [params.feed]
-        ## Enable flowlines
+        ## Enable flowlines (decorative illustrations for posts without cover images)
         flowlines = true
         ## Limit number of flowlines with maximum 42
         flowlinesLimit = 21
+        ## Override Flowlines illustration directory (optional)
+        # OverrideFlowlinesDir = 'https://example.com/flowlines/'
+        ## Illustration extension when overriding flowlines
+        # flowlinesExt = 'svg'
 
     ## Home page display settings
     [params.home]
@@ -108,8 +186,21 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
         disableSlide = false
         ## Disable taxonomy listing carousel
         disableListing = false
-        ## Select taxonomy listing to be featured
-        featuredListing = ['categories', 'tags']
+        ## Select taxonomy listing to be featured on home page
+        featuredListing = ['categories', 'tags', 'series']
+        ## Include section nodes in JSON output
+        includeSectionInJson = false
+
+    ## Logo configuration
+    [params.logo]
+        ## Define `#logomark` `content` in CSS (set to true to use CSS for logo)
+        # logoInlineCSS = false
+        ## Light mode logo mark (SVG or PNG recommended)
+        # logoMark = 'https://infinitedrive.xyz/img/logo-light.svg'
+        ## Dark mode logo mark (SVG or PNG recommended)
+        # logoMarkDark = 'https://infinitedrive.xyz/img/logo-dark.svg'
+        ## Enable logo type (text logo)
+        logoType = true
 
     ## Post display settings
     [params.posts]
@@ -121,19 +212,58 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
         sfdefault = false
         ## Show colophon section (including QR code)
         colophon = true
-        ## disable redaction history
+        ## Disable redaction history
         disableHistory = false
         ## Show related content
         related = true
+        ## Override maximum series/related post count
+        RelatedLimit = 5
         ## Show share buttons
         share = true
+        ## Enable section numbering
+        secnum = false
+
+    ## RSS feed settings
+    [params.RSS]
+        ## Item limit for RSS feed (default: 15)
+        limit = 15
+        ## Limit items with full content (default: 15)
+        content = 15
 
     ## Search configuration
     [params.search]
-        ## Enable search functionality, please index your site first
+        ## Enable search functionality, please index your site first with: npx pagefind --site "public"
         enable = true
         ## Use pagefind search when javascript enabled, currently only 'pagefind' is supported
         pagefind = true
+        ## Fallback searchbox when javascript disabled, currently the options limited to 'mojeek', otherwise duckduckgo will be used
+        # fallback = 'mojeek'
+
+    ## Extended Metadata and Social card configuration
+    [params.socialCard]
+        ## Enable twitter and opengraph social cards (same as .Params.extMeta)
+        enable = true
+        ## Default social card image, recommended resolution: 1200 x 630px
+        # images = "https://infinitedrive.xyz/img/social-share.jpg"
+
+        ## Enable Twitter cards
+        # twitter = true
+        ## Twitter creator handle
+        # twitterCreator = "@infinitedrive"
+        ## Twitter site handle
+        # twitterSite = "@infinitedrive"
+
+        ## Enable OpenGraph
+        # opengraph = true
+        ## Facebook App ID
+        # facebookAppID = "123456789"
+        ## Facebook Admin ID
+        # facebookAdmin = "USER_ID"
+
+        ## Schema.org (EXPERIMENTAL, not fully supported body tags)
+        # schema = true
+        ## JsonLD (EXPERIMENTAL, cannot validate permalink)
+        # jsonLD = true
 
     ## Typography settings
     [params.typeface]
@@ -143,15 +273,10 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
         roman = 'crimson'
         ## Sans-serif font selection: 'Inter' 'Montserrat' 'Rosario' and 'Lexica Ultralegible' (default)
         sans = 'inter'
-        ## Host fonts on local host instead of GitHub
+        ## Host fonts on local host instead of GitHub (requires downloading fonts first)
         localHost = true
         ## Reduce icon subset for base-ui to only 38 icon (save up to 15KB)
         minimalUI = true
-
-    ## Extended Metadata and Social card configuration
-    [params.socialCard]
-        ## Enable twitter and opengraph social cards (same as .Params.extMeta)
-        enable = true
 
 ## Menu configuration
 [[menu.main]]
@@ -167,6 +292,67 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     pageRef = "/posts/"
     weight = 20
     pre = "book"
+
+## Additional menu items (uncomment and configure as needed)
+# [[menu.main]]
+#     name = "Categories"
+#     identifier = "categories"
+#     pageRef = "/categories/"
+#     weight = 30
+#     pre = "tag"
+
+# [[menu.main]]
+#     name = "Tags"
+#     identifier = "tags"
+#     pageRef = "/tags/"
+#     weight = 40
+#     pre = "tag"
+
+# [[menu.main]]
+#     name = "About"
+#     identifier = "about"
+#     pageRef = "/about/"
+#     weight = 50
+#     pre = "info"
+
+## More menu (secondary navigation)
+# [[menu.more]]
+#     name = "Resources"
+#     identifier = "resources"
+#     pageRef = "/resources/"
+#     weight = 10
+
+# [[menu.more]]
+#     name = "Contact"
+#     identifier = "contact"
+#     pageRef = "/contact/"
+#     weight = 20
+
+## Footer menu (social links, etc.)
+# [[menu.footer]]
+#     identifier = "github"
+#     url = "https://github.com/yourusername"
+#     name = "GitHub"
+#     pre = "github"
+#     weight = 10
+#     [[menu.footer.params]]
+#         target = "_blank"
+
+# [[menu.footer]]
+#     identifier = "twitter"
+#     url = "https://twitter.com/yourusername"
+#     name = "Twitter"
+#     pre = "twitter"
+#     weight = 20
+#     [[menu.footer.params]]
+#         target = "_blank"
+
+# [[menu.footer]]
+#     identifier = "email"
+#     url = "mailto:contact@infinitedrive.xyz"
+#     name = "Email"
+#     pre = "email"
+#     weight = 30
 
 ## Language configuration
 [languages]
