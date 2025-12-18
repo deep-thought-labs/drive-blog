@@ -1,8 +1,8 @@
 ---
 title: "歓迎"
-date: 2025-12-18T10:00:00Z
+date: 2025-12-18
 tags: ["announcement", "project-42"]
-cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+cover: 'https://infinitedrive.xyz/_assets/v11/6d4f77f3b0e748b1f3ccf51223cb823b64ef4067.png'
 alt: 'Project 42 - Infinite Improbability Drive'
 ---
 
