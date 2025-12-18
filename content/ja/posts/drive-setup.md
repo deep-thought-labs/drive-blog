@@ -1,6 +1,7 @@
 ---
 title: "Drive準備"
 date: 2025-11-27T10:00:00Z
+draft: true
 tags: ["testing", "drive"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
 alt: 'テストフェーズ - Driveの準備'
