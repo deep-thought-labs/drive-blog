@@ -1,6 +1,7 @@
 ---
 title: "Gentxの作成方法"
 date: 2025-12-11T10:00:00Z
+draft: true
 tags: ["guide", "genesis"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
 alt: 'ガイド - Gentxの作成方法'
