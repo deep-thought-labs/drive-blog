@@ -1,0 +1,96 @@
+/* hugo-brewm theme: Custom color variables */
+:root {
+    /* default contrast */
+    /* hugo-brewm: Accent color - change this to match your brand */
+    --ac-light: #36c;      /* accent color on default contrast */
+    --fg-light: #111;      /* foreground color on default contrast */
+    --bg-light: #f9f9fb;  /* background color on default contrast */
+    --midtone: gray;       /* midtone on default contrast */
+    --fg-dark: #f9f9fb;   /* foreground color on dark mode, default contrast */
+    --bg-dark: #111;       /* background color on dark mode, default contrast */
+    --ac-dark: #fa0;       /* accent color on dark mode, default contrast */
+
+    /* less contrast */
+    --ac-light-less: var(--ac-light);
+    --fg-light-less: #13253d;
+    --bg-light-less: #e7e2e2;
+    --midtone-less: #7d8490;
+    --fg-dark-less: #e7e2e2;
+    --bg-dark-less: #13253d;
+    --ac-dark-less: var(--ac-dark);
+
+    /* more contrast */
+    --ac-light-more: var(--ac-light);
+    --fg-light-more: #000;
+    --bg-light-more: #fff;
+    --midtone-more: gray;
+    --fg-dark-more: #fff;
+    --bg-dark-more: #000;
+    --ac-dark-more: var(--ac-dark);
+
+    /* mark & selector highlight color */
+    --hl: yellow;
+
+    /* hugo-brewm: Layout width variables - STILL USED by theme */
+    /* --golden-ratio: 61.803398% - Used for: home page tags panel, mobile layouts, cards, fediverse comments */
+    /* --canonic: 70.710678% - Used for: slides content, some responsive breakpoints */
+    /* --max-width: 58rem - Used for: overall layout max width, menu max width, home page posts list */
+    /* These variables are still important for other theme elements, not just paragraphs */
+    /* To customize these globally, uncomment and modify:
+    --golden-ratio: 75%;
+    --canonic: 80%;
+    --max-width: 70rem;
+    */
+}
+
+/* hugo-brewm: Override paragraph width to match titles and other elements */
+/* This removes the --golden-ratio restriction ONLY from paragraphs and content elements */
+/* Other theme elements (home page, cards, menus) still use --golden-ratio for their layout */
+#content > p,
+#main-article section > p,
+#content > blockquote,
+#content > ul,
+#content > ol,
+.textwidth {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Logo customization (if using logoInlineCSS = true) */
+/*
+#logomark {
+    content: "🚀";  /* You can use emoji, text or SVG */
+}
+*/
+
+/* Additional customizations */
+/* Example: Change link colors */
+/*
+a {
+    color: var(--ac-light);
+}
+
+a:hover {
+    color: var(--ac-dark);
+}
+*/
+
+/* Example: Customize footer */
+/*
+#main-footer {
+    /* Your custom styles here */
+}
+*/
+
+/* hugo-brewm: Fix search modal visibility */
+/* Ensure search modal appears above screening overlay */
+#search.on-hull {
+    z-index: 1;
+    position: relative;
+}
+
+#has-search-fallback.on-hull {
+    z-index: 1;
+    position: relative;
+}
+

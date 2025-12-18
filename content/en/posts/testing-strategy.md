@@ -1,10 +1,13 @@
 ---
-title: "Testing Phase: Strategy and Preparation"
+title: "Testing Strategy"
 date: 2025-11-13T10:00:00Z
-tags: ["testing", "announcement", "strategy", "project-42"]
+draft: true
+tags: ["testing", "announcement"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'Testing Phase - Project 42'
 ---
 
-# Testing Phase: Strategy and Preparation
+{{< figure src="cover" caption="alt" >}}
 
 We are pleased to announce the official start of the **testing phase** for Project 42. This phase is crucial to validate all the essential functionalities, commands, and flows of our **Infinite Improbability Drive** blockchain before the official launch.
 

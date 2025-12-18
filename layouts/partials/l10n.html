@@ -1,0 +1,22 @@
+{{- /* hugo-brewm theme: Override l10n template to fix post title display in language selector */}}
+{{ "<!-- l10n.html -->" | safeHTML }}
+{{- $page := .page }}
+<details id="has-l10n" class="presentation">
+    <summary aria-label="{{ i18n "selectLang" }}" aria-description="{{ printf "%s %s" (i18n "currentLang") $page.Language.LanguageName }}">
+        <span>{{ $page.Lang | upper }}</span>
+    </summary>
+    <nav aria-label="{{ i18n "selectLang" }}">
+        <ul class="on-plank" role="presentation">
+        {{- range $page.Translations }}
+        {{- $flag := partial "i18n/flag.html" (dict "iso3166" (substr .Language.LanguageCode -2)) }}
+            <li>
+                <a href="{{ .RelPermalink }}" aria-label="{{ printf "%s %s" (i18n "switchLangTo") .Language.LanguageName }}" aria-description="{{ .Title }}">
+                    <span class="emoji">{{ $flag }}&nbsp;</span>
+                    <span>{{ .Title }}</span>
+                </a>
+            </li>
+        {{- end }}
+        </ul>
+    </nav>
+</details>
+

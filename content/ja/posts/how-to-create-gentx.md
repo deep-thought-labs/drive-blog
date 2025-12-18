@@ -1,10 +1,15 @@
 ---
-title: テストフェーズ：Gentx（Genesisトランザクション）の作成方法
+title: "Gentxの作成方法"
 date: 2025-12-11T10:00:00Z
-tags: ["testing", "guide", "genesis", "project-42", "gentx"]
+draft: true
+tags: ["guide", "genesis"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'ガイド - Gentxの作成方法'
 ---
 
-# STEP 0. 前提条件
+{{< figure src="cover" caption="alt" >}}
+
+## STEP 0. 前提条件
 
 ## 0-1. goとjqのインストール確認
 

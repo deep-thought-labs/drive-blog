@@ -1,10 +1,13 @@
 ---
-title: "Testing Phase: How to Create a Gentx (Genesis Transaction)"
+title: "How to Create a Gentx"
 date: 2025-12-11T10:00:00Z
-tags: ["testing", "guide", "genesis", "project-42", "gentx"]
+draft: true
+tags: ["guide", "genesis"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'Guide - How to Create a Gentx'
 ---
 
-# How to Create a Gentx (Genesis Transaction)
+{{< figure src="cover" caption="alt" >}}
 
 ## STEP 0. Prerequisites
 

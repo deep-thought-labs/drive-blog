@@ -1,10 +1,13 @@
 ---
-title: "Testing Phase: Start of Testing Rounds"
+title: "Testing Begins"
 date: 2025-11-06T10:00:00Z
-tags: ["testing", "announcement", "project-42", "infinite-improbability-drive"]
+draft: true
+tags: ["testing", "announcement", "infinite-improbability-drive"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'Testing Phase - Infinite Improbability Drive'
 ---
 
-# Testing Phase: Start of Testing Rounds
+{{< figure src="cover" caption="alt" >}}
 
 We are pleased to announce that we have entered a crucial phase of our development: **the testing phase** for the launch of **Project 42** and its main component, the **Infinite Improbability Drive** blockchain.
 

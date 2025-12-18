@@ -1,10 +1,13 @@
 ---
-title: "Fase de Testing - Ronda 1: Chain Launch"
+title: "Ronda 1: Chain Launch"
 date: 2025-12-04T10:00:00Z
-tags:tags: ["testing", "round-1", "chain-launch", "genesis", "validators"]
+draft: true
+tags: ["testing", "genesis"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'Fase de Testing - Ronda 1: Chain Launch'
 ---
 
-# Testing Phase - Round 1: Chain Launch
+{{< figure src="cover" caption="alt" >}}
 
 The first round of testing focuses on the most critical process in a chain's lifecycle: **the Chain Launch**.
 

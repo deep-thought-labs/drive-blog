@@ -1,0 +1,248 @@
+# Japanese translations for hugo-brewm theme
+[404PageNotFound]
+    other = "ページが見つかりません"
+[404Alert]
+    other = "このページは意図的にリダイレクトされます"
+[404ReturnHome]
+    other = "ホームページに戻る"
+[accessibility]
+    other = "アクセシビリティ"
+[accessTime]
+    other = "このページにアクセスした日時"
+[allPosts]
+    other = "すべての投稿"
+[appearance]
+    other = "外観"
+[articles]
+    one = "記事"
+    other = "記事"
+[author]
+    one = "著者"
+    other = "著者"
+[back]
+    other = "戻る"
+[baselineStretch]
+    other = "ベースラインストレッチ"
+[bionRead]
+    other = "BionReadモード"
+[breadcrumb]
+    other = "パンくずリスト"
+[buildTime]
+    other = "このページが構築された日時"
+[bypass]
+    other = "バイパス"
+[categories]
+    one = "カテゴリー"
+    other = "カテゴリー"
+[close]
+    other = "閉じる"
+[coffeeStat]
+    other = "コーヒー統計"
+[coffeeCount]
+    other = "❤️と"
+[coffeeCountPost]
+    other = "で作られました。"
+[colophon]
+    other = "奥付"
+[colorPalette]
+    other = "カラーパレット"
+[colorSettings]
+    other = "色設定"
+[comments]
+    other = "ディスカッション"
+[contrast]
+    other = "コントラスト"
+[contrib]
+    other = "貢献"
+[contribAskReader]
+    other = "この記事を楽しみましたか？"
+[contribAskReaderResponse]
+    other = "素晴らしい！"
+[contribAskReaderToContribute]
+    one = "以下の貢献をすることで私をサポートすることもできます："
+    other = "以下の貢献をすることで私たちをサポートすることもできます："
+[contribCoffeeStat]
+    other = "ご存知でしたか"
+[contribCoffeeStatPost]
+    one =  "がこの記事を書くのを手伝ってくれました？"
+    other = "がこの記事を書くのを手伝ってくれました？"
+[copy]
+    other = "URLをコピー"
+[copying]
+    other = "コピー中..."
+[ctaComments]
+    other = "ディスカッションに参加"
+[cup]
+    one = "コーヒー1杯"
+    other = "コーヒー"
+[currentLang]
+    other = "現在の言語は"
+[dark]
+    other = "ダーク"
+[darkMode]
+    other = "ダークモード"
+[defaultColor]
+    other = "デフォルト"
+[defaultContrast]
+    other = "デフォルト"
+[deuteranopia]
+    other = "緑色覚異常"
+[discover]
+    other = "トピックを発見"
+[editedBy]
+    other = "編集者"
+[email]
+    other = "メール"
+[featuredImg]
+    other = "特徴画像"
+[fediverseBluesky]
+    other = "blueskyで返信"
+[fediverseErr]
+    other = "コメントの読み込み中にエラーが発生しました"
+[fediverseIsLoading]
+    other = "Fediverseのコメントを読み込み中"
+[fediverseReplies]
+    one = "返信"
+    other = "返信"
+[fediverseReblogs]
+    one = "リブログ"
+    other = "リブログ"
+[fediverseFavourites]
+    one = "お気に入り"
+    other = "お気に入り"
+[focusMode]
+    other = "フォーカスモード"
+[followRSS]
+    other = "RSSでフォロー"
+[fontSize]
+    other = "フォントサイズ"
+[home]
+    other = "ホームページ"
+[in]
+    other = "で"
+[inNewTab]
+    other = "新しいタブで"
+[keepInTouch]
+    other = "連絡を取り合いましょう！"
+[lessContrast]
+    other = "低"
+[light]
+    other = "ライト"
+[main]
+    other = "メインメニュー"
+[marginpar]
+    other = "追加の注記"
+[menuControls]
+    other = "アクセシビリティメニューコントロール"
+[modified]
+    other = "変更"
+[monochrome]
+    other = "モノクロ"
+[more]
+    other = "その他のメニュー"
+[moreContrast]
+    other = "高"
+[nav]
+    other = "ナビゲーション"
+[networkGraph]
+    other = "コンテンツネットワークグラフ"
+[next]
+    other = "次へ"
+[noArticle]
+    other = "表示する記事がありません。"
+[noArticlePost]
+    other = "著者がコーヒーを切らしたようです... 落ち着いて、すぐに淹れます！"
+[noComment]
+    other = "表示するコメントがありません。"
+[noGiscus]
+    other = "GiscusにはJavascriptとLocalStorageを有効にする必要があります。"
+[noScript]
+    other = "あら... Javascriptが無効になっています！"
+[noLocalStorage]
+    other = "ブラウザでLocalStorageが利用できません。設定は保存されません。"
+[note]
+    other = "注記"
+[on]
+    other = "オン"
+[OpenDyslexic]
+    other = "OpenDyslexicフォントを使用"
+[optimizeSR]
+    other = "スクリーンリーダー最適化"
+[optimizeSRDesc]
+    other = "ポインタデバイスでナビゲートするスクリーンリーダーユーザー向けに表示とリソースを最適化します。"
+[pages]
+    one = "ページ"
+    other = "ページ"
+[pagination]
+    other = "ページネーション"
+[posts]
+    one = "投稿"
+    other = "投稿"
+[postsBy]
+    other = "投稿者"
+[postsOn]
+    other = "投稿日"
+[poweredBy]
+    other = "提供"
+[prev]
+    other = "前へ"
+[print]
+    other = "印刷"
+[protanopia]
+    other = "赤色覚異常"
+[published]
+    other = "公開"
+[readingTime]
+    other = "分で読める"
+[recent]
+    other = "最近の投稿"
+[redactionHistory]
+    other = "編集履歴"
+[redactionNotes]
+    other = "一部の情報は時間の経過とともに変更される可能性があります。編集を最新の状態に保ちます。"
+[related]
+    other = "こちらもおすすめ"
+[reset]
+    other = "リセット"
+[reviewedBy]
+    other = "レビュー者"
+[save]
+    other = "保存"
+[search]
+    other = "検索"
+[seeAll]
+    other = "すべて見る"
+[seeMore]
+    other = "さらにトピックを探索"
+[section]
+    other = "セクション"
+[selectLang]
+    other = "言語選択"
+[series]
+    other = "シリーズ"
+[share]
+    other = "共有"
+[shareOn]
+    other = "で共有"
+[slide]
+    one = "スライド"
+    other = "スライド"
+[stage]
+    one = "ステージ"
+    other = "ステージ"
+[switchLangTo]
+    other = "言語を切り替え"
+[TableOfContents]
+    other = "目次"
+[tags]
+    one = "タグ"
+    other = "タグ"
+[toContent]
+    other = "メインコンテンツにスキップ"
+[toTop]
+    other = "コンテンツのトップへ"
+[top-nav]
+    other = "トップ"
+[tritanopia]
+    other = "青色覚異常"
+

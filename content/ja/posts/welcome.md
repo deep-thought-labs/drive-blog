@@ -1,10 +1,12 @@
 ---
-title: プロジェクトへの歓迎と紹介
-date: 2025-10-30T10:00:00Z
-tags: ["introduction", "announcement"]
+title: "歓迎"
+date: 2025-12-18
+tags: ["announcement", "project-42"]
+cover: 'https://infinitedrive.xyz/_assets/v11/6d4f77f3b0e748b1f3ccf51223cb823b64ef4067.png'
+alt: 'Project 42 - Infinite Improbability Drive'
 ---
 
-# プロジェクトへの歓迎と紹介
+{{< figure src="cover" caption="alt" >}}
 
 公式ブログへようこそ！
 
@@ -20,7 +22,9 @@ tags: ["introduction", "announcement"]
 2. **BabelFish Network**：検閲耐性のあるインフラストラクチャ上で数百万台のデバイスを接続するグローバルP2Pネットワーク
 3. **Drive**：ノードとサービスの統合管理を可能にするクライアントツール
 
-> 🌐 プロジェクトの詳細については、メイン Web サイトをご覧ください: [infinitedrive.xyz](https://infinitedrive.xyz)
+> 🌐 プロジェクトの詳細については、メイン Web サイトをご覧ください: [infinitedrive.xyz](https://infinitedrive.xyz)<br>
+> 📚 技術ドキュメントはこちら: [docs.infinitedrive.xyz](https://docs.infinitedrive.xyz)<br>
+> 📝 そして、このページを読んでいるあなたは、すでに私たちのブログにいます: [blog.infinitedrive.xyz](https://blog.infinitedrive.xyz)
 
 ## 私たちのコミットメント
 

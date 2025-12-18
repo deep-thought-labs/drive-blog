@@ -1,10 +1,13 @@
 ---
-title: "Fase de Testing: Estrategia y Preparación"
+title: "Estrategia de Testing"
 date: 2025-11-13T10:00:00Z
-tags: ["testing", "anuncio", "estrategia", "project-42"]
+draft: true
+tags: ["testing", "announcement"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'Fase de Testing - Project 42'
 ---
 
-# Fase de Testing: Estrategia y Preparación
+{{< figure src="cover" caption="alt" >}}
 
 Nos complace anunciar el inicio oficial de la **fase de testing** para Project 42. Esta fase es crucial para validar todas las funcionalidades, comandos y flujos esenciales de nuestra cadena de bloques **Infinite Improbability Drive** antes del lanzamiento oficial.
 

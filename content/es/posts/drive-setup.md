@@ -1,10 +1,13 @@
 ---
-title: "Fase de Testing: Preparación con Drive y Gestión de Keys"
+title: "Preparación con Drive"
 date: 2025-11-27T10:00:00Z
-tags: ["testing", "drive", "keys", "seguridad", "preparación"]
+draft: true
+tags: ["testing", "drive"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'Fase de Testing - Preparación con Drive'
 ---
 
-# Fase de Testing: Preparación con Drive y Gestión de Keys
+{{< figure src="cover" caption="alt" >}}
 
 Antes de comenzar con las rondas de testing, es fundamental preparar correctamente nuestro entorno y entender la importancia crítica de la gestión segura de keys (claves) y seed phrases (frases semilla).
 

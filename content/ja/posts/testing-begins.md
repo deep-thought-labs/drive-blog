@@ -1,10 +1,13 @@
 ---
-title: テストフェーズ：テストラウンド開始
+title: "テスト開始"
 date: 2025-11-06T10:00:00Z
-tags: ["testing", "announcement", "project-42", "infinite-improbability-drive"]
+draft: true
+tags: ["testing", "announcement", "infinite-improbability-drive"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'テストフェーズ - Infinite Improbability Drive'
 ---
 
-# テストフェーズ: テストラウンドの開始
+{{< figure src="cover" caption="alt" >}}
 
 私たちは開発の重要な段階、つまり**Project 42**とその主要コンポーネントである**Infinite Improbability Drive**ブロックチェーンの立ち上げに向けた**テスト段階**に入ったことをお知らせします。
 

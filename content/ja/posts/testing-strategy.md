@@ -1,10 +1,13 @@
 ---
-title: テストフェーズ：戦略と準備
+title: "テスト戦略"
 date: 2025-11-13T10:00:00Z
-tags: ["testing", "announcement", "strategy", "project-42"]
+draft: true
+tags: ["testing", "announcement"]
+cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
+alt: 'テストフェーズ - Project 42'
 ---
 
-# テストフェーズ: 戦略と準備
+{{< figure src="cover" caption="alt" >}}
 
 Project 42の**テストフェーズ**の正式な開始をお知らせいたします。このフェーズは、正式リリース前に**Infinite Improbability Drive**ブロックチェーンの重要な機能、コマンド、フローをすべて検証するために非常に重要です。
 

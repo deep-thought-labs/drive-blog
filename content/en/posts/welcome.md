@@ -1,10 +1,12 @@
 ---
-title: "Welcome and Introduction to the Project"
-date: 2025-10-30T10:00:00Z
-tags: ["introduction", "announcement"]
+title: "Welcome"
+date: 2025-12-18
+tags: ["announcement", "project-42"]
+cover: 'https://infinitedrive.xyz/_assets/v11/6d4f77f3b0e748b1f3ccf51223cb823b64ef4067.png'
+alt: 'Project 42 - Infinite Improbability Drive'
 ---
 
-# Welcome and Introduction to the Project
+{{< figure src="cover" caption="alt" >}}
 
 Welcome to our official blog!
 
@@ -20,7 +22,9 @@ Our project consists of three main components that work together:
 2. **BabelFish Network**: The global P2P network that connects millions of devices on a censorship-resistant infrastructure
 3. **Drive**: The client tools that enable unified management of nodes and services
 
-> 🌐 For more information about our project, visit our main website: [infinitedrive.xyz](https://infinitedrive.xyz)
+> 🌐 For more information about our project, visit our main website: [infinitedrive.xyz](https://infinitedrive.xyz)<br>
+> 📚 For technical documentation, visit: [docs.infinitedrive.xyz](https://docs.infinitedrive.xyz)<br>
+> 📝 And if you're reading this, you're already on our blog: [blog.infinitedrive.xyz](https://blog.infinitedrive.xyz)
 
 ## Our Commitment
 
