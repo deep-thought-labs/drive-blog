@@ -1,56 +1,120 @@
-# Infinite Improbability Drive - Blog
+# Infinite Improbability Drive — Blog
 
-Blog oficial de Infinite Improbability Drive donde compartimos actualizaciones, comunicados y el progreso de nuestros proyectos.
+Official blog for Infinite Improbability Drive, where we publish updates, announcements, and project progress.
 
-## Sitio Principal
+## Website
 
-- 🌐 **Sitio Web**: [infinitedrive.xyz](https://infinitedrive.xyz)
+- **Main site**: `https://infinitedrive.xyz`
+- **Blog (this repository)**: `https://blog.infinitedrive.xyz`
 
-## Desarrollo Local
+## Tech stack
 
-Este blog está construido con [Hugo](https://gohugo.io/) y utiliza el tema [hugo-brewm](https://github.com/foxihd/hugo-brewm).
+- **Static site generator**: [Hugo](https://gohugo.io/)
+- **Theme**: [hugo-brewm](https://github.com/foxihd/hugo-brewm) (tracked as a Git submodule under `themes/hugo-brewm`)
 
-### Requisitos
+## Requirements
 
-- Hugo (versión 0.135.0 o superior)
+- **Hugo**: v0.135.0 or later
+- **Git**: for cloning and managing the theme submodule
+- **Node.js (optional)**: only if you enable Pagefind indexing
 
-### Instalación y Ejecución
+## Clone (with submodules)
 
-```bash
-# Instalar dependencias del tema (si es necesario)
-cd themes/hugo-geekdoc
-npm install
-npm run build
-
-# Volver al directorio raíz y ejecutar el servidor de desarrollo
-cd ../..
-hugo server
-```
-
-El sitio estará disponible en `http://localhost:1313`
-
-### Construcción para Producción
+This repository uses a Git submodule for the theme. The easiest way to clone is:
 
 ```bash
-hugo
+git clone --recurse-submodules https://github.com/deep-thought-labs/drive-blog
+cd drive-blog
 ```
 
-Los archivos estáticos se generarán en el directorio `public/`.
-
-## Despliegue
-
-Este proyecto está configurado para desplegarse en Cloudflare Workers usando Wrangler.
+If you already cloned the repo without submodules:
 
 ```bash
-# Construir el sitio
-hugo
-
-# Desplegar
-wrangler deploy
+git submodule update --init --recursive
 ```
 
-## Estructura del Contenido
+## Local development
 
-- `content/posts/` - Artículos del blog
-- `content/_index.md` - Página de inicio
-- `hugo.toml` - Configuración de Hugo
+Run the Hugo development server:
+
+```bash
+hugo server --minify
+```
+
+The site will be available at `http://localhost:1313`.
+
+## Production build
+
+Generate the static site into `public/`:
+
+```bash
+hugo --minify
+```
+
+### (Optional) Pagefind search index
+
+If your configuration enables Pagefind search (see `params.search.pagefind` in `hugo.toml`), build the search index after generating `public/`:
+
+```bash
+npx pagefind --site "public"
+```
+
+### Cloudflare (Wrangler) build settings
+
+Cloudflare is used here to host the built site and (optionally) connect it to a **custom domain** with **automatic builds / deployments** when changes are pushed to this repository.
+
+This is **already configured for our official domain**. The details below are shared for **informational and educational** purposes.
+
+#### Base configuration
+
+These are the baseline settings we use:
+
+> **Important:** Make sure the Cloudflare project/Worker name matches the `name` field in `wrangler.json` (currently `drive-blog`), otherwise deployments may target the wrong project or fail.
+
+```text
+# Build configuration
+
+Build command:hugo --minify --gc
+Deploy command:npx wrangler deploy
+Version command:npx wrangler versions upload
+Root directory:/
+```
+
+Click to enlarge:
+
+[![Cloudflare build configuration screenshot](assets/images/cloudflare-configuration-300w.png)](assets/images/cloudflare-configuration.png)
+
+
+#### Optional: Pagefind support
+
+This project has Pagefind enabled (`params.search.pagefind = true`). To make the built-in search UI work, your build must also generate the `public/pagefind/` index (same config as above, but with an extended build command):
+
+```text
+# Build configuration (with Pagefind)
+
+Build command:hugo --minify --gc && npx --yes pagefind --site public
+Deploy command:npx wrangler deploy
+Version command:npx wrangler versions upload
+Root directory:/
+```
+
+## Updating the theme submodule
+
+To pull the latest changes from the theme repository:
+
+```bash
+git submodule update --remote --merge themes/hugo-brewm
+```
+
+Then commit the updated submodule pointer:
+
+```bash
+git add themes/hugo-brewm
+git commit -m "Update hugo-brewm theme"
+```
+
+## Content structure
+
+- **Posts**: `content/<lang>/posts/` (e.g. `content/en/posts/`)
+- **Home pages**: `content/<lang>/_index.md`
+- **Site config**: `hugo.toml`
