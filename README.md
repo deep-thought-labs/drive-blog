@@ -43,6 +43,40 @@ hugo server --minify
 
 The site will be available at `http://localhost:1313`.
 
+### Local development (with Pagefind search)
+
+`hugo server` does **not** generate the Pagefind index automatically. If you have Pagefind enabled (`params.search.pagefind = true` in `hugo.toml`), you have two options:
+
+#### Option A (recommended): build + index + serve `public/`
+
+This matches production most closely:
+
+```bash
+hugo --minify --gc && npx --yes pagefind --site public
+```
+
+Then serve the generated `public/` directory with any static file server, for example:
+
+```bash
+python3 -m http.server --directory public 1313
+```
+
+#### Option B: Hugo Server + separate terminal for Pagefind
+
+If you want to keep using `hugo server` locally, run Hugo in one terminal and regenerate the Pagefind index in another terminal.
+
+Terminal A (Hugo):
+
+```bash
+hugo server --minify --renderToDisk
+```
+
+Terminal B (Pagefind, rerun whenever content changes):
+
+```bash
+npx --yes pagefind --site public
+```
+
 ## Production build
 
 Generate the static site into `public/`:
