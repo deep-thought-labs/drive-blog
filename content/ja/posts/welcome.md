@@ -22,7 +22,9 @@ alt: 'Project 42 - Infinite Improbability Drive'
 2. **BabelFish Network**：検閲耐性のあるインフラストラクチャ上で数百万台のデバイスを接続するグローバルP2Pネットワーク
 3. **Drive**：ノードとサービスの統合管理を可能にするクライアントツール
 
-> 🌐 プロジェクトの詳細については、メイン Web サイトをご覧ください: [infinitedrive.xyz](https://infinitedrive.xyz)
+> 🌐 プロジェクトの詳細については、メイン Web サイトをご覧ください: [infinitedrive.xyz](https://infinitedrive.xyz)<br>
+> 📚 技術ドキュメントはこちら: [docs.infinitedrive.xyz](https://docs.infinitedrive.xyz)<br>
+> 📝 そして、このページを読んでいるあなたは、すでに私たちのブログにいます: [blog.infinitedrive.xyz](https://blog.infinitedrive.xyz)
 
 ## 私たちのコミットメント
 

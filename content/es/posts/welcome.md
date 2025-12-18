@@ -22,7 +22,9 @@ Nuestro proyecto se compone de tres componentes principales que trabajan en conj
 2. **BabelFish Network**: La red P2P global que conecta millones de dispositivos en una infraestructura resistente a censura
 3. **Drive**: Las herramientas cliente que permiten gestionar nodos y servicios de manera unificada
 
-> 🌐 Para más información sobre nuestro proyecto, visita nuestro sitio principal: [infinitedrive.xyz](https://infinitedrive.xyz)
+> 🌐 Para más información sobre nuestro proyecto, visita nuestro sitio principal: [infinitedrive.xyz](https://infinitedrive.xyz)<br>
+> 📚 Para la documentación técnica, visita: [docs.infinitedrive.xyz](https://docs.infinitedrive.xyz)<br>
+> 📝 Y si estás leyendo esto, ya estás en nuestro blog: [blog.infinitedrive.xyz](https://blog.infinitedrive.xyz)
 
 ## Nuestro Compromiso
 
