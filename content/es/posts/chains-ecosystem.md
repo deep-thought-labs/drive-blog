@@ -105,9 +105,9 @@ La elección de cadena depende de tu propósito:
 
 Para más información sobre cómo participar en cada cadena, consulta:
 
-- [Instalación de Drive](/es/posts/drive-installation/)
-- [Gestión de Keys y Seed Phrases](/es/posts/gestion-keys-seed-phrases/)
-- [priv_validator_key: Guía Completa](/es/posts/priv-validator-key-guia/)
+- Instalación de Drive (próximamente)
+- Gestión de Keys y Seed Phrases (próximamente)
+- priv_validator_key: Guía Completa (próximamente)
 - [Fase de Testing: Guía General](/es/posts/testing-phase-guide/)
 
 ---

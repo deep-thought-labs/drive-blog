@@ -97,7 +97,7 @@ Antes de comenzar con las rondas de testing, es fundamental preparar correctamen
 - Conceptos básicos de gestión de keys y seed phrases
 - Mejores prácticas de seguridad para validadores
 
-> 📖 **Siguiente paso**: Consulta nuestra guía completa: [Instalación de Drive](/es/posts/drive-installation/)
+> 📖 **Siguiente paso**: Consulta nuestra guía completa de Instalación de Drive (próximamente)
 
 ---
 
@@ -110,7 +110,7 @@ La gestión correcta de keys es **absolutamente crítica** para la seguridad de 
 - Cómo crear y gestionar keys de forma segura
 - Mejores prácticas para evitar pérdida de acceso
 
-> 📖 **Consulta**: [Gestión de Keys y Seed Phrases](/es/posts/key-management/)
+> 📖 **Consulta**: Gestión de Keys y Seed Phrases (próximamente)
 
 ---
 
@@ -124,7 +124,7 @@ El `priv_validator_key` es específico para validadores y requiere atención esp
 - Proceso de verificación recomendado antes de crear un validador
 - Advertencias críticas sobre su pérdida
 
-> 📖 **Consulta**: [priv_validator_key: Guía Completa](/es/posts/priv-validator-key-guide/)
+> 📖 **Consulta**: priv_validator_key: Guía Completa (próximamente)
 
 ---
 
@@ -146,7 +146,7 @@ La primera ronda de testing se enfoca en el proceso más crítico en el ciclo de
 - Cómo crear tu gentx (transacción genesis) paso a paso
 - Cómo participar en el lanzamiento de la cadena como validador
 
-> 📖 **Siguiente paso**: Consulta [Lanzamiento de Cadena - Cómo Participar](/es/posts/chain-launch/)
+> 📖 **Siguiente paso**: Consulta Lanzamiento de Cadena - Cómo Participar (próximamente)
 
 ---
 
@@ -192,10 +192,10 @@ Mantendremos a la comunidad informada sobre el progreso de estas pruebas a trav�
 
 **Para comenzar tu participación:**
 
-1. Lee y sigue la guía de [Instalación de Drive](/es/posts/drive-installation/)
-2. Asegúrate de haber completado la gestión segura de tus keys ([Gestión de Keys y Seed Phrases](/es/posts/key-management/))
-3. Verifica tu priv_validator_key ([priv_validator_key: Guía Completa](/es/posts/priv-validator-key-guide/))
-4. Prepárate para el primer lanzamiento consultando [Lanzamiento de Cadena - Cómo Participar](/es/posts/chain-launch/)
+1. Lee y sigue la guía de Instalación de Drive (próximamente)
+2. Asegúrate de haber completado la gestión segura de tus keys (Gestión de Keys y Seed Phrases - próximamente)
+3. Verifica tu priv_validator_key (priv_validator_key: Guía Completa - próximamente)
+4. Prepárate para el primer lanzamiento consultando Lanzamiento de Cadena - Cómo Participar (próximamente)
 5. Únete a nuestro canal de Telegram para coordinación en tiempo real de las rondas
 
 ## Agradecimientos
