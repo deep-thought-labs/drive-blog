@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{{- $lang := or site.Language.LanguageCode site.Language.Lang }}
+{{- $dir := or site.Language.LanguageDirection "ltr" }}
+<html lang="{{ $lang }}" dir="{{ $dir }}">
+<head>
+    {{ partial "head/meta.html" . }}
+    {{- $siteTitle := or site.Title site.Params.title | plainify }}
+    {{- $title := cond .IsHome $siteTitle (printf "%s | %s" .Title $siteTitle) | plainify  }}
+    <title>{{ $title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        .fullscreen-iframe-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            z-index: 9999;
+        }
+        .fullscreen-iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="fullscreen-iframe-container">
+        {{ .Content }}
+    </div>
+</body>
+</html>
+

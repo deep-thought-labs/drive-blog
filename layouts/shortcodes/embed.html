@@ -1,0 +1,24 @@
+{{- $url := .Get "url" | default (.Get 0) }}
+{{- $width := .Get "width" | default "100%" }}
+{{- $height := .Get "height" | default "600px" }}
+{{- $title := .Get "title" | default "Contenido incrustado" }}
+{{- $loading := .Get "loading" | default "lazy" }}
+{{- $sandbox := .Get "sandbox" }}
+{{- $allow := .Get "allow" | default "fullscreen" }}
+
+{{- if $url }}
+<div class="embed-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+    <iframe 
+        src="{{ $url }}" 
+        title="{{ $title }}"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        loading="{{ $loading }}"
+        {{- if $sandbox }}sandbox="{{ $sandbox }}"{{ end }}
+        {{- if $allow }}allow="{{ $allow }}"{{ end }}
+        allowfullscreen>
+    </iframe>
+</div>
+{{- else }}
+<p class="error">Error: Se requiere una URL para el shortcode embed. Uso: {{ "{{" }}&lt; embed url="https://ejemplo.com" &gt;{{ "}}" }}</p>
+{{- end }}
+

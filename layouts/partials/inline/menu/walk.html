@@ -16,6 +16,16 @@
     {{- end }}
     {{- /* hugo-brewm: Ensure URLs respect current language */}}
     {{- $menuURL := .URL }}
+    {{- /* If URL is empty but PageRef exists, try to resolve it */}}
+    {{- if and (not $menuURL) .PageRef }}
+        {{- $refPage := $page.GetPage .PageRef }}
+        {{- if $refPage }}
+            {{- $menuURL = $refPage.RelPermalink }}
+        {{- else }}
+            {{- /* Fallback: use PageRef as URL if page not found */}}
+            {{- $menuURL = .PageRef }}
+        {{- end }}
+    {{- end }}
     {{- if and $menuURL (not (urls.Parse $menuURL).IsAbs) }}
         {{- $currentLang := $page.Language.Lang }}
         {{- $langPrefix := printf "/%s" $currentLang }}

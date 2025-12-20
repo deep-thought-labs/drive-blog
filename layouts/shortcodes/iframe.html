@@ -1,0 +1,26 @@
+{{- $url := .Get "url" | default (.Get 0) }}
+{{- $width := .Get "width" | default "100%" }}
+{{- $height := .Get "height" | default "600px" }}
+{{- $title := .Get "title" | default "Contenido incrustado" }}
+{{- $loading := .Get "loading" | default "lazy" }}
+{{- $sandbox := .Get "sandbox" }}
+{{- $allow := .Get "allow" | default "fullscreen" }}
+{{- $class := .Get "class" }}
+
+{{- if $url }}
+<iframe 
+    src="{{ $url }}" 
+    title="{{ $title }}"
+    width="{{ $width }}"
+    height="{{ $height }}"
+    style="border: 0;{{ if $class }}{{ end }}"
+    class="{{ $class }}"
+    loading="{{ $loading }}"
+    {{- if $sandbox }}sandbox="{{ $sandbox }}"{{ end }}
+    {{- if $allow }}allow="{{ $allow }}"{{ end }}
+    allowfullscreen>
+</iframe>
+{{- else }}
+<p class="error">Error: Se requiere una URL para el shortcode iframe. Uso: {{ "{{" }}&lt; iframe url="https://ejemplo.com" &gt;{{ "}}" }}</p>
+{{- end }}
+

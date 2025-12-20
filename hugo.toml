@@ -293,6 +293,13 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     weight = 20
     pre = "book"
 
+[[menu.main]]
+    name = "Contenido Externo"
+    identifier = "contenido-externo"
+    pageRef = "contenido-externo"
+    weight = 30
+    pre = "link"
+
 ## Additional menu items (uncomment and configure as needed)
 # [[menu.main]]
 #     name = "Categories"
