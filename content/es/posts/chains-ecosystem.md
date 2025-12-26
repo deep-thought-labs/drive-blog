@@ -1,6 +1,6 @@
 ---
 title: "Cadenas del Ecosistema: Mainnet, Testnet y Creative"
-date: 2025-11-06T10:00:00Z
+date: 2025-12-20T10:00:00Z
 draft: false
 tags: ["guide", "chains", "ecosystem"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'

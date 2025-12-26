@@ -1,6 +1,6 @@
 ---
 title: "Validator Preparation"
-date: 2025-12-25T10:00:00Z
+date: 2025-12-25T11:00:00Z
 draft: false
 tags: ["validator", "keys", "security", "guide"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
