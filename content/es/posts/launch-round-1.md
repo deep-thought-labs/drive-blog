@@ -363,10 +363,10 @@ tar -czf gentx-mi-validador-round-1.tar.gz gentx-adba573456c82908c3221163185703c
 
 **Enviar por Telegram:**
 
-Envía el archivo comprimido directamente por Telegram a **RED** con el nombre de usuario **@teh_woman_in_red**.
+Envía el archivo comprimido directamente por Telegram a **Cypher Xenia** con el nombre de usuario **@XeniaCypher88**.
 
 1. Abre Telegram
-2. Busca el usuario **@teh_woman_in_red** (RED)
+2. Busca el usuario **@XeniaCypher88** (Cypher Xenia)
 3. Envía el archivo comprimido directamente
 
 **⚠️ Importante:**
