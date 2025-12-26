@@ -134,7 +134,7 @@ La primera ronda de testing se enfoca en el proceso más crítico en el ciclo de
 - Cómo crear tu gentx (transacción genesis) paso a paso
 - Cómo participar en el lanzamiento de la cadena como validador
 
-> 📖 **Siguiente paso**: Consulta Lanzamiento de Cadena - Cómo Participar (próximamente)
+> 📖 **Siguiente paso**: Consulta [Launch Round 1](/es/posts/launch-round-1/) para las instrucciones específicas de la primera ronda de pruebas
 
 ---
 
