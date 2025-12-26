@@ -134,7 +134,7 @@ The first testing round focuses on the most critical process in a chain's lifecy
 - How to create your gentx (genesis transaction) step by step
 - How to participate in the chain launch as a validator
 
-> 📖 **Next step**: Consult Chain Launch - How to Participate (coming soon)
+> 📖 **Next step**: See [Launch Round 1](/en/posts/launch-round-1/) for the specific instructions for the first testing round
 
 ---
 
@@ -182,7 +182,7 @@ We will keep the community informed about the progress of these tests through re
 
 1. Read and follow the [Drive Installation](/en/posts/drive-installation/) guide
 2. Make sure you have completed [Validator Preparation](/en/posts/validator-preparation/), including secure key management and verification of your priv_validator_key
-3. Prepare for the first launch by consulting Chain Launch - How to Participate (coming soon)
+3. **The first round is here!** See [Launch Round 1](/en/posts/launch-round-1/) for the specific instructions for the first testing round
 4. Join our Telegram channel for real-time coordination of rounds
 
 ## Acknowledgments

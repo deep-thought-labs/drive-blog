@@ -134,7 +134,7 @@ alt: 'テストフェーズ - Infinite Improbability Drive'
 - gentx（ジェネシストランザクション）をステップバイステップで作成する方法
 - バリデータとしてチェーンローンチに参加する方法
 
-> 📖 **次のステップ**：チェーンローンチ - 参加方法を参照（近日公開）
+> 📖 **次のステップ**：[Launch Round 1](/ja/posts/launch-round-1/)を参照して、最初のテストラウンドの具体的な手順を確認してください
 
 ---
 
@@ -182,7 +182,7 @@ alt: 'テストフェーズ - Infinite Improbability Drive'
 
 1. [Driveインストール](/ja/posts/drive-installation/)ガイドを読んで従う
 2. [バリデーターの準備](/ja/posts/validator-preparation/)を完了したことを確認する（安全なキー管理とpriv_validator_keyの検証を含む）
-3. チェーンローンチ - 参加方法を参照して最初のローンチに備える（近日公開）
+3. **最初のラウンドが始まりました！** [Launch Round 1](/ja/posts/launch-round-1/)を参照して、最初のテストラウンドの具体的な手順を確認してください
 4. ラウンドのリアルタイム調整のためにTelegramチャンネルに参加する
 
 ## 謝辞
