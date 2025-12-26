@@ -9,7 +9,11 @@ alt: 'Launch Round 1 - Creative Network'
 
 {{< figure src="cover" caption="alt" >}}
 
-Esta es la **primera ronda de pruebas** para el lanzamiento de la cadena **Infinite Improbability Drive**. En esta ronda, trabajaremos con la **network Creative** de nuestra cadena y te guiaremos paso a paso para crear tu gentx (genesis transaction) que será incluida en el genesis final de la cadena.
+Esta es la **primera ronda de pruebas** para el lanzamiento de la cadena **Infinite Improbability Drive**. Esta ronda inicia hoy, **25 de diciembre de 2025, jueves** — una Navidad en jueves, porque es Navidad y porque los jueves son días raros.
+
+En esta ronda, trabajaremos con la **network Creative** de nuestra cadena y te guiaremos paso a paso para crear tu gentx (genesis transaction) que será incluida en el genesis final de la cadena.
+
+> 📖 **Contexto de la Fase de Testing:** Esta ronda forma parte de la [Fase de Testing: Guía General](/es/posts/testing-phase-guide/) que fue anunciada el 20 de diciembre. Si aún no has leído la guía general, te recomendamos revisarla para entender el contexto completo de las rondas de testing.
 
 **Sobre las networks de Infinite Improbability Drive:**
 - **Creative**: Network utilizada para pruebas y desarrollo (esta primera ronda)
@@ -20,16 +24,16 @@ La network Creative será utilizada para nuestra primera ronda de prueba de lanz
 
 ## 📅 Periodo de Participación
 
-**Fecha de publicación:** 25 de diciembre de 2025  
-**Periodo de entrega:** Del 25 al 27 de diciembre de 2025 (2 días)
+**Fecha de publicación:** 25 de diciembre de 2025 (jueves)  
+**Periodo de entrega:** Del 25 al 28 de diciembre de 2025 (4 días)
 
-Durante estos dos días, los participantes tendrán la oportunidad de:
+Durante estos cuatro días, los participantes tendrán la oportunidad de:
 
 1. Descargar el genesis base proporcionado por el equipo
 2. Crear su gentx siguiendo las instrucciones específicas
 3. Entregar su archivo gentx al equipo de desarrollo
 
-**Después del 27 de diciembre**, el equipo de desarrollo compilará todas las gentxs recibidas en un genesis final que será redistribuido a todos los participantes para proceder con el lanzamiento de la cadena.
+**Después del 28 de diciembre**, el equipo de desarrollo compilará todas las gentxs recibidas en un genesis final que será redistribuido a todos los participantes para proceder con el lanzamiento de la cadena.
 
 ---
 
@@ -400,7 +404,7 @@ Verifica que:
 
 ## 🔄 Proceso Post-Entrega
 
-Una vez que el equipo de desarrollo reciba todas las gentxs (hasta el 27 de diciembre):
+Una vez que el equipo de desarrollo reciba todas las gentxs (hasta el 28 de diciembre):
 
 1. **Compilación del Genesis Final:**
    - El equipo compilará todas las gentxs recibidas en un genesis final
@@ -420,7 +424,7 @@ Una vez que el equipo de desarrollo reciba todas las gentxs (hasta el 27 de dici
 
 ### ¿Qué pasa si no entrego mi gentx a tiempo?
 
-Si no entregas tu gentx antes del 27 de diciembre, no podrás participar como validador en el lanzamiento inicial de Creative. Sin embargo, realizaremos esta misma ronda de iteración en otras cadenas de manera repetitiva, por lo que tendrás oportunidades futuras de participar.
+Si no entregas tu gentx antes del 28 de diciembre, no podrás participar como validador en el lanzamiento inicial de Creative. Sin embargo, realizaremos esta misma ronda de iteración en otras cadenas de manera repetitiva, por lo que tendrás oportunidades futuras de participar.
 
 ### ¿Puedo modificar mi gentx después de enviarla?
 
@@ -472,7 +476,7 @@ El equipo de desarrollo confirmará la recepción de tu gentx. Si no recibes con
 
 **¡Estamos emocionados de comenzar esta primera ronda de pruebas contigo!** Si tienes alguna pregunta o encuentras algún problema durante el proceso, no dudes en contactar al equipo de desarrollo.
 
-**Periodo de entrega:** 25 - 27 de diciembre de 2025  
+**Periodo de entrega:** 25 - 28 de diciembre de 2025  
 **Servicio:** Creative (node2-infinite-creative)  
 **Chain ID:** `infinite_421018002-1`
 

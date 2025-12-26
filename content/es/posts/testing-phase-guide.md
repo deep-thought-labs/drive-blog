@@ -182,7 +182,7 @@ Mantendremos a la comunidad informada sobre el progreso de estas pruebas a trav�
 
 1. Lee y sigue la guía de [Instalación de Drive](/es/posts/drive-installation/)
 2. Asegúrate de haber completado la [Preparación como Validador](/es/posts/validator-preparation/), incluyendo la gestión segura de tus keys y la verificación de tu priv_validator_key
-3. Prepárate para el primer lanzamiento consultando Lanzamiento de Cadena - Cómo Participar (próximamente)
+3. **¡La primera ronda ya está aquí!** Consulta [Launch Round 1](/es/posts/launch-round-1/) para las instrucciones específicas de la primera ronda de pruebas
 4. Únete a nuestro canal de Telegram para coordinación en tiempo real de las rondas
 
 ## Agradecimientos
