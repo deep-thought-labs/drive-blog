@@ -85,7 +85,7 @@ Una vez dentro del contenedor, el binario `infinited` estará disponible directa
 Descarga el genesis base para Creative ejecutando el siguiente comando dentro del contenedor:
 
 ```bash
-curl -o ~/.infinited/config/genesis.json https://raw.githubusercontent.com/deep-thought-labs/infinite/main/config/genesis/assets/creative-genesis-base.json
+curl -o ~/.infinited/config/genesis.json https://assets.infinitedrive.xyz/tests-round1/genesis-base.json
 ```
 
 **⚠️ Importante:**
