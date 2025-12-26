@@ -1,6 +1,6 @@
 ---
 title: "テストフェーズ：総合ガイド"
-date: 2025-11-06T10:00:00Z
+date: 2025-12-20T10:00:00Z
 draft: false
 tags: ["testing", "announcement", "infinite-improbability-drive"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
@@ -94,37 +94,25 @@ alt: 'テストフェーズ - Infinite Improbability Drive'
 **このフェーズで学ぶこと：**
 - Driveとは何か、なぜ必要か
 - Driveのインストールと設定方法
-- キーとシードフレーズ管理の基本概念
-- バリデータのセキュリティベストプラクティス
+- Driveが正しくインストールされていることを確認する方法
 
-> 📖 **次のステップ**：完全なDriveインストールガイドを参照（近日公開）
+> 📖 **次のステップ**：完全な[Driveインストール](/ja/posts/drive-installation/)ガイドを参照
 
 ---
 
-### フェーズ2：安全なキー管理
+### フェーズ2：バリデーターの準備
 
 適切なキー管理は、バリデータのセキュリティにとって**絶対に重要**です。この情報は、テストフェーズ中だけでなく、複数のコンテキストで適用可能な重要な情報です。
 
 **このフェーズで学ぶこと：**
 - シードフレーズの重要性と安全な保存方法
 - キーを安全に作成・管理する方法
+- `priv_validator_key`とは何か、その重要な目的
+- バリデータ作成前に`priv_validator_key`を検証する方法
 - アクセス損失を防ぐベストプラクティス
+- バリデーターの準備の完全なプロセス
 
-> 📖 **参照**：キーとシードフレーズ管理（近日公開）
-
----
-
-### フェーズ2.1：priv_validator_key
-
-`priv_validator_key`はバリデータに固有で、特別な注意が必要です。バリデータを作成する前に、その動作を理解することが重要です。
-
-**このフェーズで学ぶこと：**
-- `priv_validator_key`とは何か、その目的
-- `priv_validator_key`の検証方法
-- バリデータ作成前の推奨検証プロセス
-- 損失に関する重要な警告
-
-> 📖 **参照**：priv_validator_key：完全ガイド（近日公開）
+> 📖 **参照**：[バリデーターの準備](/ja/posts/validator-preparation/)
 
 ---
 
@@ -146,7 +134,7 @@ alt: 'テストフェーズ - Infinite Improbability Drive'
 - gentx（ジェネシストランザクション）をステップバイステップで作成する方法
 - バリデータとしてチェーンローンチに参加する方法
 
-> 📖 **次のステップ**：チェーンローンチ - 参加方法を参照（近日公開）
+> 📖 **次のステップ**：[Launch Round 1](/ja/posts/launch-round-1/)を参照して、最初のテストラウンドの具体的な手順を確認してください
 
 ---
 
@@ -192,11 +180,10 @@ alt: 'テストフェーズ - Infinite Improbability Drive'
 
 **参加を開始するには：**
 
-1. Driveインストールガイドを読んで従う（近日公開）
-2. 安全なキー管理を完了したことを確認する（キーとシードフレーズ管理 - 近日公開）
-3. priv_validator_keyを検証する（priv_validator_key：完全ガイド - 近日公開）
-4. チェーンローンチ - 参加方法を参照して最初のローンチに備える（近日公開）
-5. ラウンドのリアルタイム調整のためにTelegramチャンネルに参加する
+1. [Driveインストール](/ja/posts/drive-installation/)ガイドを読んで従う
+2. [バリデーターの準備](/ja/posts/validator-preparation/)を完了したことを確認する（安全なキー管理とpriv_validator_keyの検証を含む）
+3. **最初のラウンドが始まりました！** [Launch Round 1](/ja/posts/launch-round-1/)を参照して、最初のテストラウンドの具体的な手順を確認してください
+4. ラウンドのリアルタイム調整のためにTelegramチャンネルに参加する
 
 ## 謝辞
 
