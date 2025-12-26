@@ -1,6 +1,6 @@
 ---
 title: "Launch Round 1"
-date: 2025-12-25T10:00:00Z
+date: 2025-12-25T14:00:00Z
 draft: false
 tags: ["testing", "gentx", "creative", "chain-launch", "round-1"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
