@@ -1,6 +1,6 @@
 ---
 title: "Testing Phase: General Guide"
-date: 2025-11-06T10:00:00Z
+date: 2025-12-20T10:00:00Z
 draft: false
 tags: ["testing", "announcement", "infinite-improbability-drive"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
@@ -94,37 +94,25 @@ Before starting the testing rounds, it is essential to properly prepare our envi
 **In this phase you will learn:**
 - What Drive is and why you need it
 - How to install and configure Drive
-- Basic concepts of key and seed phrase management
-- Security best practices for validators
+- How to verify that Drive is correctly installed
 
-> 📖 **Next step**: Consult our complete Drive Installation guide (coming soon)
+> 📖 **Next step**: Consult our complete [Drive Installation](/en/posts/drive-installation/) guide
 
 ---
 
-### Phase 2: Secure Key Management
+### Phase 2: Validator Preparation
 
 Proper key management is **absolutely critical** for your validator's security. This information is essential and applicable in multiple contexts, not just during the testing phase.
 
 **In this phase you will learn:**
 - Importance of seed phrases and how to store them securely
 - How to create and manage keys securely
+- What `priv_validator_key` is and its critical purpose
+- How to verify your `priv_validator_key` before creating a validator
 - Best practices to avoid loss of access
+- Complete validator preparation process
 
-> 📖 **Consult**: Key and Seed Phrase Management (coming soon)
-
----
-
-### Phase 2.1: priv_validator_key
-
-The `priv_validator_key` is specific to validators and requires special attention. It is critical to understand its operation before creating a validator.
-
-**In this phase you will learn:**
-- What `priv_validator_key` is and its purpose
-- How to verify your `priv_validator_key`
-- Recommended verification process before creating a validator
-- Critical warnings about its loss
-
-> 📖 **Consult**: priv_validator_key: Complete Guide (coming soon)
+> 📖 **Consult**: [Validator Preparation](/en/posts/validator-preparation/)
 
 ---
 
@@ -192,11 +180,10 @@ We will keep the community informed about the progress of these tests through re
 
 **To begin your participation:**
 
-1. Read and follow the Drive Installation guide (coming soon)
-2. Make sure you have completed secure key management (Key and Seed Phrase Management - coming soon)
-3. Verify your priv_validator_key (priv_validator_key: Complete Guide - coming soon)
-4. Prepare for the first launch by consulting Chain Launch - How to Participate (coming soon)
-5. Join our Telegram channel for real-time coordination of rounds
+1. Read and follow the [Drive Installation](/en/posts/drive-installation/) guide
+2. Make sure you have completed [Validator Preparation](/en/posts/validator-preparation/), including secure key management and verification of your priv_validator_key
+3. Prepare for the first launch by consulting Chain Launch - How to Participate (coming soon)
+4. Join our Telegram channel for real-time coordination of rounds
 
 ## Acknowledgments
 

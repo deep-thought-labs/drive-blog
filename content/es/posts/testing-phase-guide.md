@@ -1,6 +1,6 @@
 ---
 title: "Fase de Testing: Guía General"
-date: 2025-11-06T10:00:00Z
+date: 2025-12-20T10:00:00Z
 draft: false
 tags: ["testing", "announcement", "infinite-improbability-drive"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
@@ -94,37 +94,25 @@ Antes de comenzar con las rondas de testing, es fundamental preparar correctamen
 **En esta fase aprenderás:**
 - Qué es Drive y por qué lo necesitas
 - Cómo instalar y configurar Drive
-- Conceptos básicos de gestión de keys y seed phrases
-- Mejores prácticas de seguridad para validadores
+- Cómo verificar que Drive está correctamente instalado
 
-> 📖 **Siguiente paso**: Consulta nuestra guía completa de Instalación de Drive (próximamente)
+> 📖 **Siguiente paso**: Consulta nuestra guía completa de [Instalación de Drive](/es/posts/drive-installation/)
 
 ---
 
-### Fase 2: Gestión Segura de Keys
+### Fase 2: Preparación como Validador
 
 La gestión correcta de keys es **absolutamente crítica** para la seguridad de tu validador. Esta información es esencial y aplicable en múltiples contextos, no solo durante la fase de testing.
 
 **En esta fase aprenderás:**
 - Importancia de las seed phrases y cómo almacenarlas de forma segura
 - Cómo crear y gestionar keys de forma segura
+- Qué es `priv_validator_key` y su propósito crítico
+- Cómo verificar tu `priv_validator_key` antes de crear un validador
 - Mejores prácticas para evitar pérdida de acceso
+- Proceso completo de preparación como validador
 
-> 📖 **Consulta**: Gestión de Keys y Seed Phrases (próximamente)
-
----
-
-### Fase 2.1: priv_validator_key
-
-El `priv_validator_key` es específico para validadores y requiere atención especial. Es crítico entender su funcionamiento antes de crear un validador.
-
-**En esta fase aprenderás:**
-- Qué es `priv_validator_key` y su propósito
-- Cómo verificar tu `priv_validator_key`
-- Proceso de verificación recomendado antes de crear un validador
-- Advertencias críticas sobre su pérdida
-
-> 📖 **Consulta**: priv_validator_key: Guía Completa (próximamente)
+> 📖 **Consulta**: [Preparación como Validador](/es/posts/validator-preparation/)
 
 ---
 
@@ -192,11 +180,10 @@ Mantendremos a la comunidad informada sobre el progreso de estas pruebas a trav�
 
 **Para comenzar tu participación:**
 
-1. Lee y sigue la guía de Instalación de Drive (próximamente)
-2. Asegúrate de haber completado la gestión segura de tus keys (Gestión de Keys y Seed Phrases - próximamente)
-3. Verifica tu priv_validator_key (priv_validator_key: Guía Completa - próximamente)
-4. Prepárate para el primer lanzamiento consultando Lanzamiento de Cadena - Cómo Participar (próximamente)
-5. Únete a nuestro canal de Telegram para coordinación en tiempo real de las rondas
+1. Lee y sigue la guía de [Instalación de Drive](/es/posts/drive-installation/)
+2. Asegúrate de haber completado la [Preparación como Validador](/es/posts/validator-preparation/), incluyendo la gestión segura de tus keys y la verificación de tu priv_validator_key
+3. Prepárate para el primer lanzamiento consultando Lanzamiento de Cadena - Cómo Participar (próximamente)
+4. Únete a nuestro canal de Telegram para coordinación en tiempo real de las rondas
 
 ## Agradecimientos
 
