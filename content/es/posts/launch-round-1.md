@@ -480,3 +480,93 @@ El equipo de desarrollo confirmará la recepción de tu gentx. Si no recibes con
 **Servicio:** Creative (node2-infinite-creative)  
 **Chain ID:** `infinite_421018002-1`
 
+---
+
+<div style="border: 2px solid currentColor; border-left: 6px solid currentColor; padding: 20px; margin: 30px 0; border-radius: 4px;">
+
+## 🔄 ACTUALIZACIÓN: Génesis Final y Lanzamiento Sincronizado
+
+> **📅 Esta es una actualización posterior al periodo de entrega de gentxs.**
+
+</div>
+
+---
+
+El tiempo límite de entrega de los archivos gentx ha finalizado y todos los archivos han sido recopilados exitosamente. El archivo Génesis final ya está listo para ser distribuido a todos los nuevos validadores participantes en esta fase.
+
+### Descarga del Génesis Final
+
+El equipo de desarrollo proporcionará un script para descargar y reemplazar el archivo Génesis final. Este script descargará el Génesis compilado con todas las gentxs recibidas y lo colocará en la ubicación correcta dentro del contenedor.
+
+> **📝 Nota:** El comando de descarga y la URL del archivo Génesis final están por definirse y serán actualizados en este documento cuando estén disponibles. **NO intentes usar el comando de ejemplo mostrado a continuación, ya que aún no está disponible.**
+
+**Para los participantes de esta fase:**
+
+1. **Acceder al contenedor de Creative:**
+   - Navega al directorio del servicio Creative y accede al bash del contenedor (como se hizo en el Paso 1):
+   ```bash
+   cd services/node2-infinite-creative
+   ./drive.sh exec infinite-creative bash
+   ```
+
+2. **Descargar el Génesis final:**
+   - Una vez dentro del contenedor, ejecuta el comando que será proporcionado por el equipo de desarrollo (ejemplo del formato esperado):
+   ```bash
+   curl -o ~/.infinited/config/genesis.json [URL_POR_DEFINIR]
+   ```
+   
+   **⚠️ Importante:**
+   - **Este comando es solo un ejemplo del formato.** La URL real será proporcionada cuando esté disponible
+   - **NO ejecutes este comando aún**, ya que la URL no está disponible
+   - Una vez que el comando esté disponible, descargará el Génesis final directamente a la ubicación correcta (`~/.infinited/config/genesis.json`)
+   - Reemplazará el genesis existente con el Génesis final compilado
+   - Asegúrate de estar dentro del contenedor antes de ejecutar el comando cuando esté disponible
+
+3. **Verificar el Génesis descargado:**
+   - Verifica que el Génesis se descargó correctamente y que el Chain ID es el correcto:
+   ```bash
+   cat ~/.infinited/config/genesis.json | jq -r '.chain_id'
+   ```
+   
+   **Chain ID esperado para Creative:** `infinite_421018002-1`
+
+4. **Validar el Génesis final:**
+   - Antes de continuar, valida que el Génesis final es correcto:
+   ```bash
+   infinited genesis validate-genesis --home ~/.infinited
+   ```
+   
+   Si la validación es exitosa, puedes proceder con confianza.
+
+5. **Preparación para el lanzamiento:**
+   - Una vez que tengas el Génesis final descargado y validado, estarás listo para iniciar tu nodo validador
+   - La cadena nacerá cuando todos los validadores inicien sus nodos de manera sincronizada
+
+### ⏰ Lanzamiento Sincronizado
+
+**⚠️ Importante:** El lanzamiento de la cadena debe realizarse de manera **sincronizada**. Todos los participantes deben iniciar sus nodos validadores al mismo tiempo para que la cadena nazca correctamente.
+
+> **📝 Nota:** Las horas específicas del cronograma están por definirse y serán actualizadas en este documento cuando estén confirmadas.
+
+**Cronograma del lanzamiento:**
+
+1. **Hora de disponibilidad del script:**
+   - **Hora:** [Por definirse] UTC
+   - **En ese momento** es cuando todos los participantes podrán proceder a ejecutar el script para descargar y reemplazar el archivo Génesis final
+   - Asegúrate de tener acceso al contenedor y estar preparado para ejecutar el comando en ese momento
+
+2. **Hora de inicio de nodos:**
+   - **Hora:** [Por definirse] UTC (cinco minutos después de la hora de disponibilidad del script)
+   - Este será el momento en el que **todos los participantes deben iniciar sus nodos validadores simultáneamente**
+   - Esta sincronización es crítica para el nacimiento exitoso de la cadena
+
+**Ejemplo del cronograma (horas por confirmar):**
+- Si el script está disponible a las **[HH:MM] UTC**, en ese momento todos los participantes podrán proceder a ejecutar el script para descargar el archivo Génesis final
+- A las **[HH:MM] UTC** (cinco minutos después), todos los participantes deben iniciar sus nodos validadores al mismo tiempo
+
+> **📢 Nota:** Las horas exactas serán actualizadas en este documento y comunicadas por el equipo de desarrollo a través de los canales oficiales de comunicación. Asegúrate de estar atento a estos anuncios y preparado para el lanzamiento sincronizado.
+
+---
+
+**¡Estamos a punto de dar vida a la cadena Creative!** Asegúrate de tener todo preparado y estar listo para el lanzamiento sincronizado.
+

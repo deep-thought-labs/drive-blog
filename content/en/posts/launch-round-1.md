@@ -480,3 +480,93 @@ The development team will confirm receipt of your gentx. If you don't receive co
 **Service:** Creative (node2-infinite-creative)  
 **Chain ID:** `infinite_421018002-1`
 
+---
+
+<div style="border: 2px solid currentColor; border-left: 6px solid currentColor; padding: 20px; margin: 30px 0; border-radius: 4px;">
+
+## 🔄 UPDATE: Final Genesis and Synchronized Launch
+
+> **📅 This is an update after the gentx delivery period.**
+
+</div>
+
+---
+
+The deadline for gentx file delivery has ended and all files have been successfully collected. The final Genesis file is now ready to be distributed to all new validators participating in this phase.
+
+### Download the Final Genesis
+
+The development team will provide a script to download and replace the final Genesis file. This script will download the Genesis compiled with all received gentxs and place it in the correct location within the container.
+
+> **📝 Note:** The download command and the URL of the final Genesis file are yet to be defined and will be updated in this document when available. **DO NOT attempt to use the example command shown below, as it is not yet available.**
+
+**For participants in this phase:**
+
+1. **Access the Creative container:**
+   - Navigate to the Creative service directory and access the container's bash (as done in Step 1):
+   ```bash
+   cd services/node2-infinite-creative
+   ./drive.sh exec infinite-creative bash
+   ```
+
+2. **Download the final Genesis:**
+   - Once inside the container, execute the command that will be provided by the development team (example of expected format):
+   ```bash
+   curl -o ~/.infinited/config/genesis.json [URL_TO_BE_DEFINED]
+   ```
+   
+   **⚠️ Important:**
+   - **This command is only an example of the format.** The actual URL will be provided when available
+   - **DO NOT execute this command yet**, as the URL is not available
+   - Once the command is available, it will download the final Genesis directly to the correct location (`~/.infinited/config/genesis.json`)
+   - It will replace the existing genesis with the compiled final Genesis
+   - Make sure you are inside the container before executing the command when it's available
+
+3. **Verify the downloaded Genesis:**
+   - Verify that the Genesis downloaded correctly and that the Chain ID is correct:
+   ```bash
+   cat ~/.infinited/config/genesis.json | jq -r '.chain_id'
+   ```
+   
+   **Expected Chain ID for Creative:** `infinite_421018002-1`
+
+4. **Validate the final Genesis:**
+   - Before continuing, validate that the final Genesis is correct:
+   ```bash
+   infinited genesis validate-genesis --home ~/.infinited
+   ```
+   
+   If validation is successful, you can proceed with confidence.
+
+5. **Preparation for launch:**
+   - Once you have the final Genesis downloaded and validated, you will be ready to start your validator node
+   - The chain will be born when all validators start their nodes in a synchronized manner
+
+### ⏰ Synchronized Launch
+
+**⚠️ Important:** The chain launch must be performed in a **synchronized** manner. All participants must start their validator nodes at the same time for the chain to be born correctly.
+
+> **📝 Note:** The specific times in the schedule are yet to be defined and will be updated in this document when confirmed.
+
+**Launch schedule:**
+
+1. **Script availability time:**
+   - **Time:** [To be defined] UTC
+   - **At that moment** is when all participants will be able to proceed to execute the script to download and replace the final Genesis file
+   - Make sure you have access to the container and are prepared to execute the command at that time
+
+2. **Node start time:**
+   - **Time:** [To be defined] UTC (five minutes after the script availability time)
+   - This will be the moment when **all participants must start their validator nodes simultaneously**
+   - This synchronization is critical for the successful birth of the chain
+
+**Schedule example (times to be confirmed):**
+- If the script is available at **[HH:MM] UTC**, at that moment all participants will be able to proceed to execute the script to download the final Genesis file
+- At **[HH:MM] UTC** (five minutes later), all participants must start their validator nodes at the same time
+
+> **📢 Note:** The exact times will be updated in this document and communicated by the development team through official communication channels. Make sure to stay alert to these announcements and be prepared for the synchronized launch.
+
+---
+
+**We're about to bring the Creative chain to life!** Make sure you have everything prepared and are ready for the synchronized launch.
+
