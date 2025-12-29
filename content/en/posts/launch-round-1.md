@@ -1,10 +1,10 @@
 ---
-title: "Launch Round 1"
+title: "Launch Round 1 - First Flow"
 date: 2025-12-25T14:00:00Z
 draft: false
 tags: ["testing", "gentx", "creative", "chain-launch", "round-1"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
-alt: 'Launch Round 1 - Creative Network'
+alt: 'Launch Round 1 - First Flow'
 ---
 
 {{< figure src="cover" caption="alt" >}}
@@ -220,6 +220,7 @@ Generate your gentx with the specific parameters for Creative:
 ```bash
 infinited genesis gentx <your-key-name> 10000000000000000000cdrop \
   --chain-id infinite_421018002-1 \
+  --moniker "<your-moniker>" \
   --commission-rate "0.01" \
   --commission-max-rate "0.05" \
   --commission-max-change-rate "0.01" \
@@ -228,10 +229,13 @@ infinited genesis gentx <your-key-name> 10000000000000000000cdrop \
   --home ~/.infinited
 ```
 
-**⚠️ Important:** Replace `<your-key-name>` with the exact name of your key that you verified in Step 3.
+**⚠️ Important:** 
+- Replace `<your-key-name>` with the exact name of your key that you verified in Step 3
+- Replace `<your-moniker>` with the name you want to use for your validator (for example: `"My Validator"` or `"validator-01"`). This will be the public name that identifies your validator on the network
 
 **Specific parameters for this round:**
 - **Chain ID:** `infinite_421018002-1` (Creative)
+- **Moniker:** Public name of your validator (must be unique and descriptive)
 - **Self-delegation:** `10000000000000000000cdrop` (10 tokens)
 - **Initial commission rate:** `0.01` (1%)
 - **Maximum commission rate:** `0.05` (5%)
@@ -570,3 +574,16 @@ The development team will provide a script to download and replace the final Gen
 
 **We're about to bring the Creative chain to life!** Make sure you have everything prepared and are ready for the synchronized launch.
 
+---
+
+<div style="border: 2px solid currentColor; border-left: 6px solid currentColor; padding: 15px; margin: 30px 0; border-radius: 4px;">
+
+## 📢 Update: Error Detected and Correction
+
+> **📅 Update:** During the process of this round, a fundamental error was identified in the initial flow that requires correction.
+
+An error has been detected in the process flow and a separate document has been created with correction and continuation instructions.
+
+**👉 [View correction and continuation instructions →](/en/posts/launch-round-1-correction/)**
+
+</div>

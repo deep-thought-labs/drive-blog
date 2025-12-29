@@ -1,10 +1,10 @@
 ---
-title: "Launch Round 1"
+title: "Launch Round 1 - 最初のフロー"
 date: 2025-12-25T14:00:00Z
 draft: false
 tags: ["testing", "gentx", "creative", "chain-launch", "round-1"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
-alt: 'Launch Round 1 - Creative Network'
+alt: 'Launch Round 1 - 最初のフロー'
 ---
 
 {{< figure src="cover" caption="alt" >}}
@@ -220,6 +220,7 @@ Creative向けの特定パラメータでgentxを生成します：
 ```bash
 infinited genesis gentx <your-key-name> 10000000000000000000cdrop \
   --chain-id infinite_421018002-1 \
+  --moniker "<your-moniker>" \
   --commission-rate "0.01" \
   --commission-max-rate "0.05" \
   --commission-max-change-rate "0.01" \
@@ -228,10 +229,13 @@ infinited genesis gentx <your-key-name> 10000000000000000000cdrop \
   --home ~/.infinited
 ```
 
-**⚠️ 重要:** `<your-key-name>`を、ステップ3で確認したキーの正確な名前に置き換えてください。
+**⚠️ 重要:** 
+- `<your-key-name>`を、ステップ3で確認したキーの正確な名前に置き換えてください
+- `<your-moniker>`を、バリデーターに使用したい名前に置き換えてください（例：`"My Validator"`または`"validator-01"`）。これは、ネットワーク上でバリデーターを識別する公開名になります
 
 **このラウンド向けの特定パラメータ:**
 - **チェーンID:** `infinite_421018002-1`（Creative）
+- **モニカー:** バリデーターの公開名（一意で説明的である必要があります）
 - **自己委任:** `10000000000000000000cdrop`（10トークン）
 - **初期手数料率:** `0.01`（1%）
 - **最大手数料率:** `0.05`（5%）
@@ -570,3 +574,16 @@ gentxファイルの提出期限が終了し、すべてのファイルが正常
 
 **Creativeチェーンに命を吹き込む準備が整いました！** すべての準備が整い、同期ローンチの準備ができていることを確認してください。
 
+---
+
+<div style="border: 2px solid currentColor; border-left: 6px solid currentColor; padding: 15px; margin: 30px 0; border-radius: 4px;">
+
+## 📢 更新: エラー検出と修正
+
+> **📅 更新:** このラウンドのプロセス中、初期フローに根本的なエラーが検出され、修正が必要です。
+
+プロセスフローでエラーが検出され、修正と継続の手順を含む別のドキュメントが作成されました。
+
+**👉 [修正と継続の手順を表示 →](/ja/posts/launch-round-1-correction/)**
+
+</div>
