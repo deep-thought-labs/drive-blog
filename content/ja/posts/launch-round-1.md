@@ -220,7 +220,6 @@ Creative向けの特定パラメータでgentxを生成します：
 ```bash
 infinited genesis gentx <your-key-name> 10000000000000000000cdrop \
   --chain-id infinite_421018002-1 \
-  --moniker "<your-moniker>" \
   --commission-rate "0.01" \
   --commission-max-rate "0.05" \
   --commission-max-change-rate "0.01" \
@@ -229,13 +228,10 @@ infinited genesis gentx <your-key-name> 10000000000000000000cdrop \
   --home ~/.infinited
 ```
 
-**⚠️ 重要:** 
-- `<your-key-name>`を、ステップ3で確認したキーの正確な名前に置き換えてください
-- `<your-moniker>`を、バリデーターに使用したい名前に置き換えてください（例：`"My Validator"`または`"validator-01"`）。これは、ネットワーク上でバリデーターを識別する公開名になります
+**⚠️ 重要:** `<your-key-name>`を、ステップ3で確認したキーの正確な名前に置き換えてください。
 
 **このラウンド向けの特定パラメータ:**
 - **チェーンID:** `infinite_421018002-1`（Creative）
-- **モニカー:** バリデーターの公開名（一意で説明的である必要があります）
 - **自己委任:** `10000000000000000000cdrop`（10トークン）
 - **初期手数料率:** `0.01`（1%）
 - **最大手数料率:** `0.05`（5%）

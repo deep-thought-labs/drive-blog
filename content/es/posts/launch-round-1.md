@@ -222,7 +222,6 @@ Genera tu gentx con los parámetros específicos para Creative:
 ```bash
 infinited genesis gentx <nombre-de-tu-llave> 10000000000000000000cdrop \
   --chain-id infinite_421018002-1 \
-  --moniker "<tu-moniker>" \
   --commission-rate "0.01" \
   --commission-max-rate "0.05" \
   --commission-max-change-rate "0.01" \
@@ -231,13 +230,10 @@ infinited genesis gentx <nombre-de-tu-llave> 10000000000000000000cdrop \
   --home ~/.infinited
 ```
 
-**⚠️ Importante:** 
-- Reemplaza `<nombre-de-tu-llave>` con el nombre exacto de tu llave que verificaste en el Paso 3
-- Reemplaza `<tu-moniker>` con el nombre que deseas usar para tu validador (por ejemplo: `"Mi Validador"` o `"validator-01"`). Este será el nombre público que identificará a tu validador en la red
+**⚠️ Importante:** Reemplaza `<nombre-de-tu-llave>` con el nombre exacto de tu llave que verificaste en el Paso 3.
 
 **Parámetros específicos para esta ronda:**
 - **Chain ID:** `infinite_421018002-1` (Creative)
-- **Moniker:** Nombre público de tu validador (debe ser único y descriptivo)
 - **Autodelegación:** `10000000000000000000cdrop` (10 tokens)
 - **Tasa de comisión inicial:** `0.01` (1%)
 - **Tasa de comisión máxima:** `0.05` (5%)

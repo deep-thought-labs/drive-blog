@@ -120,7 +120,6 @@ You only need to generate your gentx directly:
 ```bash
 infinited genesis gentx <your-key-name> 10000000000000000000cdrop \
   --chain-id infinite_421018002-1 \
-  --moniker "<your-moniker>" \
   --commission-rate "0.01" \
   --commission-max-rate "0.05" \
   --commission-max-change-rate "0.01" \
@@ -129,14 +128,10 @@ infinited genesis gentx <your-key-name> 10000000000000000000cdrop \
   --home ~/.infinited
 ```
 
-**⚠️ Important:** 
-- Replace `<your-key-name>` with the exact name of your key that you verified earlier
-- Replace `<your-moniker>` with the name you want to use for your validator (for example: `"My Validator"` or `"validator-01"`). This will be the public name that identifies your validator on the network
-- We suggest editing or making the corresponding edit in a plain text file to then simply copy and paste the command into your terminal for an easier process
+**⚠️ Important:** Replace `<your-key-name>` with the exact name of your key that you verified earlier. We suggest editing or making the corresponding edit in a plain text file to then simply copy and paste the command into your terminal for an easier process.
 
 **Specific parameters for Creative:**
 - **Chain ID:** `infinite_421018002-1` (Creative)
-- **Moniker:** Public name of your validator (must be unique and descriptive)
 - **Self-delegation:** `10000000000000000000cdrop` (10 tokens)
 - **Initial commission rate:** `0.01` (1%)
 - **Maximum commission rate:** `0.05` (5%)
