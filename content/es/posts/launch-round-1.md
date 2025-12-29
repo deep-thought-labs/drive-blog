@@ -1,10 +1,10 @@
 ---
-title: "Launch Round 1"
+title: "Launch Round 1 - Primer Flujo"
 date: 2025-12-25T14:00:00Z
 draft: false
 tags: ["testing", "gentx", "creative", "chain-launch", "round-1"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
-alt: 'Launch Round 1 - Creative Network'
+alt: 'Launch Round 1 - Primer Flujo'
 ---
 
 {{< figure src="cover" caption="alt" >}}
@@ -21,6 +21,8 @@ En esta ronda, trabajaremos con la **network Creative** de nuestra cadena y te g
 - **Mainnet**: Network principal de producción
 
 La network Creative será utilizada para nuestra primera ronda de prueba de lanzamiento. Si no puedes participar en esta ronda, no te preocupes: realizaremos esta misma ronda de iteración en otras cadenas de manera repetitiva para garantizar que siempre tengamos resultados estables y que todos tengan oportunidades de participar.
+
+---
 
 ## 📅 Periodo de Participación
 
@@ -291,7 +293,7 @@ El archivo gentx está almacenado en el volumen persistente de Docker, por lo qu
 
 2. **Localiza tu archivo gentx:**
    ```bash
-   ls -la persistent-data/.infinited/config/gentx/
+   ls -la persistent-data/config/gentx/
    ```
 
 3. **Copia el archivo gentx manteniendo su nombre original:**
@@ -303,20 +305,20 @@ El archivo gentx está almacenado en el volumen persistente de Docker, por lo qu
    mkdir -p ~/gentx-round-1
    
    # Copiar manteniendo el nombre original (reemplaza <hash> con el hash real de tu archivo)
-   cp persistent-data/.infinited/config/gentx/gentx-<hash>.json ~/gentx-round-1/
+   cp persistent-data/config/gentx/gentx-<hash>.json ~/gentx-round-1/
    ```
    
    **Ejemplo:** Si tu archivo se llama `gentx-adba573456c82908c3221163185703c421a2dd1f.json`:
    ```bash
    mkdir -p ~/gentx-round-1
-   cp persistent-data/.infinited/config/gentx/gentx-adba573456c82908c3221163185703c421a2dd1f.json ~/gentx-round-1/
+   cp persistent-data/config/gentx/gentx-adba573456c82908c3221163185703c421a2dd1f.json ~/gentx-round-1/
    ```
 
 **Si estás en un servidor remoto**, puedes usar `scp` para descargarlo a tu computadora local manteniendo el nombre original:
 
 ```bash
 # Desde tu computadora local (reemplaza <hash> con el hash real de tu archivo)
-scp usuario@servidor:/ruta/a/drive/services/node2-infinite-creative/persistent-data/.infinited/config/gentx/gentx-<hash>.json ~/
+scp usuario@servidor:/ruta/a/drive/services/node2-infinite-creative/persistent-data/config/gentx/gentx-<hash>.json ~/
 ```
 
 **Explicación del comando `scp`:**
@@ -330,7 +332,7 @@ scp usuario@servidor:/ruta/a/drive/services/node2-infinite-creative/persistent-d
 **Ejemplo completo:** Si tu usuario es `ubuntu`, tu servidor tiene la IP `192.168.1.100`, y tu archivo se llama `gentx-adba573456c82908c3221163185703c421a2dd1f.json`:
 ```bash
 mkdir -p ~/gentx-round-1
-scp ubuntu@192.168.1.100:/home/ubuntu/drive/services/node2-infinite-creative/persistent-data/.infinited/config/gentx/gentx-adba573456c82908c3221163185703c421a2dd1f.json ~/gentx-round-1/
+scp ubuntu@192.168.1.100:/home/ubuntu/drive/services/node2-infinite-creative/persistent-data/config/gentx/gentx-adba573456c82908c3221163185703c421a2dd1f.json ~/gentx-round-1/
 ```
 
 ---
@@ -392,7 +394,7 @@ O desde el host:
 
 ```bash
 # Reemplaza <hash> con el hash de tu archivo
-cat services/node2-infinite-creative/persistent-data/.infinited/config/gentx/gentx-<hash>.json | jq .
+cat services/node2-infinite-creative/persistent-data/config/gentx/gentx-<hash>.json | jq .
 ```
 
 Verifica que:
@@ -568,5 +570,15 @@ El equipo de desarrollo proporcionará un script para descargar y reemplazar el 
 
 ---
 
-**¡Estamos a punto de dar vida a la cadena Creative!** Asegúrate de tener todo preparado y estar listo para el lanzamiento sincronizado.
+<div style="border: 2px solid currentColor; border-left: 6px solid currentColor; padding: 15px; margin: 30px 0; border-radius: 4px;">
+
+## 📢 Actualización: Error Detectado y Corrección
+
+> **📅 Actualización:** Durante el proceso de esta ronda, se identificó un error fundamental en el flujo inicial que requiere corrección.
+
+Se ha detectado un error en el flujo del proceso y se ha creado un documento separado con las instrucciones de corrección y continuación.
+
+**👉 [Ver instrucciones de corrección y continuación →](/es/posts/launch-round-1-correction/)**
+
+</div>
 
