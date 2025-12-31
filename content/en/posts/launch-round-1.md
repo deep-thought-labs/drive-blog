@@ -583,3 +583,15 @@ An error has been detected in the process flow and a separate document has been 
 **👉 [View correction and continuation instructions →](/en/posts/launch-round-1-correction/)**
 
 </div>
+
+---
+
+## 🔗 Related Documents - Round 1
+
+This section contains all documents related to Round 1, in chronological order:
+
+- **[Testing Phase Guide](/en/posts/testing-phase-guide/)** - General testing phase guide (starting point)
+- **[Launch Round 1 - Correction](/en/posts/launch-round-1-correction/)** - Correction process and submission of the edited Genesis
+- **[Launch Round 1 - Preparation for Launch Day](/en/posts/launch-round-1-preparation/)** - Essential preparation steps for the launch
+
+---

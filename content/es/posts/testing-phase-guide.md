@@ -202,3 +202,13 @@ Agradecemos a todos los miembros de nuestra comunidad por su paciencia y apoyo d
 Este post se actualizará periódicamente conforme avance el proceso de testing, agregando referencias a nuevos posts, resultados de rondas y cualquier información esencial que surja durante el proceso. Te recomendamos revisarlo periódicamente para estar al día con la información más reciente.
 
 ---
+
+## 🔗 Documentos Relacionados - Round 1
+
+Esta sección contiene todos los documentos relacionados con Round 1 del proceso de testing, en orden cronológico:
+
+- **[Launch Round 1](/es/posts/launch-round-1/)** - Documento original de la Ronda 1 con el flujo inicial
+- **[Launch Round 1 - Corrección](/es/posts/launch-round-1-correction/)** - Proceso de corrección y envío del Génesis editado
+- **[Launch Round 1 - Preparación para el Día de Lanzamiento](/es/posts/launch-round-1-preparation/)** - Pasos esenciales de preparación para el lanzamiento
+
+---

@@ -128,9 +128,9 @@ Busca la sección `[rpc]` y configura `laddr` para usar `0.0.0.0` como direcció
 
 **Edita el valor para que quede así:**
 ```toml
-###################################
-###     RPC Server Configuration Options    ###
-###################################
+##########################################
+###  RPC Server Configuration Options  ###
+##########################################
 [rpc]
 
 # TCP or UNIX socket address for the RPC server to listen on
@@ -145,9 +145,9 @@ Esto evita un problema sobre desconexiones en cadenas pequeñas (como nuestro ca
 
 **Configura el valor así:**
 ```toml
-############################
-###    P2P Configuration Options      ###
-##############################
+###################################
+###  P2P Configuration Options  ###
+###################################
 [p2p]
 ...
 pex = false
@@ -241,9 +241,9 @@ TU-SUBDOMINIO.infinitedrive.xyz:26676
 
 **Ejemplo de cómo debería verse en tu docker-compose.yml:**
 ```yaml
-###########################
-#      Network P2P Configuration       #
-###########################
+###############################
+#  Network P2P Configuration  #
+###############################
 
 NODE_P2P_EXTERNAL_ADDRESS: "server-red.infinitedrive.xyz:26676"
 # NODE_P2P_SEEDS: ""
@@ -272,9 +272,9 @@ Ambas variables (`NODE_P2P_SEEDS` y `NODE_PERSISTENT_PEERS`) se encuentran en la
 
 **Ejemplo de cómo debería verse en tu docker-compose.yml:**
 ```yaml
-###########################
-#      Network P2P Configuration       #
-###########################
+###############################
+#  Network P2P Configuration  #
+###############################
 
 NODE_P2P_EXTERNAL_ADDRESS: "server-red.infinitedrive.xyz:26676"
 NODE_P2P_SEEDS: "dd5689375610aaa35b69ed311d69e51ea5557474@server-red.infinitedrive.xyz:26676,e5c1b7423d098c660bb82b7f44f86e333cb6af9e@server-farmer.infinitedrive.xyz:26676,..."
@@ -573,14 +573,22 @@ Sí, técnicamente es posible usar una dirección IP directamente. Sin embargo, 
 
 ---
 
-## 📚 Referencias
+## 📚 Referencias Técnicas
 
-- [Ronda 1 Original](/es/posts/launch-round-1/) - Documento original de la Ronda 1
-- [Corrección de la Ronda 1](/es/posts/launch-round-1-correction/) - Proceso de corrección y envío del Génesis editado
 - [Guía Completa: Crear Gentx](https://docs.infinitedrive.xyz/es/blockchain/genesis/create-gentx/) - Documentación técnica completa
 - [Configuración del Firewall](https://docs.infinitedrive.xyz/es/drive/services/ports/firewall-configuration/) - Guía general de firewall
 - [Infinite Creative Network - Documentación del Servicio](https://docs.infinitedrive.xyz/es/drive/services/catalog/node2-infinite-creative/) - Documentación completa del servicio
 - [Network P2P Configuration](https://docs.infinitedrive.xyz/en/drive/services/catalog/node2-infinite-creative/#network-p2p-configuration) - Valores de seed nodes y persistent peers (documentación oficial)
+
+---
+
+## 🔗 Documentos Relacionados - Round 1
+
+Esta sección contiene todos los documentos relacionados con Round 1, en orden cronológico:
+
+- **[Guía de Fase de Testing](/es/posts/testing-phase-guide/)** - Guía general de la fase de testing (punto de inicio)
+- **[Launch Round 1](/es/posts/launch-round-1/)** - Documento original de la Ronda 1 con el flujo inicial
+- **[Launch Round 1 - Corrección](/es/posts/launch-round-1-correction/)** - Proceso de corrección y envío del Génesis editado
 
 ---
 

@@ -583,3 +583,15 @@ gentxファイルの提出期限が終了し、すべてのファイルが正常
 **👉 [修正と継続の手順を表示 →](/ja/posts/launch-round-1-correction/)**
 
 </div>
+
+---
+
+## 🔗 関連ドキュメント - ラウンド1
+
+このセクションには、ラウンド1に関連するすべてのドキュメントが時系列順に含まれています：
+
+- **[テストフェーズガイド](/ja/posts/testing-phase-guide/)** - テストフェーズの一般的なガイド（開始点）
+- **[Launch Round 1 - 修正](/ja/posts/launch-round-1-correction/)** - 修正プロセスと編集されたGenesisの送信
+- **[Launch Round 1 - ローンチ日の準備](/ja/posts/launch-round-1-preparation/)** - ローンチのための基本的な準備手順
+
+---

@@ -272,11 +272,19 @@ Una vez que el equipo recibió y procesó todos los archivos Génesis individual
 
 ---
 
-## 📚 Referencias
+## 📚 Referencias Técnicas
 
-- [Ronda 1 Original](/es/posts/launch-round-1/) - Documento original de la Ronda 1
-- [Preparación para el Día de Lanzamiento](/es/posts/launch-round-1-preparation/) - Pasos esenciales de preparación para el lanzamiento
 - [Guía Completa: Crear Gentx](https://docs.infinitedrive.xyz/es/blockchain/genesis/create-gentx/) - Documentación técnica completa
+
+---
+
+## 🔗 Documentos Relacionados - Round 1
+
+Esta sección contiene todos los documentos relacionados con Round 1, en orden cronológico:
+
+- **[Guía de Fase de Testing](/es/posts/testing-phase-guide/)** - Guía general de la fase de testing (punto de inicio)
+- **[Launch Round 1](/es/posts/launch-round-1/)** - Documento original de la Ronda 1 con el flujo inicial
+- **[Launch Round 1 - Preparación para el Día de Lanzamiento](/es/posts/launch-round-1-preparation/)** - Pasos esenciales de preparación para el lanzamiento
 
 ---
 

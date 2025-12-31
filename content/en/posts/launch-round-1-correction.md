@@ -265,16 +265,26 @@ Once the team received and processed all individual Genesis files:
 
 **✅ Verification result:** The gentx that participants already generated previously are exactly the same as if they had generated them again with the base Genesis v2. Therefore, **it is not necessary for participants to generate new gentx again**.
 
-**👉 The team will proceed directly with the preparation for the launch event. A new preparation document specific to the launch event will be published shortly with all necessary steps.**
+**👉 The team will proceed directly with the preparation for the launch event. Consult the following document for the essential preparation steps:**
+**→ [Launch Round 1 - Preparation for Launch Day](/en/posts/launch-round-1-preparation/)**
 
 </div>
 
 ---
 
-## 📚 References
+## 📚 Technical References
 
-- [Original Round 1 - First Flow](/en/posts/launch-round-1/) - Original Round 1 document
 - [Complete Guide: Create Gentx](https://docs.infinitedrive.xyz/en/blockchain/genesis/create-gentx/) - Complete technical documentation
+
+---
+
+## 🔗 Related Documents - Round 1
+
+This section contains all documents related to Round 1, in chronological order:
+
+- **[Testing Phase Guide](/en/posts/testing-phase-guide/)** - General testing phase guide (starting point)
+- **[Launch Round 1](/en/posts/launch-round-1/)** - Original Round 1 document with the initial flow
+- **[Launch Round 1 - Preparation for Launch Day](/en/posts/launch-round-1-preparation/)** - Essential preparation steps for the launch
 
 ---
 

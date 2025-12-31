@@ -203,3 +203,13 @@ Infinite Improbability Driveの進捗に関するさらなる更新にご期待�
 
 ---
 
+## 🔗 関連ドキュメント - ラウンド1
+
+このセクションには、テストプロセスのラウンド1に関連するすべてのドキュメントが時系列順に含まれています：
+
+- **[Launch Round 1](/ja/posts/launch-round-1/)** - 初期フローを含む元のラウンド1ドキュメント
+- **[Launch Round 1 - 修正](/ja/posts/launch-round-1-correction/)** - 修正プロセスと編集されたGenesisの送信
+- **[Launch Round 1 - ローンチ日の準備](/ja/posts/launch-round-1-preparation/)** - ローンチのための基本的な準備手順
+
+---
+

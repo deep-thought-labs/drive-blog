@@ -265,16 +265,26 @@ scp ubuntu@192.168.1.100:/home/ubuntu/drive/services/node2-infinite-creative/per
 
 **✅ 検証結果:** 参加者が以前に生成したgentxは、ベースジェネシスv2で再度生成した場合とまったく同じです。したがって、**参加者が新しいgentxを再度生成する必要はありません**。
 
-**👉 チームは直接ローンチイベントの準備に進みます。ローンチイベント専用の新しい準備ドキュメントが、必要なすべての手順とともにまもなく公開されます。**
+**👉 チームは直接ローンチイベントの準備に進みます。ローンチのための基本的な準備手順については、次のドキュメントを参照してください：**
+**→ [Launch Round 1 - ローンチ日の準備](/ja/posts/launch-round-1-preparation/)**
 
 </div>
 
 ---
 
-## 📚 参照
+## 📚 技術参照
 
-- [元のラウンド1 - 最初のフロー](/ja/posts/launch-round-1/) - 元のラウンド1ドキュメント
 - [完全ガイド：Gentxを作成](https://docs.infinitedrive.xyz/ja/blockchain/genesis/create-gentx/) - 完全な技術ドキュメント
+
+---
+
+## 🔗 関連ドキュメント - ラウンド1
+
+このセクションには、ラウンド1に関連するすべてのドキュメントが時系列順に含まれています：
+
+- **[テストフェーズガイド](/ja/posts/testing-phase-guide/)** - テストフェーズの一般的なガイド（開始点）
+- **[Launch Round 1](/ja/posts/launch-round-1/)** - 初期フローを含む元のラウンド1ドキュメント
+- **[Launch Round 1 - ローンチ日の準備](/ja/posts/launch-round-1-preparation/)** - ローンチのための基本的な準備手順
 
 ---
 

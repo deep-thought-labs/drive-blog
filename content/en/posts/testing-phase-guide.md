@@ -203,3 +203,13 @@ This post will be updated periodically as the testing process progresses, adding
 
 ---
 
+## 🔗 Related Documents - Round 1
+
+This section contains all documents related to Round 1 of the testing process, in chronological order:
+
+- **[Launch Round 1](/en/posts/launch-round-1/)** - Original Round 1 document with the initial flow
+- **[Launch Round 1 - Correction](/en/posts/launch-round-1-correction/)** - Correction process and submission of the edited Genesis
+- **[Launch Round 1 - Preparation for Launch Day](/en/posts/launch-round-1-preparation/)** - Essential preparation steps for the launch
+
+---
+

@@ -582,3 +582,15 @@ Se ha detectado un error en el flujo del proceso y se ha creado un documento sep
 
 </div>
 
+---
+
+## 🔗 Documentos Relacionados - Round 1
+
+Esta sección contiene todos los documentos relacionados con Round 1, en orden cronológico:
+
+- **[Guía de Fase de Testing](/es/posts/testing-phase-guide/)** - Guía general de la fase de testing (punto de inicio)
+- **[Launch Round 1 - Corrección](/es/posts/launch-round-1-correction/)** - Proceso de corrección y envío del Génesis editado
+- **[Launch Round 1 - Preparación para el Día de Lanzamiento](/es/posts/launch-round-1-preparation/)** - Pasos esenciales de preparación para el lanzamiento
+
+---
+
