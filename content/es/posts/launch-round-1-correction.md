@@ -61,10 +61,9 @@ Para corregir este error, el proceso se dividirá en dos fases:
 
 **Fase 2: Proceso Corregido**
 - Se proporciona el nuevo Génesis base v2 a todos los participantes
-- Los participantes descargan el Génesis base v2 (que ya incluye todas las cuentas)
-- Los participantes crean nuevas gentx basándose en el Génesis base v2
-- Los participantes envían sus nuevas gentx
-- El equipo compila todas las gentxs en el Génesis final
+- El equipo verifica que las gentx generadas previamente son válidas con el nuevo Génesis base v2
+- El equipo procede directamente con la fase de lanzamiento
+- Se publica un nuevo documento de preparación específico para el evento de lanzamiento
 
 ---
 
@@ -209,21 +208,6 @@ Una vez que envíes tu archivo Génesis, el equipo lo recibirá y lo procesará.
 
 ---
 
-## ⏳ Esperando el Génesis Base v2
-
-Una vez que el equipo haya recibido y procesado todos los archivos Génesis individuales:
-
-1. **El equipo extraerá** todas las cuentas y saldos de todos los archivos Génesis recibidos
-2. **El equipo creará** un nuevo Génesis base v2 que incluirá todas las cuentas desde el inicio
-3. **El equipo publicará** el nuevo Génesis base v2 y notificará a todos los participantes
-
-> **📢 Nota:** El equipo notificará cuando el Génesis base v2 esté disponible a través de los canales oficiales de comunicación. Asegúrate de estar atento a estos anuncios.
-
-**👉 Una vez que el Génesis base v2 esté disponible, consulta las instrucciones en el siguiente documento:**
-**→ [Launch Round 1 - Crear Gentx Otra Vez](/es/posts/launch-round-1-create-gentx-again/)**
-
----
-
 ## 📝 Resumen del Proceso (Fase 1)
 
 ```
@@ -265,8 +249,25 @@ Si ya no tienes tu archivo Génesis editado, contacta al equipo de desarrollo pa
 
 El Génesis base v2 estará disponible una vez que el equipo haya recibido y procesado todos los archivos Génesis individuales de los participantes. El equipo notificará cuando esté listo.
 
-**👉 Una vez que el Génesis base v2 esté disponible, consulta las instrucciones en:**
-**→ [Launch Round 1 - Crear Gentx Otra Vez](/es/posts/launch-round-1-create-gentx-again/)**
+---
+
+## 📢 Actualización: Proceso de Lanzamiento
+
+<div style="border: 3px solid currentColor; border-left: 8px solid currentColor; padding: 20px; margin: 30px 0; border-radius: 4px; background-color: rgba(0, 123, 255, 0.1);">
+
+### 🔄 Actualización del Proceso
+
+Una vez que el equipo recibió y procesó todos los archivos Génesis individuales:
+
+1. **El equipo extrajo** todas las cuentas y saldos de todos los archivos Génesis recibidos
+2. **El equipo creó** el nuevo Génesis base v2 que incluye todas las cuentas desde el inicio
+3. **El equipo verificó** que las gentx generadas previamente por los participantes son válidas con el nuevo Génesis base v2
+
+**✅ Resultado de la verificación:** Las gentx que los participantes ya generaron previamente son exactamente las mismas que si las hubieran generado nuevamente con el Génesis base v2. Por lo tanto, **no es necesario que los participantes vuelvan a generar nuevas gentx**.
+
+**👉 El equipo procederá directamente con la preparación para el evento de lanzamiento. Se publicará un nuevo documento de preparación específico para el evento de lanzamiento en breve con todos los pasos necesarios.**
+
+</div>
 
 ---
 

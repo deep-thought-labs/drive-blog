@@ -1,7 +1,8 @@
 ---
 title: "Launch Round 1 - Crear Gentx Otra Vez"
 date: 2025-12-29T05:00:00Z
-draft: false
+expiryDate: 2020-01-01T00:00:00Z
+draft: true
 tags: ["testing", "gentx", "creative", "chain-launch", "round-1", "v2"]
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg'
 alt: 'Launch Round 1 - Crear Gentx Otra Vez'
