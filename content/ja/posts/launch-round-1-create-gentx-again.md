@@ -9,7 +9,7 @@ alt: 'Launch Round 1 - Gentxを再度作成'
 
 {{< figure src="cover" caption="alt" >}}
 
-このドキュメントには、ベースジェネシスv2が利用可能になったら**gentxを再度作成する手順**が含まれています。これは、**Infinite Improbability Drive**チェーンのローンチに向けたラウンド1の修正されたプロセスの一部です。
+このドキュメントには、ベースジェネシスv2を使用して**gentxを再度作成する手順**が含まれています。これは、**Infinite Improbability Drive**チェーンのローンチに向けたラウンド1の修正されたプロセスの一部です。
 
 > 📖 **コンテキスト:** このドキュメントは[ラウンド1の修正](/ja/posts/launch-round-1-correction/)の継続です。これらの手順に従う前に、フェーズ1（編集したジェネシスファイルの送信）を完了したことを確認してください。
 
@@ -36,7 +36,11 @@ alt: 'Launch Round 1 - Gentxを再度作成'
 
 ### ステップ1: 以前のGentxを削除
 
-新しいベースジェネシスv2をダウンロードする前に、以前に作成したgentxを削除する必要があります：
+新しいベースジェネシスv2をダウンロードする前に、以前に作成したgentxを削除する必要があります。この以前のgentxは使用されません。以前のジェネシスで作成されたため、新しい修正されたジェネシスファイル（ベースジェネシスv2）を使用して新しいgentxを作成する必要があります。
+
+関連するすべてのファイルを確実に削除するために、個別のファイルを検索して削除するのではなく、**gentxフォルダ全体を削除することをお勧めします**。これにより、新しいgentxを作成するためのクリーンな状態が保証されます。
+
+**⚠️ 重要な警告:** これらのコマンドを実行する際は、十分に注意してください。`gentx/`フォルダ**のみ**を削除し、完全な`config/`フォルダやその他のシステムフォルダなどの他の重要なフォルダを誤って削除しないようにしてください。コマンドを実行する前に、パスを慎重に確認してください。
 
 **コンテナ内:**
 ```bash
@@ -44,27 +48,19 @@ alt: 'Launch Round 1 - Gentxを再度作成'
 cd services/node2-infinite-creative
 ./drive.sh exec infinite-creative bash
 
-# 既存のgentxをリスト
-ls -la ~/.infinited/config/gentx/
-
-# 以前のgentxを削除（<hash>をgentxファイルのハッシュに置き換える）
-rm ~/.infinited/config/gentx/gentx-<hash>.json
+# gentxフォルダ全体を削除
+rm -rf ~/.infinited/config/gentx/
 ```
 
 **ホストシステムから:**
 ```bash
-# 既存のgentxをリスト
-ls -la services/node2-infinite-creative/persistent-data/config/gentx/
-
-# 以前のgentxを削除（<hash>をgentxファイルのハッシュに置き換える）
-rm services/node2-infinite-creative/persistent-data/config/gentx/gentx-<hash>.json
+# gentxフォルダ全体を削除
+rm -rf services/node2-infinite-creative/persistent-data/config/gentx/
 ```
 
 ### ステップ2: ベースジェネシスv2をダウンロード
 
-チームは、最初からすべての参加者のアカウントと残高を含むベースジェネシスv2を提供します。
-
-> **📝 注:** ダウンロードコマンドとベースジェネシスv2ファイルのURLはまだ定義されておらず、利用可能になったらこのドキュメントで更新されます。**以下の例のコマンドはまだ利用できないため、使用しないでください。**
+チームは、最初からすべての参加者のアカウントと残高を含むベースジェネシスv2をコンパイルしました。
 
 **コンテナ内:**
 ```bash
@@ -72,14 +68,12 @@ rm services/node2-infinite-creative/persistent-data/config/gentx/gentx-<hash>.js
 cd services/node2-infinite-creative
 ./drive.sh exec infinite-creative bash
 
-# ベースジェネシスv2をダウンロード（期待される形式の例 - まだ実行しない）
-curl -o ~/.infinited/config/genesis.json [URL_GENESIS_BASE_V2_TO_BE_DEFINED]
+# ベースジェネシスv2をダウンロード
+curl -o ~/.infinited/config/genesis.json https://assets.infinitedrive.xyz/tests-round1/genesis-base-v2.json
 ```
 
 **⚠️ 重要:**
-- **このコマンドは形式の例にすぎません。** 実際のURLは利用可能になったら提供されます
-- **まだこのコマンドを実行しないでください**。URLはまだ利用できません
-- このベースジェネシスv2には、すでにすべての参加者のアカウントと残高が含まれます
+- このベースジェネシスv2には、すべての参加者のアカウントと残高が含まれます
 - 設定内の既存のジェネシスを置き換えます
 
 ### ステップ3: ベースジェネシスv2を確認
@@ -249,9 +243,9 @@ infinited genesis validate-genesis --home ~/.infinited
 
 ## ❓ よくある質問
 
-### 以前のgentxを削除しないとどうなりますか？
+### 以前のgentxフォルダを削除しないとどうなりますか？
 
-ベースジェネシスv2をダウンロードする前に以前のgentxを削除しない場合、競合が発生する可能性があります。クリーンな状態で開始するために、以前のgentxを削除することが重要です。
+ベースジェネシスv2をダウンロードする前にgentxフォルダを削除しない場合、競合が発生する可能性があります。クリーンな状態で開始するために、gentxフォルダ全体を削除することが重要です。
 
 ### 以前に作成した同じgentxを使用できますか？
 
@@ -263,7 +257,7 @@ infinited genesis validate-genesis --home ~/.infinited
 
 ### 新しいgentxをいつ送信すべきですか？
 
-ベースジェネシスv2が利用可能になったら、できるだけ早く新しいgentxを送信する必要があります。チームは受信したすべてのgentxをコンパイルして、最終ジェネシスを作成します。
+ベースジェネシスv2が利用可能になったので、できるだけ早く新しいgentxを送信する必要があります。チームは受信したすべてのgentxをコンパイルして、最終ジェネシスを作成します。
 
 ---
 

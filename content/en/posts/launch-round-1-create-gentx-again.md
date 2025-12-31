@@ -9,7 +9,7 @@ alt: 'Launch Round 1 - Create Gentx Again'
 
 {{< figure src="cover" caption="alt" >}}
 
-This document contains the **instructions to create your gentx again** once the base Genesis v2 is available, as part of the corrected process of Round 1 of the **Infinite Improbability Drive** chain launch.
+This document contains the **instructions to create your gentx again** using the base Genesis v2, as part of the corrected process of Round 1 of the **Infinite Improbability Drive** chain launch.
 
 > 📖 **Context:** This document is a continuation of [Round 1 correction](/en/posts/launch-round-1-correction/). Make sure you have completed Phase 1 (sending your edited Genesis file) before following these instructions.
 
@@ -36,7 +36,11 @@ Now you must follow these steps to create your new gentx based on the base Genes
 
 ### Step 1: Delete your Previous Gentx
 
-Before downloading the new base Genesis v2, you need to delete the gentx you created previously:
+Before downloading the new base Genesis v2, you need to delete the previous gentx you created. This previous gentx will not be used because it was created with the previous Genesis, and now we need to create a new gentx using the new corrected Genesis file (base Genesis v2).
+
+To ensure we really delete all related files, **we recommend deleting the entire gentx folder** instead of searching for and deleting individual files. This guarantees a clean state to create your new gentx.
+
+**⚠️ IMPORTANT WARNING:** Be very careful when executing these commands. Make sure to delete **ONLY** the `gentx/` folder and **DO NOT** accidentally delete other important folders such as the complete `config/` folder or other system folders. Carefully verify the path before executing the command.
 
 **Inside the container:**
 ```bash
@@ -44,27 +48,19 @@ Before downloading the new base Genesis v2, you need to delete the gentx you cre
 cd services/node2-infinite-creative
 ./drive.sh exec infinite-creative bash
 
-# List existing gentx
-ls -la ~/.infinited/config/gentx/
-
-# Delete the previous gentx (replace <hash> with your gentx file hash)
-rm ~/.infinited/config/gentx/gentx-<hash>.json
+# Delete the entire gentx folder
+rm -rf ~/.infinited/config/gentx/
 ```
 
 **From the host system:**
 ```bash
-# List existing gentx
-ls -la services/node2-infinite-creative/persistent-data/config/gentx/
-
-# Delete the previous gentx (replace <hash> with your gentx file hash)
-rm services/node2-infinite-creative/persistent-data/config/gentx/gentx-<hash>.json
+# Delete the entire gentx folder
+rm -rf services/node2-infinite-creative/persistent-data/config/gentx/
 ```
 
 ### Step 2: Download the Base Genesis v2
 
-The team will provide the base Genesis v2 that will include all accounts and balances of all participants from the start.
-
-> **📝 Note:** The download command and the URL of the base Genesis v2 file are yet to be defined and will be updated in this document when available. **DO NOT attempt to use the example command shown below, as it is not yet available.**
+The team has compiled the base Genesis v2 that includes all accounts and balances of all participants from the start.
 
 **Inside the container:**
 ```bash
@@ -72,14 +68,12 @@ The team will provide the base Genesis v2 that will include all accounts and bal
 cd services/node2-infinite-creative
 ./drive.sh exec infinite-creative bash
 
-# Download the base Genesis v2 (example of expected format - DO NOT execute yet)
-curl -o ~/.infinited/config/genesis.json [URL_GENESIS_BASE_V2_TO_BE_DEFINED]
+# Download the base Genesis v2
+curl -o ~/.infinited/config/genesis.json https://assets.infinitedrive.xyz/tests-round1/genesis-base-v2.json
 ```
 
 **⚠️ Important:**
-- **This command is only an example of the format.** The actual URL will be provided when available
-- **DO NOT execute this command yet**, as the URL is not available
-- This base Genesis v2 will already include all accounts and balances of all participants
+- This base Genesis v2 includes all accounts and balances of all participants
 - It will replace any existing Genesis in your configuration
 
 ### Step 3: Verify the Base Genesis v2
@@ -249,9 +243,9 @@ If validation is successful, your gentx is ready to deliver.
 
 ## ❓ Frequently Asked Questions
 
-### What happens if I don't delete my previous gentx?
+### What happens if I don't delete the previous gentx folder?
 
-If you don't delete your previous gentx before downloading the base Genesis v2, there may be conflicts. It is important to delete the previous gentx to start with a clean state.
+If you don't delete the gentx folder before downloading the base Genesis v2, there may be conflicts. It is important to delete the entire gentx folder to start with a clean state.
 
 ### Can I use the same gentx I created previously?
 
@@ -263,7 +257,7 @@ If your account is not in the base Genesis v2, it means you did not send your ed
 
 ### When should I send my new gentx?
 
-You should send your new gentx as soon as possible after the base Genesis v2 is available. The team will compile all received gentxs to create the final Genesis.
+You should send your new gentx as soon as possible now that the base Genesis v2 is available. The team will compile all received gentxs to create the final Genesis.
 
 ---
 

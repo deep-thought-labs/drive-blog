@@ -9,7 +9,7 @@ alt: 'Launch Round 1 - Crear Gentx Otra Vez'
 
 {{< figure src="cover" caption="alt" >}}
 
-Este documento contiene las **instrucciones para crear tu gentx nuevamente** una vez que el Génesis base v2 esté disponible, como parte del proceso corregido de la Ronda 1 del lanzamiento de la cadena **Infinite Improbability Drive**.
+Este documento contiene las **instrucciones para crear tu gentx nuevamente** usando el Génesis base v2, como parte del proceso corregido de la Ronda 1 del lanzamiento de la cadena **Infinite Improbability Drive**.
 
 > 📖 **Contexto:** Este documento es la continuación de la [corrección de la Ronda 1](/es/posts/launch-round-1-correction/). Asegúrate de haber completado la Fase 1 (enviar tu archivo Génesis editado) antes de seguir estas instrucciones.
 
@@ -36,7 +36,11 @@ Ahora debes seguir estos pasos para crear tu nueva gentx basándote en el Génes
 
 ### Paso 1: Eliminar tu Gentx Anterior
 
-Antes de descargar el nuevo Génesis base v2, necesitas eliminar la gentx que creaste anteriormente:
+Antes de descargar el nuevo Génesis base v2, necesitas eliminar la gentx anterior que creaste. Esta gentx anterior no se utilizará porque fue creada con el Génesis anterior, y ahora necesitamos crear una nueva gentx utilizando el nuevo archivo Génesis corregido (Génesis base v2).
+
+Para asegurarnos de que realmente eliminamos todos los archivos relacionados, **recomendamos eliminar toda la carpeta de gentx** en lugar de buscar y eliminar archivos individuales. Esto garantiza un estado limpio para crear tu nueva gentx.
+
+**⚠️ ADVERTENCIA IMPORTANTE:** Ten mucho cuidado al ejecutar estos comandos. Asegúrate de eliminar **SOLO** la carpeta `gentx/` y **NO** borres por accidente otras carpetas importantes como `config/` completa u otras carpetas del sistema. Verifica cuidadosamente la ruta antes de ejecutar el comando.
 
 **Dentro del contenedor:**
 ```bash
@@ -44,27 +48,19 @@ Antes de descargar el nuevo Génesis base v2, necesitas eliminar la gentx que cr
 cd services/node2-infinite-creative
 ./drive.sh exec infinite-creative bash
 
-# Lista las gentx existentes
-ls -la ~/.infinited/config/gentx/
-
-# Elimina la gentx anterior (reemplaza <hash> con el hash de tu archivo gentx)
-rm ~/.infinited/config/gentx/gentx-<hash>.json
+# Elimina toda la carpeta de gentx
+rm -rf ~/.infinited/config/gentx/
 ```
 
 **Desde el sistema host:**
 ```bash
-# Lista las gentx existentes
-ls -la services/node2-infinite-creative/persistent-data/config/gentx/
-
-# Elimina la gentx anterior (reemplaza <hash> con el hash de tu archivo gentx)
-rm services/node2-infinite-creative/persistent-data/config/gentx/gentx-<hash>.json
+# Elimina toda la carpeta de gentx
+rm -rf services/node2-infinite-creative/persistent-data/config/gentx/
 ```
 
 ### Paso 2: Descargar el Génesis Base v2
 
-El equipo proporcionará el Génesis base v2 que incluirá todas las cuentas y saldos de todos los participantes desde el inicio.
-
-> **📝 Nota:** El comando de descarga y la URL del archivo Génesis base v2 están por definirse y serán actualizados en este documento cuando estén disponibles. **NO intentes usar el comando de ejemplo mostrado a continuación, ya que aún no está disponible.**
+El equipo ha compilado el Génesis base v2 que incluye todas las cuentas y saldos de todos los participantes desde el inicio.
 
 **Dentro del contenedor:**
 ```bash
@@ -72,14 +68,12 @@ El equipo proporcionará el Génesis base v2 que incluirá todas las cuentas y s
 cd services/node2-infinite-creative
 ./drive.sh exec infinite-creative bash
 
-# Descarga el Génesis base v2 (ejemplo del formato esperado - NO ejecutar aún)
-curl -o ~/.infinited/config/genesis.json [URL_GENESIS_BASE_V2_POR_DEFINIR]
+# Descarga el Génesis base v2
+curl -o ~/.infinited/config/genesis.json https://assets.infinitedrive.xyz/tests-round1/genesis-base-v2.json
 ```
 
 **⚠️ Importante:**
-- **Este comando es solo un ejemplo del formato.** La URL real será proporcionada cuando esté disponible
-- **NO ejecutes este comando aún**, ya que la URL no está disponible
-- Este Génesis base v2 ya incluirá todas las cuentas y saldos de todos los participantes
+- Este Génesis base v2 incluye todas las cuentas y saldos de todos los participantes
 - Reemplazará cualquier Génesis existente en tu configuración
 
 ### Paso 3: Verificar el Génesis Base v2
@@ -247,9 +241,9 @@ Si la validación es exitosa, tu gentx está lista para entregar.
 
 ## ❓ Preguntas Frecuentes
 
-### ¿Qué pasa si no elimino mi gentx anterior?
+### ¿Qué pasa si no elimino la carpeta de gentx anterior?
 
-Si no eliminas tu gentx anterior antes de descargar el Génesis base v2, puede haber conflictos. Es importante eliminar la gentx anterior para empezar con un estado limpio.
+Si no eliminas la carpeta de gentx antes de descargar el Génesis base v2, puede haber conflictos. Es importante eliminar toda la carpeta de gentx para empezar con un estado limpio.
 
 ### ¿Puedo usar la misma gentx que creé anteriormente?
 
@@ -261,7 +255,7 @@ Si tu cuenta no está en el Génesis base v2, significa que no enviaste tu archi
 
 ### ¿Cuándo debo enviar mi nueva gentx?
 
-Debes enviar tu nueva gentx lo antes posible después de que el Génesis base v2 esté disponible. El equipo compilará todas las gentxs recibidas para crear el Génesis final.
+Debes enviar tu nueva gentx lo antes posible ahora que el Génesis base v2 está disponible. El equipo compilará todas las gentxs recibidas para crear el Génesis final.
 
 ---
 
