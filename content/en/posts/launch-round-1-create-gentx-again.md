@@ -48,14 +48,26 @@ To ensure we really delete all related files, **we recommend deleting the entire
 cd services/node2-infinite-creative
 ./drive.sh exec infinite-creative bash
 
+# Verify the contents of the gentx folder before deleting it
+ls -la ~/.infinited/config/gentx/
+
 # Delete the entire gentx folder
 rm -rf ~/.infinited/config/gentx/
+
+# Verify that the folder was deleted (should show an error indicating it doesn't exist)
+ls -la ~/.infinited/config/gentx/
 ```
 
 **From the host system:**
 ```bash
+# Verify the contents of the gentx folder before deleting it
+ls -la services/node2-infinite-creative/persistent-data/config/gentx/
+
 # Delete the entire gentx folder
 rm -rf services/node2-infinite-creative/persistent-data/config/gentx/
+
+# Verify that the folder was deleted (should show an error indicating it doesn't exist)
+ls -la services/node2-infinite-creative/persistent-data/config/gentx/
 ```
 
 ### Step 2: Download the Base Genesis v2

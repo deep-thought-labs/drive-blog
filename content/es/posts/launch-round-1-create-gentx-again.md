@@ -48,14 +48,26 @@ Para asegurarnos de que realmente eliminamos todos los archivos relacionados, **
 cd services/node2-infinite-creative
 ./drive.sh exec infinite-creative bash
 
+# Verifica el contenido de la carpeta gentx antes de eliminarla
+ls -la ~/.infinited/config/gentx/
+
 # Elimina toda la carpeta de gentx
 rm -rf ~/.infinited/config/gentx/
+
+# Verifica que la carpeta fue eliminada (debería mostrar un error indicando que no existe)
+ls -la ~/.infinited/config/gentx/
 ```
 
 **Desde el sistema host:**
 ```bash
+# Verifica el contenido de la carpeta gentx antes de eliminarla
+ls -la services/node2-infinite-creative/persistent-data/config/gentx/
+
 # Elimina toda la carpeta de gentx
 rm -rf services/node2-infinite-creative/persistent-data/config/gentx/
+
+# Verifica que la carpeta fue eliminada (debería mostrar un error indicando que no existe)
+ls -la services/node2-infinite-creative/persistent-data/config/gentx/
 ```
 
 ### Paso 2: Descargar el Génesis Base v2

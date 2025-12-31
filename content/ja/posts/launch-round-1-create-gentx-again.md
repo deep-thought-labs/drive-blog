@@ -48,14 +48,26 @@ alt: 'Launch Round 1 - Gentxを再度作成'
 cd services/node2-infinite-creative
 ./drive.sh exec infinite-creative bash
 
+# 削除する前にgentxフォルダの内容を確認
+ls -la ~/.infinited/config/gentx/
+
 # gentxフォルダ全体を削除
 rm -rf ~/.infinited/config/gentx/
+
+# フォルダが削除されたことを確認（存在しないことを示すエラーが表示されるはず）
+ls -la ~/.infinited/config/gentx/
 ```
 
 **ホストシステムから:**
 ```bash
+# 削除する前にgentxフォルダの内容を確認
+ls -la services/node2-infinite-creative/persistent-data/config/gentx/
+
 # gentxフォルダ全体を削除
 rm -rf services/node2-infinite-creative/persistent-data/config/gentx/
+
+# フォルダが削除されたことを確認（存在しないことを示すエラーが表示されるはず）
+ls -la services/node2-infinite-creative/persistent-data/config/gentx/
 ```
 
 ### ステップ2: ベースジェネシスv2をダウンロード
