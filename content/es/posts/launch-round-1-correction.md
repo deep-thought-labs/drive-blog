@@ -265,7 +265,8 @@ Una vez que el equipo recibió y procesó todos los archivos Génesis individual
 
 **✅ Resultado de la verificación:** Las gentx que los participantes ya generaron previamente son exactamente las mismas que si las hubieran generado nuevamente con el Génesis base v2. Por lo tanto, **no es necesario que los participantes vuelvan a generar nuevas gentx**.
 
-**👉 El equipo procederá directamente con la preparación para el evento de lanzamiento. Se publicará un nuevo documento de preparación específico para el evento de lanzamiento en breve con todos los pasos necesarios.**
+**👉 El equipo procederá directamente con la preparación para el evento de lanzamiento. Consulta el siguiente documento para los pasos esenciales de preparación:**
+**→ [Launch Round 1 - Preparación para el Día de Lanzamiento](/es/posts/launch-round-1-preparation/)**
 
 </div>
 
@@ -274,6 +275,7 @@ Una vez que el equipo recibió y procesó todos los archivos Génesis individual
 ## 📚 Referencias
 
 - [Ronda 1 Original](/es/posts/launch-round-1/) - Documento original de la Ronda 1
+- [Preparación para el Día de Lanzamiento](/es/posts/launch-round-1-preparation/) - Pasos esenciales de preparación para el lanzamiento
 - [Guía Completa: Crear Gentx](https://docs.infinitedrive.xyz/es/blockchain/genesis/create-gentx/) - Documentación técnica completa
 
 ---
